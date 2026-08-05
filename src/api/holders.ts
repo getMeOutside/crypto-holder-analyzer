@@ -1,3 +1,4 @@
+import axios from "axios";
 import { ethers } from "ethers";
 import { createSolanaRpc, address as solAddress, getProgramDerivedAddress } from "@solana/kit";
 import { getBase58Encoder } from "@solana/codecs-strings";
@@ -11,6 +12,7 @@ const ERC20_ABI = [
   "function totalSupply() view returns (uint256)",
   "function balanceOf(address) view returns (uint256)",
   "function transfer(address,uint256) returns (bool)",
+  "event Transfer(address indexed from, address indexed to, uint256 value)",
 ];
 
 // ─── Solana RPC (via @solana/kit) ───
@@ -137,7 +139,7 @@ async function fetchTopHoldersSolana(mint: string, limit: number): Promise<Holde
 export async function fetchTokenInfo(address: string, chain: ChainConfig): Promise<TokenInfo> {
   if (chain.name === "Solana") return fetchTokenInfoSolana(address);
 
-  const provider = new ethers.JsonRpcProvider(chain.rpc, chain.chainId);
+  const provider = new ethers.JsonRpcProvider(chain.rpc, chain.chainId, { batchMaxCount: 1 });
   const contract = new ethers.Contract(address, ERC20_ABI, provider);
 
   const [symbol, name, decimals, totalSupply] = await Promise.all([
@@ -179,35 +181,63 @@ async function fetchHoldersEtherscan(
   apiKey: string,
   limit: number,
 ): Promise<HolderBalance[]> {
-  const provider = new ethers.JsonRpcProvider(chain.rpc, chain.chainId);
+  if (!apiKey || apiKey.includes("your_")) {
+    console.warn("⚠ ETHERSCAN_KEY is not set. Get a free key at https://etherscan.io/register");
+    return [];
+  }
+
+  const provider = new ethers.JsonRpcProvider(chain.rpc, chain.chainId, { batchMaxCount: 1 });
   const contract = new ethers.Contract(address, ERC20_ABI, provider);
 
-  const totalSupply = await contract.totalSupply();
-  const decimals = await contract.decimals();
+  const [totalSupply, decimals, currentBlock] = await Promise.all([
+    contract.totalSupply(),
+    contract.decimals(),
+    provider.getBlockNumber(),
+  ]);
   const totalSupplyNum = Number(ethers.formatUnits(totalSupply, decimals));
 
-  const currentBlock = await provider.getBlockNumber();
   const blocksToScan = 50000;
   const fromBlock = Math.max(0, currentBlock - blocksToScan);
-
-  const filter = contract.filters.Transfer();
-  const events = await contract.queryFilter(filter, fromBlock, currentBlock);
+  const TRANSFER_TOPIC = "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef";
 
   const balances = new Map<string, bigint>();
 
-  for (const event of events) {
-    if (!("args" in event)) continue;
-    const [from, to, value] = event.args as unknown as [string, string, bigint];
+  let startBlock = fromBlock;
+  while (startBlock <= currentBlock) {
+    const endBlock = Math.min(startBlock + 4999, currentBlock);
+    const params = new URLSearchParams({
+      module: "logs",
+      action: "getLogs",
+      address,
+      fromBlock: String(startBlock),
+      toBlock: String(endBlock),
+      topic0: TRANSFER_TOPIC,
+      chainid: String(chain.chainId),
+    });
+    if (apiKey) params.set("apikey", apiKey);
 
-    const fromLower = from.toLowerCase();
-    const toLower = to.toLowerCase();
+    const { data } = await axios.get<{ status: string; message: string; result: unknown[] }>(
+      chain.explorerApi,
+      { params },
+    );
+    if (data.status === "1" && Array.isArray(data.result)) {
+      for (const log of data.result) {
+        const l = log as Record<string, string>;
+        const from = ethers.getAddress("0x" + l.topics[1].slice(26));
+        const to = ethers.getAddress("0x" + l.topics[2].slice(26));
+        const value = BigInt(l.data);
 
-    if (fromLower !== ethers.ZeroAddress && fromLower !== toLower) {
-      balances.set(fromLower, (balances.get(fromLower) || 0n) - value);
+        if (from !== ethers.ZeroAddress && from !== to) {
+          balances.set(from.toLowerCase(), (balances.get(from.toLowerCase()) || 0n) - value);
+        }
+        if (to !== ethers.ZeroAddress && from !== to) {
+          balances.set(to.toLowerCase(), (balances.get(to.toLowerCase()) || 0n) + value);
+        }
+      }
     }
-    if (toLower !== ethers.ZeroAddress && fromLower !== toLower) {
-      balances.set(toLower, (balances.get(toLower) || 0n) + value);
-    }
+
+    await new Promise((r) => setTimeout(r, 250));
+    startBlock = endBlock + 1;
   }
 
   const holders: HolderBalance[] = [];
