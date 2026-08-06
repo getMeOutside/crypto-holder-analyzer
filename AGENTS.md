@@ -24,6 +24,7 @@ bun run analyze <token_address> <chain>
 | Модуль | Файл | Ответственность |
 |--------|------|-----------------|
 | Types | `src/types/index.ts` | Все типы, `KNOWN_EXCHANGES` (адреса бирж) |
+| Constants | `src/constants.ts` | Все магические числа и конфигурационные значения |
 | Config | `src/config/chains.ts` | RPC, explorer API, CoinGecko ID для каждой сети |
 | Holders API | `src/api/holders.ts` | Fetch токена (ERC-20 для ETH/BSC, SPL для Solana через @solana/kit) |
 | Price API | `src/api/price.ts` | Цена через CoinGecko → DeFiLlama (fallback) |
@@ -41,6 +42,7 @@ bun run analyze <token_address> <chain>
 1. **После правок запусти `npx tsc --noEmit`** — проект в strict mode, ошибки типов не допускаются.
 2. **Не меняй структуру `data/`** — снимки уже существуют, формат должен быть обратно совместимым.
 3. **Не удаляй адреса из `KNOWN_EXCHANGES`** без обсуждения — это ломает аналитику для существующих снимков.
+4. **Все магические числа выноси в `src/constants.ts`** — пороги, лимиты, размеры колонок, периоды.
 
 ### При добавлении новой сети
 
@@ -54,8 +56,8 @@ bun run analyze <token_address> <chain>
 
 - `src/analysis/analyzer.ts` — чистые функции, не трогают I/O.
 - `KNOWN_EXCHANGES` используется для маркировки адресов бирж в отчёте.
-- Порог redistribution: 5% изменения баланса (`buildRedistribution`).
-- Порог "unchanged": <0.5% изменения (`buildHolderDiffs`).
+- Порог redistribution: 5% изменения баланса (`buildRedistribution`, см. `REDISTRIBUTION_THRESHOLD_PERCENT`).
+- Порог "unchanged": <0.5% изменения (`buildHolderDiffs`, см. `UNCHANGED_THRESHOLD_PERCENT`).
 - `buildTradingActivityDiffs` — дельты volume/txns из истории снепшотов (3 дня, неделя).
 
 ### При изменении отчёта

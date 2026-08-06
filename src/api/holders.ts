@@ -4,6 +4,13 @@ import { createSolanaRpc, address as solAddress, getProgramDerivedAddress } from
 import { getBase58Encoder } from "@solana/codecs-strings";
 import type { ChainConfig, TokenInfo, HolderBalance } from "../types/index.js";
 import { getExplorerKey, getSolanaRpcUrl } from "../config/chains.js";
+import {
+  DEFAULT_HOLDER_LIMIT,
+  MAX_RETRY_ATTEMPTS,
+  RETRY_BASE_DELAY_MS,
+  EVM_BLOCKS_TO_SCAN,
+  EVM_REQUEST_DELAY_MS,
+} from "../constants.js";
 
 const ERC20_ABI = [
   "function symbol() view returns (string)",
@@ -21,7 +28,11 @@ function getSolanaRpc() {
   return createSolanaRpc(getSolanaRpcUrl());
 }
 
-async function withRetry<T>(fn: () => Promise<T>, label: string, attempts = 3): Promise<T> {
+async function withRetry<T>(
+  fn: () => Promise<T>,
+  label: string,
+  attempts = MAX_RETRY_ATTEMPTS,
+): Promise<T> {
   for (let i = 0; i < attempts; i++) {
     try {
       return await fn();
@@ -29,7 +40,7 @@ async function withRetry<T>(fn: () => Promise<T>, label: string, attempts = 3): 
       const message = err instanceof Error ? err.message : String(err);
       const is429 = message.includes("429") || message.includes("Too Many Requests");
       if (!is429 || i === attempts - 1) throw err;
-      const delay = 1000 * 2 ** i;
+      const delay = RETRY_BASE_DELAY_MS * 2 ** i;
       console.warn(`⚠ ${label}: 429, retry in ${delay}ms...`);
       await new Promise((r) => setTimeout(r, delay));
     }
@@ -162,7 +173,7 @@ export async function fetchTokenInfo(address: string, chain: ChainConfig): Promi
 export async function fetchTopHolders(
   address: string,
   chain: ChainConfig,
-  limit: number = 50,
+  limit: number = DEFAULT_HOLDER_LIMIT,
 ): Promise<HolderBalance[]> {
   if (chain.name === "Solana") return fetchTopHoldersSolana(address, limit);
 
@@ -196,7 +207,7 @@ async function fetchHoldersEtherscan(
   ]);
   const totalSupplyNum = Number(ethers.formatUnits(totalSupply, decimals));
 
-  const blocksToScan = 50000;
+  const blocksToScan = EVM_BLOCKS_TO_SCAN;
   const fromBlock = Math.max(0, currentBlock - blocksToScan);
   const TRANSFER_TOPIC = "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef";
 
@@ -236,7 +247,7 @@ async function fetchHoldersEtherscan(
       }
     }
 
-    await new Promise((r) => setTimeout(r, 250));
+    await new Promise((r) => setTimeout(r, EVM_REQUEST_DELAY_MS));
     startBlock = endBlock + 1;
   }
 

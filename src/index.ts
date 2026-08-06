@@ -8,6 +8,7 @@ import { analyzeSnapshots, findSnapshotByDaysAgo } from "./analysis/analyzer.js"
 import { generateReport } from "./report/generator.js";
 import { KNOWN_EXCHANGES } from "./types/index.js";
 import type { TokenSnapshot, HolderSnapshot, AnalysisResult } from "./types/index.js";
+import { MAX_HOLDERS_IN_SNAPSHOT, HOLDER_PERIODS_DAYS } from "./constants.js";
 
 async function main() {
   const args = process.argv.slice(2);
@@ -47,13 +48,15 @@ async function main() {
     );
   }
 
-  const holderSnapshots: HolderSnapshot[] = holders.slice(0, 50).map((h, i) => ({
-    rank: i + 1,
-    address: h.address,
-    balance: h.balanceFormatted,
-    percentage: h.percentage,
-    label: KNOWN_EXCHANGES[h.address] || KNOWN_EXCHANGES[h.address.toLowerCase()],
-  }));
+  const holderSnapshots: HolderSnapshot[] = holders
+    .slice(0, MAX_HOLDERS_IN_SNAPSHOT)
+    .map((h, i) => ({
+      rank: i + 1,
+      address: h.address,
+      balance: h.balanceFormatted,
+      percentage: h.percentage,
+      label: KNOWN_EXCHANGES[h.address] || KNOWN_EXCHANGES[h.address.toLowerCase()],
+    }));
 
   const now = new Date();
   const currentSnapshot: TokenSnapshot = {
@@ -78,13 +81,13 @@ async function main() {
 
   // Check which intervals are covered by snapshots
   const snapshotDays = new Set<number>();
-  for (const ds of [1, 3, 7]) {
+  for (const ds of HOLDER_PERIODS_DAYS) {
     const r = findSnapshotByDaysAgo(allSnapshots, currentSnapshot, ds);
     if (r) snapshotDays.add(ds);
   }
 
   // Fetch only missing intervals from DeFiLlama
-  const missingDays = [1, 3, 7].filter((d) => !snapshotDays.has(d));
+  const missingDays = [...HOLDER_PERIODS_DAYS].filter((d) => !snapshotDays.has(d));
   let historicalPrices: Awaited<ReturnType<typeof fetchHistoricalPrices>> | undefined;
 
   if (missingDays.length > 0) {
@@ -124,9 +127,8 @@ async function main() {
     historicalPrices,
   );
 
-  // Generate and display report
+  // Generate and display report (tables printed directly via console.table)
   const report = generateReport(result);
-  console.log("\n" + report);
 
   // Also save report to file
   const reportPath = `data/reports/${tokenInfo.chain.toLowerCase()}_${tokenInfo.address}_${currentSnapshot.date}.md`;

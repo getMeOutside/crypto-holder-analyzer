@@ -1,7 +1,6 @@
 import axios from "axios";
 import type { ChainConfig } from "../types/index.js";
-
-const PERIODS = [1, 3, 7] as const;
+import { HOLDER_PERIODS_DAYS, SECONDS_PER_DAY } from "../constants.js";
 
 const chainMap: Record<string, string> = {
   Ethereum: "ethereum",
@@ -43,8 +42,8 @@ export async function fetchHistoricalPrices(
   const now = Math.floor(Date.now() / 1000);
 
   const results = await Promise.allSettled(
-    PERIODS.map(async (daysAgo) => {
-      const ts = now - daysAgo * 86400;
+    HOLDER_PERIODS_DAYS.map(async (daysAgo) => {
+      const ts = now - daysAgo * SECONDS_PER_DAY;
       const url = `https://coins.llama.fi/prices/historical/${ts}/${key}`;
       const { data } = await axios.get<LlamaResponse>(url);
       const price = data.coins[key]?.price;

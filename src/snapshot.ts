@@ -5,6 +5,7 @@ import { fetchTradingActivity } from "./api/dexscreener.js";
 import { saveSnapshot } from "./storage/snapshots.js";
 import { KNOWN_EXCHANGES } from "./types/index.js";
 import type { TokenSnapshot, HolderSnapshot } from "./types/index.js";
+import { MAX_HOLDERS_IN_SNAPSHOT } from "./constants.js";
 
 async function main() {
   const args = process.argv.slice(2);
@@ -41,13 +42,15 @@ async function main() {
     );
   }
 
-  const holderSnapshots: HolderSnapshot[] = holders.slice(0, 50).map((h, i) => ({
-    rank: i + 1,
-    address: h.address,
-    balance: h.balanceFormatted,
-    percentage: h.percentage,
-    label: KNOWN_EXCHANGES[h.address] || KNOWN_EXCHANGES[h.address.toLowerCase()],
-  }));
+  const holderSnapshots: HolderSnapshot[] = holders
+    .slice(0, MAX_HOLDERS_IN_SNAPSHOT)
+    .map((h, i) => ({
+      rank: i + 1,
+      address: h.address,
+      balance: h.balanceFormatted,
+      percentage: h.percentage,
+      label: KNOWN_EXCHANGES[h.address] || KNOWN_EXCHANGES[h.address.toLowerCase()],
+    }));
 
   const now = new Date();
   const snapshot: TokenSnapshot = {

@@ -15,12 +15,19 @@ import type {
 } from "../types/index.js";
 import { KNOWN_EXCHANGES } from "../types/index.js";
 import type { HistoricalPrices } from "../api/price-history.js";
-
-export const SIGNIFICANT_CHANGE_PERCENT = 1;
-
-function shortAddr(addr: string): string {
-  return `${addr.slice(0, 6)}…${addr.slice(-4)}`;
-}
+import {
+  SIGNIFICANT_CHANGE_PERCENT,
+  HOLDER_PERIODS_DAYS,
+  UNCHANGED_THRESHOLD_PERCENT,
+  WHALE_ACCUMULATION_THRESHOLD_PERCENT,
+  REDISTRIBUTION_MIN_RANK,
+  REDISTRIBUTION_MAX_RANK,
+  REDISTRIBUTION_THRESHOLD_PERCENT,
+  MS_PER_DAY,
+  SNAPSHOT_TOLERANCE_MS,
+  PRICE_DROP_WARNING_PERCENT,
+  PRICE_GAIN_WARNING_PERCENT,
+} from "../constants.js";
 
 function fmtNum(n: number): string {
   if (Math.abs(n) >= 1_000_000) return `${(n / 1_000_000).toFixed(2)}M`;
@@ -42,7 +49,7 @@ export function analyzeSnapshots(
   const tradingActivityDiffs = buildTradingActivityDiffs(current, previous, first, allSnapshots);
   const whaleConcentration = buildWhaleConcentration(current, previous, allSnapshots);
   const periodHolderDiffs = buildHolderPeriodDiffs(current, allSnapshots);
-  const whaleSignals = buildWhaleBehaviorSignals(priceChange, periodHolderDiffs);
+  const whaleSignals = buildWhaleBehaviorSignals(priceChange, whaleConcentration);
   const summary = buildSummary(
     current,
     previous,
@@ -154,7 +161,7 @@ function buildHolderDiffs(current: TokenSnapshot, previous?: TokenSnapshot): Hol
     const changePercent = prev.balance > 0 ? (balanceChange / prev.balance) * 100 : 0;
 
     let action: HolderDiff["action"] = "unchanged";
-    if (Math.abs(changePercent) > 0.5) {
+    if (Math.abs(changePercent) > UNCHANGED_THRESHOLD_PERCENT) {
       action = balanceChange > 0 ? "increased" : "decreased";
     }
 
@@ -198,10 +205,8 @@ function buildHolderPeriodDiffs(
   current: TokenSnapshot,
   allSnapshots?: TokenSnapshot[],
 ): PeriodHolderDiff[] {
-  const PERIODS = [1, 3, 7] as const;
-
   const prevSnapshots = new Map<number, TokenSnapshot>();
-  for (const daysAgo of PERIODS) {
+  for (const daysAgo of HOLDER_PERIODS_DAYS) {
     const r = allSnapshots ? findSnapshotByDaysAgo(allSnapshots, current, daysAgo) : undefined;
     if (r) prevSnapshots.set(daysAgo, r.snapshot);
   }
@@ -210,11 +215,14 @@ function buildHolderPeriodDiffs(
 
   const result: PeriodHolderDiff[] = [];
   for (const cur of current.holders) {
-    const deltas = new Map<number, number>();
+    const deltas = new Map<number, { ppChange: number; balanceChange: number }>();
     for (const [daysAgo, snap] of prevSnapshots) {
       const prev = snap.holders.find((h) => h.address.toLowerCase() === cur.address.toLowerCase());
       if (prev) {
-        deltas.set(daysAgo, cur.percentage - prev.percentage);
+        deltas.set(daysAgo, {
+          ppChange: cur.percentage - prev.percentage,
+          balanceChange: cur.balance - prev.balance,
+        });
       }
     }
     result.push({
@@ -232,18 +240,18 @@ function buildHolderPeriodDiffs(
 
 function buildWhaleBehaviorSignals(
   priceChange: PriceChange | null,
-  periodHolderDiffs: PeriodHolderDiff[],
+  whaleConcentration: WhaleConcentration | null,
 ): Map<number, WhaleSignal> {
-  const PERIODS = [1, 3, 7] as const;
   const result = new Map<number, WhaleSignal>();
 
   if (!priceChange) return result;
+  if (!whaleConcentration) return result;
 
   const priceHist = priceChange.historical
     ? new Map(priceChange.historical.map((h) => [h.daysAgo, h.changePercent]))
     : new Map<number, number>();
 
-  for (const daysAgo of PERIODS) {
+  for (const daysAgo of HOLDER_PERIODS_DAYS) {
     let priceDelta = priceChange.changePercent;
     if (daysAgo !== 1) {
       const h = priceHist.get(daysAgo);
@@ -252,8 +260,8 @@ function buildWhaleBehaviorSignals(
     }
     if (priceDelta === undefined) continue;
 
-    const holdersWithDeltas = periodHolderDiffs.filter((h) => h.deltas.has(daysAgo));
-    if (holdersWithDeltas.length === 0) {
+    const concEntry = whaleConcentration.entries.find((e) => e.daysAgo === daysAgo);
+    if (!concEntry) {
       result.set(daysAgo, {
         emoji: "🟡",
         text: `${daysAgo}д: цена ${priceDelta >= 0 ? "+" : ""}${priceDelta.toFixed(1)}% (данных о холдерах пока нет)`,
@@ -261,37 +269,27 @@ function buildWhaleBehaviorSignals(
       continue;
     }
 
-    const avgConcDelta =
-      holdersWithDeltas.reduce((sum, h) => sum + (h.deltas.get(daysAgo) ?? 0), 0) /
-      holdersWithDeltas.length;
+    const concDelta = whaleConcentration.currentConcentration - concEntry.concentration;
     const priceUp = priceDelta >= 0;
-    const whalesStable = Math.abs(avgConcDelta) < 3;
 
-    if (whalesStable) {
-      result.set(daysAgo, {
-        emoji: priceUp ? "🟢" : "🔴",
-        text: priceUp
-          ? `Мелкие игроки набирают (${daysAgo}д). Киты не трогают (≈${avgConcDelta >= 0 ? "+" : ""}${avgConcDelta.toFixed(1)}% supply)`
-          : `Мелкие игроки продают (${daysAgo}д). Киты не трогают (≈${avgConcDelta >= 0 ? "+" : ""}${avgConcDelta.toFixed(1)}% supply)`,
-      });
-    } else if (avgConcDelta > 3) {
-      result.set(daysAgo, {
-        emoji: "🟢",
-        text: `Киты закупают (${daysAgo}д, +${avgConcDelta.toFixed(1)}% supply)${priceUp ? "" : " — цена падает на фоне накопления"}`,
-      });
-    } else if (avgConcDelta < -3) {
-      result.set(daysAgo, {
-        emoji: "🔴",
-        text: `Киты распродают (${daysAgo}д, ${avgConcDelta.toFixed(1)}% supply)${!priceUp ? "" : " — цена растет на фоне продаж"}`,
-      });
+    const playerEmoji = priceUp ? "🟢" : "🔴";
+    const playerText = priceUp
+      ? `Мелкие игроки набирают (${daysAgo}д)`
+      : `Мелкие игроки продают (${daysAgo}д)`;
+
+    let whaleLine: string;
+    if (concDelta > WHALE_ACCUMULATION_THRESHOLD_PERCENT) {
+      whaleLine = `🟢 Киты накапливают (${daysAgo}д, +${concDelta.toFixed(1)}% supply)`;
+    } else if (concDelta < -WHALE_ACCUMULATION_THRESHOLD_PERCENT) {
+      whaleLine = `🔴 Киты распродают (${daysAgo}д, ${concDelta.toFixed(1)}% supply)`;
     } else {
-      result.set(daysAgo, {
-        emoji: priceUp ? "🟢" : "🟡",
-        text: priceUp
-          ? `Цена растет ${daysAgo}д (+${priceDelta.toFixed(1)}%), киты без изменений (${avgConcDelta >= 0 ? "+" : ""}${avgConcDelta.toFixed(1)}% supply)`
-          : `Цена падает ${daysAgo}д (${priceDelta.toFixed(1)}%), киты без изменений (${avgConcDelta >= 0 ? "+" : ""}${avgConcDelta.toFixed(1)}% supply)`,
-      });
+      whaleLine = `🟡 Киты без изменений (${daysAgo}д, ${concDelta >= 0 ? "+" : ""}${concDelta.toFixed(1)}% supply)`;
     }
+
+    result.set(daysAgo, {
+      emoji: playerEmoji,
+      text: `${playerText}\n  ${whaleLine}`,
+    });
   }
 
   return result;
@@ -345,7 +343,7 @@ function buildRedistribution(
   const prevMap = new Map(previous.holders.map((h) => [h.address.toLowerCase(), h]));
   const events: RedistributionEvent[] = [];
 
-  for (const cur of current.holders.slice(6, 20)) {
+  for (const cur of current.holders.slice(REDISTRIBUTION_MIN_RANK - 1, REDISTRIBUTION_MAX_RANK)) {
     const addr = cur.address.toLowerCase();
     const prev = prevMap.get(addr);
     if (!prev) continue;
@@ -353,7 +351,7 @@ function buildRedistribution(
     const changePercent =
       prev.balance > 0 ? ((cur.balance - prev.balance) / prev.balance) * 100 : 0;
 
-    if (Math.abs(changePercent) > 5) {
+    if (Math.abs(changePercent) > REDISTRIBUTION_THRESHOLD_PERCENT) {
       events.push({
         address: cur.address,
         balance: cur.balance,
@@ -373,7 +371,7 @@ export function findSnapshotByDaysAgo(
   daysTarget: number,
 ): { snapshot: TokenSnapshot; daysAgo: number } | undefined {
   const now = new Date(current.timestamp).getTime();
-  const target = now - daysTarget * 86400000;
+  const target = now - daysTarget * MS_PER_DAY;
   let best: TokenSnapshot | undefined;
   let bestDiff = Infinity;
   for (const s of snapshots) {
@@ -384,8 +382,8 @@ export function findSnapshotByDaysAgo(
       best = s;
     }
   }
-  if (bestDiff > 2 * 86400000 || !best) return undefined;
-  const daysAgo = Math.round((now - new Date(best.timestamp).getTime()) / 86400000);
+  if (bestDiff > SNAPSHOT_TOLERANCE_MS || !best) return undefined;
+  const daysAgo = Math.round((now - new Date(best.timestamp).getTime()) / MS_PER_DAY);
   return { snapshot: best, daysAgo };
 }
 
@@ -490,21 +488,13 @@ function buildSummary(
       Math.abs(d.changePercent) >= SIGNIFICANT_CHANGE_PERCENT,
   );
 
-  if (significantChanges.length === 0) {
-    lines.push("🟢 Крупные держатели не изменили позиции — киты продолжают удерживать.");
-  } else {
-    for (const diff of significantChanges) {
-      const label = diff.label || shortAddr(diff.address);
-      if (diff.action === "decreased") {
-        lines.push(
-          `🔴 ${label} (топ-${diff.rank}) сократил позицию на ${fmtNum(Math.abs(diff.balanceChange))} токенов (-${Math.abs(diff.changePercent).toFixed(1)}%).`,
-        );
-      } else if (diff.action === "increased") {
-        lines.push(
-          `🟢 ${label} (топ-${diff.rank}) увеличил позицию на ${fmtNum(diff.balanceChange)} токенов (+${diff.changePercent.toFixed(1)}%).`,
-        );
-      }
-    }
+  if (significantChanges.length > 0) {
+    const inc = significantChanges.filter((d) => d.action === "increased").length;
+    const dec = significantChanges.filter((d) => d.action === "decreased").length;
+    const parts: string[] = [];
+    if (inc > 0) parts.push(`${inc} увеличили`);
+    if (dec > 0) parts.push(`${dec} сократили`);
+    lines.push(`📗 ${parts.join(", ")} позиции (подробности в таблице холдеров).`);
   }
 
   for (const flow of exchangeFlows) {
@@ -523,18 +513,18 @@ function buildSummary(
   }
 
   if (priceChange && priceChange.changePercent !== undefined) {
-    if (priceChange.changePercent < -20) {
+    if (priceChange.changePercent < PRICE_DROP_WARNING_PERCENT) {
       lines.push(`⚠️ Цена упала на ${Math.abs(priceChange.changePercent).toFixed(1)}% за период`);
-    } else if (priceChange.changePercent > 20) {
+    } else if (priceChange.changePercent > PRICE_GAIN_WARNING_PERCENT) {
       lines.push(`✅ Цена выросла на ${priceChange.changePercent.toFixed(1)}% за период`);
     }
   } else if (priceChange?.historical && priceChange.historical.length > 0) {
     const latest = priceChange.historical[priceChange.historical.length - 1];
-    if (latest.changePercent < -20) {
+    if (latest.changePercent < PRICE_DROP_WARNING_PERCENT) {
       lines.push(
         `⚠️ Цена упала на ${Math.abs(latest.changePercent).toFixed(1)}% за ${latest.daysAgo}д (DeFiLlama).`,
       );
-    } else if (latest.changePercent > 20) {
+    } else if (latest.changePercent > PRICE_GAIN_WARNING_PERCENT) {
       lines.push(
         `✅ Цена выросла на ${latest.changePercent.toFixed(1)}% за ${latest.daysAgo}д (DeFiLlama).`,
       );

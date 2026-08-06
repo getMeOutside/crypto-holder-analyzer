@@ -139,13 +139,18 @@ export interface WhaleConcentration {
   entries: WhaleConcentrationEntry[];
 }
 
+export interface PeriodDelta {
+  ppChange: number;
+  balanceChange: number;
+}
+
 export interface PeriodHolderDiff {
   rank: number;
   address: string;
   label?: string;
   currentBalance: number;
   currentPercentage: number;
-  deltas: Map<number, number>;
+  deltas: Map<number, PeriodDelta>;
 }
 
 export interface WhaleSignal {
