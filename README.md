@@ -4,10 +4,11 @@
 
 ## Возможности
 
-- 📊 Трекинг топ-50 держателей токена на EVM-чейнах
+- 📊 Трекинг топ-50 держателей токена (EVM) / топ-20 (Solana)
 - 💰 Цена в реальном времени через CoinGecko / DeFiLlama
+- 📈 Торговая активность через DexScreener (volume 24h, txns buy/sell, дельты за 3 дня и неделю)
 - 🔍 Определение входов/выходов на биржи (Binance, Coinbase, OKX и др.)
-- 📈 Сравнение снимков держателей во времени
+- 🔄 Динамическое отслеживание изменений держателей (порог 1%, все холдеры — не только топ-6)
 - 📝 Генерация детальных Markdown-отчётов на русском
 
 ## Поддерживаемые сети
@@ -27,62 +28,60 @@ cp .env.example .env
 
 Добавь API-ключи в `.env`:
 
-| Переменная | Описание |
-|------------|----------|
-| `ETHERSCAN_KEY` | Etherscan API key |
-| `BSCSCAN_KEY` | BscScan API key |
-| `SOLSCAN_KEY` | Solscan API key (опционально) |
-| `COINGECKO_KEY` | CoinGecko Pro key (опционально) |
+| Переменная | Описание | Обязательный |
+|------------|----------|:---:|
+| `ETHERSCAN_KEY` | Etherscan API key | — |
+| `COINGECKO_KEY` | CoinGecko Pro key (опционально) | нет |
+
+DexScreener API бесплатный и не требует ключа.
 
 ## Использование
 
-### 1. Сохранить снимок (первый запуск)
-
-```bash
-bun run snapshot <token_address> <chain>
-```
-
-Собирает текущий список держателей + цену и сохраняет JSON-файл в `data/snapshots/`.
-
-### 2. Запустить анализ (после накопления снимков)
+Единая команда `analyze` делает снимок + анализ:
 
 ```bash
 bun run analyze <token_address> <chain>
 ```
 
-Сравнивает текущий снимок с предыдущим, генерирует отчёт с изменениями:
-- Топ-6 китов — кто не изменился, кто продал/купил
-- Потоки токенов на биржи (Binance, Coinbase и др.)
-- Перераспределение среди средних китов (топ-7–20)
-- Динамика цены за период и с начала мониторинга
+- Если_previousх снимков нет — просто сохраняет текущий снимок
+- Если_previousе снимки есть — сравнивает, генерирует отчёт
+
+Отдельный снимок без анализа:
+
+```bash
+bun run snapshot <token_address> <chain>
+```
+
+### Что включает отчёт
+
+- **Изменения держателей** — все кошельки, изменившие баланс более чем на 1%
+- **Торговая активность** — volume 24h, транзакции (buy/sell) в таблице: сейчас vs вчера vs 3 дня vs неделя
+- **Exchange Flows** — потоки токенов на/с бирж
+- **Перераспределение** — средние киты (топ-7–20) с >5% изменениями
+- **Динамика цены** — за период и с начала мониторинга
+- **Сравнение с первым днём** — все значимые изменения с момента старта
 
 ### Примеры
 
 ```bash
-# BSC токен (UAI)
-bun run snapshot 0x0d8c86ab... bsc
+# BSC токен
 bun run analyze 0x0d8c86ab... bsc
 
 # Ethereum токен
-bun run snapshot 0x1f9840a8... eth
 bun run analyze 0x1f9840a8... eth
 
 # Solana токен
-bun run snapshot So11111111111111111111111111111111111111112 sol
+bun run analyze ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82 sol
 ```
 
 ## Рабочий процесс
 
 ```
-День 1:   bun run snapshot <token> <chain>   → сохраняется снимок
-День 7:   bun run snapshot <token> <chain>   → второй снимок
-          bun run analyze <token> <chain>    → отчёт с диффом
+День 1:   bun run analyze <token> <chain>   → снимок + уведомление "нет_previousх данных"
+День 2+:  bun run analyze <token> <chain>   → снимок + полный отчёт
 
-Либо одной командой:
-День 7:   bun run analyze <token> <chain>    → снимок + отчёт
+Дельты за 3 дня / неделю появляются после накопления истории.
 ```
-
-Для регулярного мониторинга рекомендуется запускать `snapshot` раз в неделю через cron, а `analyze` — когда нужен отчёт.
 
 ## Хранение данных
 
@@ -97,30 +96,35 @@ data/
     └── bsc_0x0d8c86ab..._2026-08-05.md
 ```
 
+Каждый снимок включает: топ-холдеров, цену и данные DexScreener (volume, txns, пара).
+
 ## Архитектура
 
 ```
 src/
-├── index.ts              # analyze — основной скрипт анализа
-├── snapshot.ts           # snapshot — сохранение снимка
+├── index.ts              # analyze — снимок + анализ + отчёт
+├── snapshot.ts           # snapshot — только сохранение снимка
 ├── config/
-│   └── chains.ts         # конфигурация сетей (RPC, explorer API)
+│   └── chains.ts         # конфигурация сетей (RPC, explorer API, DexScreener chain ID)
 ├── api/
-│   ├── holders.ts        # получение держателей через Transfer events
-│   └── price.ts          # цена (CoinGecko + DeFiLlama)
+│   ├── holders.ts        # держатели (EVM: Transfer events, Solana: getTokenLargestAccounts)
+│   ├── price.ts          # цена (CoinGecko + DeFiLlama fallback)
+│   └── dexscreener.ts    # торговая активность (DexScreener API, топ-пара автоматически)
 ├── storage/
 │   └── snapshots.ts      # JSON-хранилище снимков
 ├── analysis/
-│   └── analyzer.ts       # логика: diff держателей, биржи, перераспределение
+│   └── analyzer.ts       # diff держателей, биржи, redistribution, trading activity diffs
 ├── report/
-│   └── generator.ts      # генерация Markdown-отчёта с эмодзи
+│   └── generator.ts      # генерация Markdown-отчёта (русский, эмодзи)
 └── types/
-    └── index.ts           # типы + база известных адресов бирж
+    └── index.ts           # типы + KNOWN_EXCHANGES (адреса бирж)
 ```
 
 ## Ограничения
 
 - Бесплатный tier Etherscan: 5 запросов/сек.
-- Для полного списка держателей EVM (не только по Transfer events) рекомендуется Moralis или Alchemy.
-- Solana: топ держатели берутся через `getTokenLargestAccounts` из `@solana/kit` (макс. ~20 аккаунтов — ограничение RPC).
+- EVM держатели — только из Transfer events (последние ~50k блоков). Для полного списка нужен Moralis/Alchemy.
+- Solana: `getTokenLargestAccounts` возвращает топ-20 (ограничение RPC).
 - Цена из CoinGecko может быть недоступна для малых токенов — тогда используется DeFiLlama.
+- DexScreener: автоматически берётся топ-пара по volume. Для выбора конкретной пары — нужна доработка.
+- Дельты за 3 дня / неделю появятся только после накопления нескольких снимков.

@@ -8,7 +8,7 @@ CLI-инструмент на Bun + TypeScript для анализа держа�
 
 - **Runtime:** Bun (не Node.js)
 - **Язык:** TypeScript (strict mode, ESNext)
-- **Зависимости:** ethers v6 (EVM on-chain), @solana/kit (Solana RPC), axios (цены)
+- **Зависимости:** ethers v6 (EVM on-chain), @solana/kit (Solana RPC), axios (цены, DexScreener)
 - **Хранение:** JSON-файлы в `data/`
 
 ## Как запускать
@@ -27,6 +27,7 @@ bun run analyze <token_address> <chain>
 | Config | `src/config/chains.ts` | RPC, explorer API, CoinGecko ID для каждой сети |
 | Holders API | `src/api/holders.ts` | Fetch токена (ERC-20 для ETH/BSC, SPL для Solana через @solana/kit) |
 | Price API | `src/api/price.ts` | Цена через CoinGecko → DeFiLlama (fallback) |
+| DexScreener API | `src/api/dexscreener.ts` | Торговая активность: volume 24h, txns 24h, пара, DEX |
 | Storage | `src/storage/snapshots.ts` | CRUD JSON-снимков в `data/snapshots/` |
 | Analysis | `src/analysis/analyzer.ts` | Diff держателей, распознавание бирж, redistribution, summary |
 | Report | `src/report/generator.ts` | Markdown-отчёт на русском с эмодзи |
@@ -43,7 +44,7 @@ bun run analyze <token_address> <chain>
 
 ### При добавлении новой сети
 
-1. Добавь конфиг в `src/config/chains.ts` (rpc, explorerApi, explorerKeyEnv, coingeckoId).
+1. Добавь конфиг в `src/config/chains.ts` (rpc, explorerApi, explorerKeyEnv, coingeckoId, dexscreenerId).
 2. Добавь платформу в `src/api/price.ts` → `platformMap` (CoinGecko) и `chainMap` (DeFiLlama).
 3. Для EVM: `fetchHoldersEtherscan()` в `src/api/holders.ts` — использует Transfer events через ethers.
 4. Для Solana: `fetchTopHoldersSolana()` в `src/api/holders.ts` — использует `getTokenLargestAccounts` через `@solana/kit` (`createSolanaRpc`).
@@ -55,6 +56,7 @@ bun run analyze <token_address> <chain>
 - `KNOWN_EXCHANGES` используется для маркировки адресов бирж в отчёте.
 - Порог redistribution: 5% изменения баланса (`buildRedistribution`).
 - Порог "unchanged": <0.5% изменения (`buildHolderDiffs`).
+- `buildTradingActivityDiffs` — дельты volume/txns из истории снепшотов (3 дня, неделя).
 
 ### При изменении отчёта
 
@@ -66,7 +68,7 @@ bun run analyze <token_address> <chain>
 ```
 ethers@6 — on-chain чтение (EVM: RPC, ERC-20, Transfer events)
 @solana/kit — Solana RPC (getTokenSupply, getTokenLargestAccounts, getAccountInfo)
-axios — CoinGecko, DeFiLlama
+axios — CoinGecko, DeFiLlama, DexScreener
 @types/bun — типы для Bun runtime
 typescript — компилятор
 ```

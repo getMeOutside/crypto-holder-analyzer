@@ -5,6 +5,7 @@ export interface ChainConfig {
   explorerApi: string;
   explorerKeyEnv: string;
   coingeckoId: string;
+  dexscreenerId: string;
 }
 
 export interface TokenInfo {
@@ -38,6 +39,16 @@ export interface TokenSnapshot {
   priceUsd: number;
   holders: HolderSnapshot[];
   totalHolders: number;
+  tradingActivity?: TradingActivity;
+}
+
+export interface TradingActivity {
+  dex: string;
+  pairAddress: string;
+  pairUrl: string;
+  quoteToken: string;
+  volume24h: number;
+  txns24h: { buys: number; sells: number };
 }
 
 export interface AnalysisResult {
@@ -48,15 +59,28 @@ export interface AnalysisResult {
   topHolderChanges: HolderDiff[];
   exchangeFlows: ExchangeFlow[];
   redistribution: RedistributionEvent[];
+  tradingActivityDiffs: TradingActivityDiffs | null;
+  whaleConcentration: WhaleConcentration | null;
+  periodHolderDiffs: PeriodHolderDiff[];
+  whaleSignals: Map<number, WhaleSignal>;
   summary: string;
 }
 
 export interface PriceChange {
   current: number;
-  previous: number;
-  changePercent: number;
+  previous?: number;
+  changePercent?: number;
   firstPrice?: number;
   firstPriceChangePercent?: number;
+  historical?: HistoricalPriceEntry[];
+}
+
+export interface HistoricalPriceEntry {
+  price: number;
+  date: string;
+  daysAgo: number;
+  source: "snapshot" | "api";
+  changePercent: number;
 }
 
 export interface HolderDiff {
@@ -89,6 +113,44 @@ export interface RedistributionEvent {
   previousBalance: number;
   changePercent: number;
   direction: "accumulating" | "distributing";
+}
+
+export interface TradingActivitySnapshot {
+  activity: TradingActivity;
+  date: string;
+  daysAgo: number;
+}
+
+export interface TradingActivityDiffs {
+  current: TradingActivity;
+  entries: TradingActivitySnapshot[];
+}
+
+export interface WhaleConcentrationEntry {
+  concentration: number;
+  date: string;
+  daysAgo: number;
+}
+
+export interface WhaleConcentration {
+  holderCount: number;
+  currentMcapUsd: number;
+  currentConcentration: number;
+  entries: WhaleConcentrationEntry[];
+}
+
+export interface PeriodHolderDiff {
+  rank: number;
+  address: string;
+  label?: string;
+  currentBalance: number;
+  currentPercentage: number;
+  deltas: Map<number, number>;
+}
+
+export interface WhaleSignal {
+  emoji: string;
+  text: string;
 }
 
 export const KNOWN_EXCHANGES: Record<string, string> = {

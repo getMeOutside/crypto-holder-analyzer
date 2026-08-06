@@ -1,6 +1,7 @@
 import { getChain } from "./config/chains.js";
 import { fetchTokenInfo, fetchTopHolders } from "./api/holders.js";
 import { fetchTokenPrice } from "./api/price.js";
+import { fetchTradingActivity } from "./api/dexscreener.js";
 import { saveSnapshot } from "./storage/snapshots.js";
 import { KNOWN_EXCHANGES } from "./types/index.js";
 import type { TokenSnapshot, HolderSnapshot } from "./types/index.js";
@@ -32,6 +33,14 @@ async function main() {
   const holders = await fetchTopHolders(tokenAddress, chain);
   console.log(`✅ Found ${holders.length} holders`);
 
+  console.log(`\n📈 Fetching trading activity...`);
+  const tradingActivity = await fetchTradingActivity(tokenAddress, chain);
+  if (tradingActivity) {
+    console.log(
+      `✅ DEX: ${tradingActivity.dex} (volume 24h: $${tradingActivity.volume24h.toLocaleString()})`,
+    );
+  }
+
   const holderSnapshots: HolderSnapshot[] = holders.slice(0, 50).map((h, i) => ({
     rank: i + 1,
     address: h.address,
@@ -48,6 +57,7 @@ async function main() {
     priceUsd: price,
     holders: holderSnapshots,
     totalHolders: holders.length,
+    tradingActivity: tradingActivity ?? undefined,
   };
 
   saveSnapshot(snapshot);

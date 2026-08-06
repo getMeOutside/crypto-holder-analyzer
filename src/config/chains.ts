@@ -10,6 +10,7 @@ export const CHAINS: Record<string, ChainConfig> = {
     explorerApi: "https://api.etherscan.io/v2/api",
     explorerKeyEnv: "ETHERSCAN_KEY",
     coingeckoId: "ethereum",
+    dexscreenerId: "ethereum",
   },
   bsc: {
     name: "BSC",
@@ -18,6 +19,7 @@ export const CHAINS: Record<string, ChainConfig> = {
     explorerApi: "https://api.etherscan.io/v2/api",
     explorerKeyEnv: "ETHERSCAN_KEY",
     coingeckoId: "binancecoin",
+    dexscreenerId: "bsc",
   },
   sol: {
     name: "Solana",
@@ -26,6 +28,7 @@ export const CHAINS: Record<string, ChainConfig> = {
     explorerApi: "https://public-api.solscan.io",
     explorerKeyEnv: "SOLSCAN_KEY",
     coingeckoId: "solana",
+    dexscreenerId: "solana",
   },
 };
 
