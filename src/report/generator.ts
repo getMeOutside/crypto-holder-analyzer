@@ -1,4 +1,5 @@
 import type { AnalysisResult } from "../types/index.js";
+import { SIGNIFICANT_CHANGE_PERCENT } from "../analysis/analyzer.js";
 
 function shortAddr(addr: string): string {
   return `${addr.slice(0, 6)}…${addr.slice(-4)}`;
@@ -62,30 +63,23 @@ export function generateReport(result: AnalysisResult): string {
   lines.push("Самое интересное — что происходило с держателями.");
   lines.push("");
 
-  const top6Unchanged = result.topHolderChanges.filter(
-    (d) => d.rank <= 6 && d.action === "unchanged",
-  );
-  const top6Changed = result.topHolderChanges.filter(
-    (d) => d.rank <= 6 && d.action !== "unchanged",
+  const significantChanges = result.topHolderChanges.filter(
+    (d) =>
+      (d.action === "increased" || d.action === "decreased") &&
+      Math.abs(d.changePercent) >= SIGNIFICANT_CHANGE_PERCENT,
   );
 
-  if (top6Unchanged.length === 6) {
-    lines.push("🟢 Топ-6 вообще не изменились");
+  if (significantChanges.length === 0) {
+    lines.push("🟢 Крупные держатели не изменили позиции");
     lines.push("");
-    lines.push("Первые шесть крупнейших кошельков не продали ни одного токена.");
-    lines.push("Их доли остались абсолютно такими же:");
-    lines.push("");
-    for (let i = 0; i < 6; i++) {
-      const h = cur.holders[i];
-      if (h) {
-        lines.push(
-          `#${h.rank} — ${h.percentage.toFixed(2)}%  (${fmtNum(h.balance)} ${token.symbol})`,
-        );
-      }
-    }
-  } else if (top6Changed.length > 0) {
-    lines.push("Изменения в топ-6:");
-    for (const diff of top6Changed) {
+    lines.push(
+      `Ни один из топ-холдеров не изменил баланс более чем на ${SIGNIFICANT_CHANGE_PERCENT}%.`,
+    );
+  } else {
+    lines.push(
+      `Изменения (>${SIGNIFICANT_CHANGE_PERCENT}%):`,
+    );
+    for (const diff of significantChanges) {
       const label = diff.label || shortAddr(diff.address);
       if (diff.action === "decreased") {
         lines.push(
@@ -145,26 +139,43 @@ export function generateReport(result: AnalysisResult): string {
     lines.push(`📈 Сравнение с первым днём мониторинга (${first.date}):`);
     lines.push("");
 
-    const top6FromFirst = cur.holders
-      .slice(0, 6)
+    const changesFromFirst = cur.holders
       .map((h) => {
         const firstHolder = first.holders.find(
           (f) => f.address.toLowerCase() === h.address.toLowerCase(),
         );
         if (!firstHolder) return null;
+        const changePercent =
+          firstHolder.balance > 0
+            ? ((h.balance - firstHolder.balance) / firstHolder.balance) * 100
+            : 0;
         return {
           rank: h.rank,
           address: h.address,
+          label: h.label,
           current: h.balance,
           first: firstHolder.balance,
-          unchanged: Math.abs(h.balance - firstHolder.balance) < h.balance * 0.001,
+          changePercent,
         };
       })
       .filter((t): t is NonNullable<typeof t> => t !== null);
 
-    const allTop6Unchanged = top6FromFirst.every((t) => t.unchanged);
-    if (allTop6Unchanged) {
-      lines.push("✅ Топ-6 вообще не изменились с самого начала.");
+    const significantFromFirst = changesFromFirst.filter(
+      (t) => Math.abs(t.changePercent) >= SIGNIFICANT_CHANGE_PERCENT,
+    );
+
+    if (significantFromFirst.length === 0) {
+      lines.push(
+        `✅ Ни один из топ-холдеров не изменил баланс более чем на ${SIGNIFICANT_CHANGE_PERCENT}% с начала мониторинга.`,
+      );
+    } else {
+      for (const t of significantFromFirst) {
+        const label = t.label || shortAddr(t.address);
+        const arrow = t.changePercent >= 0 ? "🟢" : "🔴";
+        lines.push(
+          `${arrow} #${t.rank} ${label}: ${fmtNum(t.first)} → ${fmtNum(t.current)} (${t.changePercent >= 0 ? "+" : ""}${t.changePercent.toFixed(1)}%)`,
+        );
+      }
     }
     lines.push("");
   }

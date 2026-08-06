@@ -8,6 +8,8 @@ import type {
 } from "../types/index.js";
 import { KNOWN_EXCHANGES } from "../types/index.js";
 
+export const SIGNIFICANT_CHANGE_PERCENT = 1;
+
 function shortAddr(addr: string): string {
   return `${addr.slice(0, 6)}…${addr.slice(-4)}`;
 }
@@ -217,15 +219,22 @@ function buildSummary(
   priceChange: PriceChange | null,
 ): string {
   const lines: string[] = [];
-  const topChanged = holderDiffs.filter((d) => d.rank <= 6 && d.action !== "unchanged");
-  const topUnchanged = holderDiffs.filter((d) => d.rank <= 6 && d.action === "unchanged");
+  const significantChanges = holderDiffs.filter(
+    (d) =>
+      (d.action === "increased" || d.action === "decreased") &&
+      Math.abs(d.changePercent) >= SIGNIFICANT_CHANGE_PERCENT,
+  );
+  const unchangedOrMinor = holderDiffs.filter(
+    (d) =>
+      d.action === "unchanged" ||
+      ((d.action === "increased" || d.action === "decreased") &&
+        Math.abs(d.changePercent) < SIGNIFICANT_CHANGE_PERCENT),
+  );
 
-  if (topUnchanged.length === 6) {
-    lines.push("🟢 Топ-6 держателей не изменились — киты продолжают удерживать позиции.");
-  } else if (topChanged.length === 0) {
-    lines.push("🟢 Топ-6 держателей без изменений.");
+  if (significantChanges.length === 0) {
+    lines.push("🟢 Крупные держатели не изменили позиции — киты продолжают удерживать.");
   } else {
-    for (const diff of topChanged) {
+    for (const diff of significantChanges) {
       const label = diff.label || shortAddr(diff.address);
       if (diff.action === "decreased") {
         lines.push(

@@ -13,14 +13,11 @@ async function main() {
   if (args.length < 2) {
     console.log("Usage: bun run analyze <token_address> <chain>");
     console.log("");
-    console.log("commands:");
-    console.log("  bun run snapshot <token> <chain>  — save a new snapshot");
-    console.log("  bun run analyze <token> <chain>   — generate analysis report");
+    console.log("Takes a snapshot and analyzes holder changes (if previous snapshots exist).");
     console.log("");
     console.log("Supported chains: eth, bsc, sol");
     console.log("");
     console.log("Example:");
-    console.log("  bun run snapshot 0x0d8c86... bsc");
     console.log("  bun run analyze 0x0d8c86... bsc");
     process.exit(1);
   }
