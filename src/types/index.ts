@@ -49,6 +49,14 @@ export interface TradingActivity {
   quoteToken: string;
   volume24h: number;
   txns24h: { buys: number; sells: number };
+  liquidityUsd?: number;
+  pairCreatedAt?: number;
+  priceUsd?: number;
+  marketCap?: number;
+  name?: string;
+  symbol?: string;
+  imageUrl?: string;
+  priceChange?: { h24?: number };
 }
 
 export interface AnalysisResult {

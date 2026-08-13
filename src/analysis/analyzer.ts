@@ -121,9 +121,21 @@ function buildPriceChange(
 
     historical.sort((a, b) => a.daysAgo - b.daysAgo);
     result.historical = historical;
+  } else if (current.tradingActivity?.priceChange?.h24 !== undefined && current.priceUsd > 0) {
+    const h24Pct = current.tradingActivity.priceChange.h24;
+    const inferred = current.priceUsd / (1 + h24Pct / 100);
+    if (inferred > 0) {
+      result.historical = [{
+        price: inferred,
+        date: "24ч назад",
+        daysAgo: 1,
+        source: "api",
+        changePercent: h24Pct,
+      }];
+    }
   }
 
-  if (!previous && (!historicalPrices || historicalPrices.prices.size === 0)) {
+  if (!previous && (!historicalPrices || historicalPrices.prices.size === 0) && !result.historical) {
     return null;
   }
 

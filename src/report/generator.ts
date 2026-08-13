@@ -76,7 +76,7 @@ export function generateReport(result: AnalysisResult): string {
       ];
       console.table(tableData);
 
-      if (hasApi) {
+    if (hasApi) {
         console.log("  Источник цен: DeFiLlama");
       }
 
@@ -108,6 +108,11 @@ export function generateReport(result: AnalysisResult): string {
     const ta = d.current;
 
     console.log(`📊 Торговая активность (${ta.dex}, ${ta.quoteToken})`);
+
+    if (ta.priceChange && ta.priceChange.h24 !== undefined) {
+      const h24 = ta.priceChange.h24;
+      console.log(`  📈 ΔPrice 24ч: ${h24 >= 0 ? "+" : ""}${h24.toFixed(2)}% (DexScreener)`);
+    }
 
     const pct = (cur: number, prev: number) => (prev > 0 ? ((cur - prev) / prev) * 100 : null);
     const entryMap = new Map(d.entries.map((e) => [e.daysAgo, e.activity]));
