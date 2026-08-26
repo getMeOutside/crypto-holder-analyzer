@@ -1,14 +1,13 @@
 import axios from "axios";
 import { ethers } from "ethers";
 import { createSolanaRpc, address as solAddress, getProgramDerivedAddress } from "@solana/kit";
-import { getBase58Encoder } from "@solana/codecs-strings";
+import { getBase58Encoder, getBase58Decoder } from "@solana/codecs-strings";
 import type { ChainConfig, TokenInfo, HolderBalance } from "../types/index.js";
 import { getExplorerKey, getSolanaRpcUrl } from "../config/chains.js";
 import {
   DEFAULT_HOLDER_LIMIT,
   MAX_RETRY_ATTEMPTS,
   RETRY_BASE_DELAY_MS,
-  EVM_BLOCKS_TO_SCAN,
   EVM_REQUEST_DELAY_MS,
 } from "../constants.js";
 
@@ -51,6 +50,7 @@ async function withRetry<T>(
 // ─── Metaplex Token Metadata helpers ───
 
 const base58Encode = getBase58Encoder();
+const base58Decode = getBase58Decoder();
 const METADATA_PROGRAM_ID = solAddress("metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s");
 const METADATA_PROGRAM_ID_BYTES = base58Encode.encode(METADATA_PROGRAM_ID);
 
@@ -136,14 +136,39 @@ async function fetchTopHoldersSolana(mint: string, limit: number): Promise<Holde
   const supplyInfo = await withRetry(() => rpc.getTokenSupply(addr).send(), "getTokenSupply");
 
   const totalSupply = Number(supplyInfo.value.uiAmount);
+  const tokenAccounts = largest.value.slice(0, limit);
 
-  return largest.value.slice(0, limit).map((acc) => ({
-    address: acc.address,
+  // Resolve owner addresses from token accounts (each token account has an owner at offset 32)
+  let ownerAddresses: string[];
+  try {
+    const accountAddresses = tokenAccounts.map((acc) => solAddress(acc.address));
+    const batch = await withRetry(
+      () => rpc.getMultipleAccounts(accountAddresses, { encoding: "base64" }).send(),
+      "getMultipleAccounts",
+    );
+    ownerAddresses = batch.value.map((acc, i) => {
+      if (acc?.data && Array.isArray(acc.data) && typeof acc.data[0] === "string") {
+        const buf = Buffer.from(acc.data[0], acc.data[1] as BufferEncoding);
+        const ownerBytes = buf.slice(SPL_TOKEN_OWNER_OFFSET, SPL_TOKEN_OWNER_OFFSET + 32);
+        return base58Decode.decode(new Uint8Array(ownerBytes));
+      }
+      return tokenAccounts[i].address; // fallback to token account address
+    });
+  } catch {
+    ownerAddresses = tokenAccounts.map((acc) => acc.address);
+  }
+
+  return tokenAccounts.map((acc, i) => ({
+    address: ownerAddresses[i],
     balance: acc.amount,
     balanceFormatted: acc.uiAmount ?? 0,
     percentage: totalSupply > 0 ? ((acc.uiAmount ?? 0) / totalSupply) * 100 : 0,
   }));
 }
+
+// ─── SPL Token Account layout ───
+
+const SPL_TOKEN_OWNER_OFFSET = 32;
 
 // ─── EVM (Etherscan-style) ───
 
@@ -179,7 +204,7 @@ export async function fetchTopHolders(
 
   const apiKey = getExplorerKey(chain);
 
-  if (chain.explorerApi.includes("etherscan") || chain.explorerApi.includes("bscscan")) {
+  if (chain.explorerApi.includes("etherscan")) {
     return fetchHoldersEtherscan(address, chain, apiKey, limit);
   }
 
@@ -192,78 +217,123 @@ async function fetchHoldersEtherscan(
   apiKey: string,
   limit: number,
 ): Promise<HolderBalance[]> {
-  if (!apiKey || apiKey.includes("your_")) {
-    console.warn("⚠ ETHERSCAN_KEY is not set. Get a free key at https://etherscan.io/register");
-    return [];
-  }
-
   const provider = new ethers.JsonRpcProvider(chain.rpc, chain.chainId, { batchMaxCount: 1 });
   const contract = new ethers.Contract(address, ERC20_ABI, provider);
 
-  const [totalSupply, decimals, currentBlock] = await Promise.all([
-    contract.totalSupply(),
+  const [decimals, totalSupplyBigInt] = await Promise.all([
     contract.decimals(),
-    provider.getBlockNumber(),
+    contract.totalSupply(),
   ]);
-  const totalSupplyNum = Number(ethers.formatUnits(totalSupply, decimals));
+  const decimalsNum = Number(decimals);
+  const totalSupplyFormatted = Number(ethers.formatUnits(totalSupplyBigInt, decimalsNum));
 
-  const blocksToScan = EVM_BLOCKS_TO_SCAN;
-  const fromBlock = Math.max(0, currentBlock - blocksToScan);
-  const TRANSFER_TOPIC = "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef";
+  // Try Blockscout first (free, no API key needed)
+  if (chain.chainId === 1) {
+    const blockscoutUrl = "https://eth.blockscout.com";
+    
+    const holders: HolderBalance[] = [];
+    let nextPageParams: Record<string, string> | null = null;
 
-  const balances = new Map<string, bigint>();
+    while (holders.length < limit) {
+      try {
+        const url = nextPageParams 
+          ? `${blockscoutUrl}/api/v2/tokens/${address}/holders`
+          : `${blockscoutUrl}/api/v2/tokens/${address}/holders`;
+        
+        const { data } = await axios.get<{ items: unknown[]; next_page_params: Record<string, string> | null }>(
+          url,
+          { params: nextPageParams || {} },
+        );
 
-  let startBlock = fromBlock;
-  while (startBlock <= currentBlock) {
-    const endBlock = Math.min(startBlock + 4999, currentBlock);
+        if (!data.items || data.items.length === 0) break;
+
+        for (const item of data.items) {
+          const entry = item as Record<string, unknown>;
+          const addressEntry = entry.address as Record<string, string>;
+          const value = entry.value || entry.token_balance;
+          if (!value) continue;
+          
+          const balanceBigInt = BigInt(value as string);
+          const balanceFormatted = Number(ethers.formatUnits(balanceBigInt, decimalsNum));
+
+          if (balanceFormatted > 0) {
+            holders.push({
+              address: (addressEntry.hash || addressEntry.address || "").toLowerCase(),
+              balance: value as string,
+              balanceFormatted,
+              percentage: (balanceFormatted / totalSupplyFormatted) * 100,
+            });
+          }
+        }
+
+        nextPageParams = data.next_page_params;
+        if (!nextPageParams) break;
+        
+        await new Promise((r) => setTimeout(r, EVM_REQUEST_DELAY_MS));
+      } catch (err: unknown) {
+        const message = err instanceof Error ? err.message : String(err);
+        console.warn(`⚠ Blockscout API failed: ${message}`);
+        break;
+      }
+    }
+
+    if (holders.length > 0) {
+      holders.sort((a, b) => b.balanceFormatted - a.balanceFormatted);
+      return holders.slice(0, limit);
+    }
+  }
+
+  // Fallback to Etherscan API Pro (requires paid plan)
+  if (!apiKey || apiKey.includes("your_")) {
+    console.warn("⚠ No API key or Blockscout failed. Results may be incomplete.");
+    return [];
+  }
+
+  const holders: HolderBalance[] = [];
+  const maxPages = Math.ceil(limit / 100);
+
+  for (let page = 1; page <= maxPages; page++) {
     const params = new URLSearchParams({
-      module: "logs",
-      action: "getLogs",
-      address,
-      fromBlock: String(startBlock),
-      toBlock: String(endBlock),
-      topic0: TRANSFER_TOPIC,
+      module: "token",
+      action: "tokenholderlist",
+      contractaddress: address,
+      page: String(page),
+      offset: "100",
       chainid: String(chain.chainId),
+      apikey: apiKey,
     });
-    if (apiKey) params.set("apikey", apiKey);
 
     const { data } = await axios.get<{ status: string; message: string; result: unknown[] }>(
       chain.explorerApi,
       { params },
     );
-    if (data.status === "1" && Array.isArray(data.result)) {
-      for (const log of data.result) {
-        const l = log as Record<string, string>;
-        const from = ethers.getAddress("0x" + l.topics[1].slice(26));
-        const to = ethers.getAddress("0x" + l.topics[2].slice(26));
-        const value = BigInt(l.data);
 
-        if (from !== ethers.ZeroAddress && from !== to) {
-          balances.set(from.toLowerCase(), (balances.get(from.toLowerCase()) || 0n) - value);
-        }
-        if (to !== ethers.ZeroAddress && from !== to) {
-          balances.set(to.toLowerCase(), (balances.get(to.toLowerCase()) || 0n) + value);
-        }
+    if (data.status !== "1" || !Array.isArray(data.result)) {
+      console.warn(`⚠ Etherscan API returned: ${data.result || data.message}`);
+      break;
+    }
+
+    for (const item of data.result) {
+      const entry = item as Record<string, string>;
+      const balanceBigInt = BigInt(entry.TokenHolderQuantity);
+      const balanceFormatted = Number(ethers.formatUnits(balanceBigInt, decimalsNum));
+
+      if (balanceFormatted > 0) {
+        holders.push({
+          address: entry.TokenHolderAddress.toLowerCase(),
+          balance: entry.TokenHolderQuantity,
+          balanceFormatted,
+          percentage: (balanceFormatted / totalSupplyFormatted) * 100,
+        });
       }
     }
 
+    if (data.result.length < 100) break;
     await new Promise((r) => setTimeout(r, EVM_REQUEST_DELAY_MS));
-    startBlock = endBlock + 1;
-  }
-
-  const holders: HolderBalance[] = [];
-  for (const [addr, bal] of balances) {
-    if (bal > 0n) {
-      const formatted = Number(ethers.formatUnits(bal, decimals));
-      holders.push({
-        address: addr,
-        balance: bal.toString(),
-        balanceFormatted: formatted,
-        percentage: (formatted / totalSupplyNum) * 100,
-      });
-    }
   }
 
   holders.sort((a, b) => b.balanceFormatted - a.balanceFormatted);
+  if (holders.length > 0) return holders.slice(0, limit);
+
   return holders.slice(0, limit);
 }

@@ -16,7 +16,6 @@
 | Сеть | Ключ |
 |------|------|
 | Ethereum | `eth` |
-| BSC | `bsc` |
 | Solana | `sol` |
 
 ## Установка
@@ -64,8 +63,8 @@ bun run snapshot <token_address> <chain>
 ### Примеры
 
 ```bash
-# BSC токен
-bun run analyze 0x0d8c86ab... bsc
+# Ethereum токен
+bun run analyze 0x0d8c86ab... eth
 
 # Ethereum токен
 bun run analyze 0x1f9840a8... eth
@@ -88,12 +87,12 @@ bun run analyze ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82 sol
 ```
 data/
 ├── snapshots/
-│   └── bsc_0x0d8c86ab.../
+│   └── eth_0x0d8c86ab.../
 │       ├── 2026-07-29.json
 │       ├── 2026-08-05.json
 │       └── ...
 └── reports/
-    └── bsc_0x0d8c86ab..._2026-08-05.md
+    └── eth_0x0d8c86ab..._2026-08-05.md
 ```
 
 Каждый снимок включает: топ-холдеров, цену и данные DexScreener (volume, txns, пара).

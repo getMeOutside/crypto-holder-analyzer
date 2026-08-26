@@ -5,6 +5,8 @@
   "scripts": {
     "analyze": "bun run src/index.ts",
     "snapshot": "bun run src/snapshot.ts",
+    "batch-analyze": "bun run src/batch-analyze.ts",
+    "export-analysis": "bun run src/export-analysis.ts",
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
     "format": "prettier --write src/",

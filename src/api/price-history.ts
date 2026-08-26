@@ -4,7 +4,6 @@ import { HOLDER_PERIODS_DAYS, SECONDS_PER_DAY } from "../constants.js";
 
 const chainMap: Record<string, string> = {
   Ethereum: "ethereum",
-  BSC: "bsc",
   Solana: "solana",
 };
 

@@ -12,9 +12,9 @@ async function main() {
 
   if (args.length < 2) {
     console.log("Usage: bun run snapshot <token_address> <chain>");
-    console.log("Example: bun run snapshot 0x0d8c86... bsc");
+    console.log("Example: bun run snapshot 0x0d8c86... eth");
     console.log("");
-    console.log("Supported chains: eth, bsc, sol");
+    console.log("Supported chains: eth, sol");
     process.exit(1);
   }
 

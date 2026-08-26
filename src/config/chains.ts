@@ -1,6 +1,6 @@
 import type { ChainConfig } from "../types/index.js";
 
-type _EnvVars = "ETHERSCAN_KEY" | "BSCSCAN_KEY" | "HELIUS_KEY" | "SOLSCAN_KEY";
+type _EnvVars = "ETHERSCAN_KEY" | "HELIUS_KEY" | "SOLSCAN_KEY";
 
 export const CHAINS: Record<string, ChainConfig> = {
   eth: {
@@ -12,15 +12,7 @@ export const CHAINS: Record<string, ChainConfig> = {
     coingeckoId: "ethereum",
     dexscreenerId: "ethereum",
   },
-  bsc: {
-    name: "BSC",
-    chainId: 56,
-    rpc: process.env.BSC_RPC_URL || "https://bsc-dataseed1.binance.org",
-    explorerApi: "https://api.etherscan.io/v2/api",
-    explorerKeyEnv: "ETHERSCAN_KEY",
-    coingeckoId: "binancecoin",
-    dexscreenerId: "bsc",
-  },
+
   sol: {
     name: "Solana",
     chainId: 0,

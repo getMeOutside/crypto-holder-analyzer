@@ -27,7 +27,7 @@ function normalizeAddress(address: string, chainName: string): string {
 async function fetchPriceCoinGecko(tokenAddress: string, chain: ChainConfig): Promise<number> {
   const platformMap: Record<string, string> = {
     Ethereum: "ethereum",
-    BSC: "binance-smart-chain",
+
     Solana: "solana",
   };
 
@@ -55,7 +55,7 @@ async function fetchPriceCoinGecko(tokenAddress: string, chain: ChainConfig): Pr
 async function fetchPriceDefiLlama(tokenAddress: string, chain: ChainConfig): Promise<number> {
   const chainMap: Record<string, string> = {
     Ethereum: "ethereum",
-    BSC: "bsc",
+
     Solana: "solana",
   };
 

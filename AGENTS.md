@@ -17,6 +17,7 @@ CLI-инструмент на Bun + TypeScript для анализа держа�
 bun install
 bun run snapshot <token_address> <chain>
 bun run analyze <token_address> <chain>
+bun run batch-analyze
 ```
 
 ## Структура кода
@@ -26,14 +27,16 @@ bun run analyze <token_address> <chain>
 | Types | `src/types/index.ts` | Все типы, `KNOWN_EXCHANGES` (адреса бирж) |
 | Constants | `src/constants.ts` | Все магические числа и конфигурационные значения |
 | Config | `src/config/chains.ts` | RPC, explorer API, CoinGecko ID для каждой сети |
-| Holders API | `src/api/holders.ts` | Fetch токена (ERC-20 для ETH/BSC, SPL для Solana через @solana/kit) |
+| Holders API | `src/api/holders.ts` | Fetch токена (ERC-20 для ETH, SPL для Solana через @solana/kit) |
 | Price API | `src/api/price.ts` | Цена через CoinGecko → DeFiLlama (fallback) |
 | DexScreener API | `src/api/dexscreener.ts` | Торговая активность: volume 24h, txns 24h, пара, DEX |
 | Storage | `src/storage/snapshots.ts` | CRUD JSON-снимков в `data/snapshots/` |
 | Analysis | `src/analysis/analyzer.ts` | Diff держателей, распознавание бирж, redistribution, summary |
 | Report | `src/report/generator.ts` | Markdown-отчёт на русском с эмодзи |
+| Tasks | `src/tasks/analyze.ts` | Общая логика анализа: fetch → snapshot → analyze → report |
 | Entry | `src/index.ts` | `analyze` команда: fetch → snapshot → analyze → report |
 | Entry | `src/snapshot.ts` | `snapshot` команда: fetch → snapshot |
+| Entry | `src/batch-analyze.ts` | `batch-analyze` команда: пакетный анализ из ENV |
 
 ## Правила для агентов
 
@@ -78,7 +81,6 @@ typescript — компилятор
 ## Сети
 
 - `eth` — Ethereum (Etherscan API + Transfer events)
-- `bsc` — BSC (BscScan API + Transfer events)
 - `sol` — Solana (Solana RPC `getTokenLargestAccounts` через @solana/kit)
 
 ## Известные ограничения
