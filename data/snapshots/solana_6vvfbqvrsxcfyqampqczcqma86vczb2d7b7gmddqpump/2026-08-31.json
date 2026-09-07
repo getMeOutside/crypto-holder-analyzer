@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-08-31T14:03:39.618Z",
+  "date": "2026-08-31",
+  "token": {
+    "address": "6vVfbQVRSXcfyQamPqCzcqmA86vCzb2d7B7gmDDqpump",
+    "chain": "Solana",
+    "symbol": "UPTOBER",
+    "name": "UPTOBER",
+    "decimals": 6,
+    "totalSupply": "903214665153257"
+  },
+  "priceUsd": 0.0006679213744863258,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 106785756.63175,
+      "percentage": 11.822854604960455,
+      "label": "Raydium"
+    },
+    {
+      "rank": 2,
+      "address": "9JoExVJx751pqS5ef9sACuAwTsZB5MQEjZMacyGsqsHs",
+      "balance": 20000000,
+      "percentage": 2.214313027856607
+    },
+    {
+      "rank": 3,
+      "address": "5QQV1JXrXEaTxwn1D1YeWNkBeNe4JeuEn7JizmeaQnEk",
+      "balance": 19596533.096576,
+      "percentage": 2.169642926828571
+    },
+    {
+      "rank": 4,
+      "address": "A4c8CPfUMekuhGBCYffoKdUejn7Us5uVBXfh2uzHLrwy",
+      "balance": 18631114.043752,
+      "percentage": 2.062755927528112
+    },
+    {
+      "rank": 5,
+      "address": "2H462xQvKXrpWVnoCPxUUo17aBrA1tp52djLaiqAXuZ9",
+      "balance": 18256976.335427,
+      "percentage": 2.021333027440289
+    },
+    {
+      "rank": 6,
+      "address": "4nKo6tEWMb6CdbFuSUxBej5fRaSyFH7gnCwmMeJo3Moz",
+      "balance": 15380350.163872,
+      "percentage": 1.7028454870429133
+    },
+    {
+      "rank": 7,
+      "address": "3GyKYNWEpowHuHGaQbp4bAAVFYdkNVSkiH3zyPcxMzVM",
+      "balance": 14017335.717348,
+      "percentage": 1.551938454738171
+    },
+    {
+      "rank": 8,
+      "address": "G6gRYsMTJCFRFsb316P4QxbpgZSKSnSpgG5JPSAoShj1",
+      "balance": 11320693.145622,
+      "percentage": 1.2533779158358893
+    },
+    {
+      "rank": 9,
+      "address": "HR2qWjU67Y8U8D2FmKHDykq82zGa1aWDcTQeaPv84dZT",
+      "balance": 10273997.163471,
+      "percentage": 1.137492288361783
+    },
+    {
+      "rank": 10,
+      "address": "F8hPcRvTCcJ4feHPFSYKHZzu9WpwTAZh5BXxFaM3zgYq",
+      "balance": 10147893.047745,
+      "percentage": 1.1235305890458622
+    },
+    {
+      "rank": 11,
+      "address": "8LsTVvQr8ydD4Sqvg3217hPqvADSMrdeqyEf5e6G9c8E",
+      "balance": 10041452.792431,
+      "percentage": 1.1117459868443536
+    },
+    {
+      "rank": 12,
+      "address": "DpRwmmP9NZyxsSc2BjGcPvbaxK4cyK4NTHVHX2Bj2KGY",
+      "balance": 10008040.257154,
+      "percentage": 1.1080466962364746
+    },
+    {
+      "rank": 13,
+      "address": "2SB8nvuPKjb8tfLMB67pKdjyQkFTwZcxaPu5WDe5iJ3N",
+      "balance": 10002070,
+      "percentage": 1.1073856953266867
+    },
+    {
+      "rank": 14,
+      "address": "G4Po1t1dCJBfE6weZ19DhyPHB8SGF6bjzudaRJDgjHiV",
+      "balance": 10000057.484118,
+      "percentage": 1.1071628783198726
+    },
+    {
+      "rank": 15,
+      "address": "6LKhuU9oqDiCcagBzU2uivGaiC73jJn24TooBdvZpr2N",
+      "balance": 10000000,
+      "percentage": 1.1071565139283035
+    },
+    {
+      "rank": 16,
+      "address": "5ypjMFkK6iocNv33hVHZih2uTksfhNy17fGkjR7pDNuA",
+      "balance": 9573851.205081,
+      "percentage": 1.0599751725085769
+    },
+    {
+      "rank": 17,
+      "address": "AMyLHRHo688mJWVfiir7pzqNHFLTE9niDBQjpqksTzxS",
+      "balance": 9438682.803564,
+      "percentage": 1.0450099148868945
+    },
+    {
+      "rank": 18,
+      "address": "GVvGDKJcQv2hTbcQeZ6K5PsYbcAeBdzXBm6BpAJ9F2vG",
+      "balance": 9000000,
+      "percentage": 0.9964408625354733
+    },
+    {
+      "rank": 19,
+      "address": "Af33j3rFYxMDJzr51c5rWSM29ZQuvej5DjBeSxs58irN",
+      "balance": 8842537.23,
+      "percentage": 0.9790072693848039
+    },
+    {
+      "rank": 20,
+      "address": "3aXnnXXY2VJuJT1RGPbwhHW8WdcaAVEZZx8WtthwxpJp",
+      "balance": 8563593.649441,
+      "percentage": 0.9481238491613655
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "9gJtVVWdCbW4zHX7NxcGCt62Ff7CbNFvceTVSbkTtayb",
+    "pairUrl": "https://dexscreener.com/solana/9gjtvvwdcbw4zhx7nxcgct62ff7cbnfvcetvsbkttayb",
+    "quoteToken": "SOL",
+    "volume24h": 54041.16,
+    "txns24h": {
+      "buys": 334,
+      "sells": 294
+    },
+    "liquidityUsd": 143073.47,
+    "pairCreatedAt": 1728343852000,
+    "priceUsd": 0.0006706,
+    "marketCap": 606218,
+    "name": "UPTOBER",
+    "symbol": "UPTOBER",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/4b0c0b92d04c3fe09967b4e8b6df130fcc29f4798bb60e77af9ff99c5b944689?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": 0.12,
+      "h1": 1.13,
+      "h6": -0.19,
+      "h24": -0.03
+    }
+  }
+}

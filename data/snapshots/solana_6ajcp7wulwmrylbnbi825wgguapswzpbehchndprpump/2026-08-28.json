@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-08-28T07:34:16.751Z",
+  "date": "2026-08-28",
+  "token": {
+    "address": "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump",
+    "chain": "Solana",
+    "symbol": "VINE",
+    "name": "Vine Coin",
+    "decimals": 6,
+    "totalSupply": "999966583993103"
+  },
+  "priceUsd": 0.007287097593138251,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+      "balance": 124442337.6365,
+      "percentage": 12.444649614147336
+    },
+    {
+      "rank": 2,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 104619640.448971,
+      "percentage": 10.46231365364231,
+      "label": "Raydium"
+    },
+    {
+      "rank": 3,
+      "address": "B1vnPVgt22LHGpbkB6TZGajE4CJs7HYAe3eNqgkr4Fu4",
+      "balance": 49566440.901269,
+      "percentage": 4.956809726914922
+    },
+    {
+      "rank": 4,
+      "address": "u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w",
+      "balance": 39596830.735504,
+      "percentage": 3.9598153947689423
+    },
+    {
+      "rank": 5,
+      "address": "22Wnk8PwyWZV7BfkZGJEKT9jGGdtvu7xY6EXeRh7zkBa",
+      "balance": 33288817.861539,
+      "percentage": 3.328993027807877
+    },
+    {
+      "rank": 6,
+      "address": "E2RvJg2myWpKcbkhBuF81gfhYr6KvmNcDbSmr5qnatYy",
+      "balance": 26788539.830394,
+      "percentage": 2.6789435026339605
+    },
+    {
+      "rank": 7,
+      "address": "8CxUEpkDR1orYnk71te4yZDaTXAHi9cxoBC2D8Lwsi8L",
+      "balance": 21738518.456736,
+      "percentage": 2.173924489549336
+    },
+    {
+      "rank": 8,
+      "address": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+      "balance": 15702313.047312,
+      "percentage": 1.5702837773447342
+    },
+    {
+      "rank": 9,
+      "address": "AGVhmrhDi3RKLu9nxnRqp3CUpaG3SVeYXWkWcygHAk8N",
+      "balance": 14886200,
+      "percentage": 1.4886697453984794
+    },
+    {
+      "rank": 10,
+      "address": "BmFdpraQhkiDQE6SnfG5omcA1VwzqfXrwtNYBwWTymy6",
+      "balance": 14233165.728537,
+      "percentage": 1.4233641359994855
+    },
+    {
+      "rank": 11,
+      "address": "9ZPsRWGkukYeWg2Z7eZ8NaTBZ1DSuBUVzLcGQWZgE4Y4",
+      "balance": 13829088.269769,
+      "percentage": 1.3829550398120485
+    },
+    {
+      "rank": 12,
+      "address": "AcoV2paK3bfZHCGmpPNbb7dK16xZ8cjSujUZqLWtibZ7",
+      "balance": 12105665.491126,
+      "percentage": 1.2106070027645541
+    },
+    {
+      "rank": 13,
+      "address": "EFE3j1pcSP1paUzA86zW7989ZjsFP2J7ginyUqo4ewqR",
+      "balance": 11808905.466456,
+      "percentage": 1.1809300086109125
+    },
+    {
+      "rank": 14,
+      "address": "6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF",
+      "balance": 11508665.911697,
+      "percentage": 1.1509050498207825
+    },
+    {
+      "rank": 15,
+      "address": "CT5q59C4hxVExUsAN5q3icCsMFPxSoS8FDuodk5TqH45",
+      "balance": 10445122.430639,
+      "percentage": 1.0445471476585904
+    },
+    {
+      "rank": 16,
+      "address": "5PAhQiYdLBd6SVdjzBQDxUAEFyDdF5ExNPQfcscnPRj5",
+      "balance": 10056504.199358,
+      "percentage": 1.005684025880145
+    },
+    {
+      "rank": 17,
+      "address": "7VWUBYWg5uJ3YDRSVC7WPpaRLxhMVkVXkwkTpxmVkbow",
+      "balance": 10000210.917867,
+      "percentage": 1.0000545096150906
+    },
+    {
+      "rank": 18,
+      "address": "ADqZYsW9SVZ6bCSGDqfBiPkfaZuQKGg79MA357otX8Ud",
+      "balance": 9931551.193349,
+      "percentage": 0.9931883077222408
+    },
+    {
+      "rank": 19,
+      "address": "6FEVkH17P9y8Q9aCkDdPcMDjvj7SVxrTETaYEm8f51Jy",
+      "balance": 8720408.081982,
+      "percentage": 0.8720699492936402
+    },
+    {
+      "rank": 20,
+      "address": "AGiAVqZiQrz32m1zKC5T4UfQKcDoGNG34sqSHSVNgwtv",
+      "balance": 7583823.059012,
+      "percentage": 0.758407648856425
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "58fzJMbX5PatnfJPqWWsqkVFPRKptkbb5r2vCw4Qq3z9",
+    "pairUrl": "https://dexscreener.com/solana/58fzjmbx5patnfjpqwwsqkvfprkptkbb5r2vcw4qq3z9",
+    "quoteToken": "SOL",
+    "volume24h": 157422.38,
+    "txns24h": {
+      "buys": 438,
+      "sells": 908
+    },
+    "liquidityUsd": 1523361.6,
+    "pairCreatedAt": 1737591763000,
+    "priceUsd": 0.007289,
+    "marketCap": 7289491,
+    "name": "Vine Coin",
+    "symbol": "VINE",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/74a2255eb11fd430603a2ae1823456c98a5e241fa2e526c253c92ad16d1fa1ce?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "h1": -1.39,
+      "h6": -2.95,
+      "h24": -1.63
+    }
+  }
+}

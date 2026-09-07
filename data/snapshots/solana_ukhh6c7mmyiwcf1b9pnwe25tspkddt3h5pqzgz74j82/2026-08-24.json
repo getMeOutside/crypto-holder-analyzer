@@ -1,0 +1,137 @@
+{
+  "timestamp": "2026-08-24T15:27:50.256Z",
+  "date": "2026-08-24",
+  "token": {
+    "address": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82",
+    "chain": "Solana",
+    "symbol": "BOME",
+    "name": "BOOK OF MEME",
+    "decimals": 6,
+    "totalSupply": "68866822155799680"
+  },
+  "priceUsd": 0.0011351679953931675,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM",
+      "balance": 17951147168.891,
+      "percentage": 26.06646656103795
+    },
+    {
+      "rank": 2,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 7509279168.984606,
+      "percentage": 10.904059362571015,
+      "label": "Raydium"
+    },
+    {
+      "rank": 3,
+      "address": "3gd3dqgtJ4jWfBfLYTX67DALFetjc5iS72sCgRhCkW2u",
+      "balance": 6586299050.828642,
+      "percentage": 9.56382020347656
+    },
+    {
+      "rank": 4,
+      "address": "CBEADkb8TZAXHjVE3zwad4L995GZE7rJcacJ7asebkVG",
+      "balance": 3830097439.41002,
+      "percentage": 5.561600375206894
+    },
+    {
+      "rank": 5,
+      "address": "5tzFkiKscXHK5ZXCGbXZxdw7gTjjD1mBwuoFbhUvuAi9",
+      "balance": 3709644408.122773,
+      "percentage": 5.386693173862913
+    },
+    {
+      "rank": 6,
+      "address": "u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w",
+      "balance": 2672780309.49941,
+      "percentage": 3.881085587850549
+    },
+    {
+      "rank": 7,
+      "address": "2Ejnns2Fd5gsZdFJbnkZmQEwbrgoiMc2ikKcS2z2Ps3e",
+      "balance": 2211159762.774268,
+      "percentage": 3.2107765300566484
+    },
+    {
+      "rank": 8,
+      "address": "5LZkATrLwHYCQj2YuVbjjgsDZzBk6YfL4pFQRJmtboT2",
+      "balance": 2125568525.531515,
+      "percentage": 3.0864913742103144
+    },
+    {
+      "rank": 9,
+      "address": "GBrURzmtWujJRTA3Bkvo7ZgWuZYLMMwPCwre7BejJXnK",
+      "balance": 1314140636.760003,
+      "percentage": 1.9082347574961123
+    },
+    {
+      "rank": 10,
+      "address": "EPxGiguU5j5tKFnMQpzMrzczEQ5NRtLWrpG9fADvtadX",
+      "balance": 1022927141.154271,
+      "percentage": 1.4853700361548108
+    },
+    {
+      "rank": 11,
+      "address": "22Wnk8PwyWZV7BfkZGJEKT9jGGdtvu7xY6EXeRh7zkBa",
+      "balance": 900161091.386083,
+      "percentage": 1.3071041514731419
+    },
+    {
+      "rank": 12,
+      "address": "AcLHpBGUgsRApF2eF3tPPxMsgsnyBAr53mdBvLM8ST8z",
+      "balance": 893628291.05416,
+      "percentage": 1.2976180155844497
+    },
+    {
+      "rank": 13,
+      "address": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+      "balance": 839352011.341448,
+      "percentage": 1.2188046218287147
+    },
+    {
+      "rank": 14,
+      "address": "6QJzieMYfp7yr3EdrePaQoG3Ghxs2wM98xSLRu8Xh56U",
+      "balance": 831689174.000001,
+      "percentage": 1.2076775840163543
+    },
+    {
+      "rank": 15,
+      "address": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+      "balance": 791322543.327914,
+      "percentage": 1.1490620861489425
+    },
+    {
+      "rank": 16,
+      "address": "6FEVkH17P9y8Q9aCkDdPcMDjvj7SVxrTETaYEm8f51Jy",
+      "balance": 695224734.555189,
+      "percentage": 1.0095205685291522
+    },
+    {
+      "rank": 17,
+      "address": "8wM44Ryv9DFCSfkgUnPEPgnsc53arT4cnmXL6LnnC4UW",
+      "balance": 486193305.581766,
+      "percentage": 0.7059906212629281
+    },
+    {
+      "rank": 18,
+      "address": "8TWNcXvh9BXKdgNdRKGAfKzGUYsoVDMKUuAdbMYxCJEA",
+      "balance": 429199204.805684,
+      "percentage": 0.6232307392298319
+    },
+    {
+      "rank": 19,
+      "address": "CmnENjeuQfyPWHprK752FnU2wQgCZ8at4uMDBedctryo",
+      "balance": 419327386.41,
+      "percentage": 0.6088960885422328
+    },
+    {
+      "rank": 20,
+      "address": "4QuB7hY3H512CLG1orbVrA7HTeXbBYCPxBpNfQ6gs5ru",
+      "balance": 399999452.9473,
+      "percentage": 0.5808304208409211
+    }
+  ],
+  "totalHolders": 20
+}

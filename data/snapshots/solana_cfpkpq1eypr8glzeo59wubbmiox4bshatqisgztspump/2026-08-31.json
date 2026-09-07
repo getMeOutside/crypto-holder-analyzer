@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-08-31T14:03:27.177Z",
+  "date": "2026-08-31",
+  "token": {
+    "address": "CFPkPq1eYPR8GLzEo59wUbbMioX4bshaTQiSGzTSpump",
+    "chain": "Solana",
+    "symbol": "MENSA",
+    "name": "The Black Table",
+    "decimals": 6,
+    "totalSupply": "999970282578094"
+  },
+  "priceUsd": 0.0008586,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "GV6UUmNxz2RpKxmNAPadYKb7uQpszwqQAu3qLJxVdC52",
+      "balance": 350000084.42,
+      "percentage": 35.00104858292789
+    },
+    {
+      "rank": 2,
+      "address": "E8RJG3srQBiSFMxDwrKG2DkwpWGyK7UYcFjkaTs9tbrS",
+      "balance": 75651101.112423,
+      "percentage": 7.565334933492379
+    },
+    {
+      "rank": 3,
+      "address": "Fojn5NMjnGP1h8jhUgvsZHVcp2zJvmUe4ooUu5jXLgDt",
+      "balance": 17264631.739069,
+      "percentage": 1.7265144814661726
+    },
+    {
+      "rank": 4,
+      "address": "7y4t9NKPcg6dN3uBgyaDmDHsfedEiNhaCEZZ2y7j5Dc5",
+      "balance": 16912080.887491,
+      "percentage": 1.6912583485869968
+    },
+    {
+      "rank": 5,
+      "address": "7YSEJnSBSnNYeWyUvyDBNjpdg3n6KAER63dbjm7tiQ4n",
+      "balance": 16489546.958144,
+      "percentage": 1.649003699953076
+    },
+    {
+      "rank": 6,
+      "address": "9kR7PA1aY2Xdm4WF7RxYiKNM7WM7GfkRH92K2Nz9NpDz",
+      "balance": 16257675.895207,
+      "percentage": 1.6258159045778777
+    },
+    {
+      "rank": 7,
+      "address": "GPWj6drP1XRXfSSVbbxB4jdBqjPgeVJa5LYJwGUn9bY1",
+      "balance": 13472997.1632,
+      "percentage": 1.3473397557839735
+    },
+    {
+      "rank": 8,
+      "address": "nu2PFrfde1eqtqJvfFMNeSucxYixYpgMU3CNjoBFyDw",
+      "balance": 12431695.846555,
+      "percentage": 1.243206529548455
+    },
+    {
+      "rank": 9,
+      "address": "HwipfXVGnxN93Rrz2ELr2EseemyMBFhJZ7fusPzELCMB",
+      "balance": 11770800.359029,
+      "percentage": 1.177115016726484
+    },
+    {
+      "rank": 10,
+      "address": "2ogFTf6Y5JmRM8P6KHt3ed1MdnjFw6k71vhsJ95nrTbW",
+      "balance": 11444762.621358,
+      "percentage": 1.144510274030489
+    },
+    {
+      "rank": 11,
+      "address": "AzAJFZYU342a484SYfxuUbdnXZmXA4NEfNjNdF68tvzL",
+      "balance": 11388217.739459,
+      "percentage": 1.1388556177987843
+    },
+    {
+      "rank": 12,
+      "address": "7EdV4ppRNPuaVYQJzFTwm9uTmUZ78tob46HbZWikSqUR",
+      "balance": 10902887.239618,
+      "percentage": 1.0903211254946994
+    },
+    {
+      "rank": 13,
+      "address": "4Be9CvxqHW6BYiRAxW9Q3xu1ycTMWaL5z8NX4HR3ha7t",
+      "balance": 8823796.745537,
+      "percentage": 0.8824058973820449
+    },
+    {
+      "rank": 14,
+      "address": "7c29p5vFXo5e7xogJGRpMxwFFnuNX9HL2x4pvqKBep78",
+      "balance": 7818236.039387,
+      "percentage": 0.781846838411063
+    },
+    {
+      "rank": 15,
+      "address": "DgKeRrDYYSvhfG8FjgSPGpwGgw4YkaDzyByJGDPNhbQm",
+      "balance": 7446406.386355,
+      "percentage": 0.744662768093157
+    },
+    {
+      "rank": 16,
+      "address": "9Nj71YLLaKGbXZd88hQaTquEPv7pUsH5zVsHEix81Qxw",
+      "balance": 6938078.059112,
+      "percentage": 0.6938284247032274
+    },
+    {
+      "rank": 17,
+      "address": "FWDKVa9AaeYVkyo3V71aeMu71gSDKTDWTsiNcQqhQqLu",
+      "balance": 6837267.314676,
+      "percentage": 0.6837470506671817
+    },
+    {
+      "rank": 18,
+      "address": "AkXmd3osdZVT7hpCuBdUUWvWLTuAw1EirgZCYABtvGgY",
+      "balance": 6775599.57532,
+      "percentage": 0.6775800934655126
+    },
+    {
+      "rank": 19,
+      "address": "67Kzg5KEq1NxJDV4bKXApWReeJa3wUkFj3fvXbGfib98",
+      "balance": 6542778.028333,
+      "percentage": 0.654297246860637
+    },
+    {
+      "rank": 20,
+      "address": "J5wMT6ft4mBYVoLTiyCKHUjc71WUsWGLZcPrnrAec39Y",
+      "balance": 6403866.77764,
+      "percentage": 0.6404057089706445
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "pumpswap",
+    "pairAddress": "E8RJG3srQBiSFMxDwrKG2DkwpWGyK7UYcFjkaTs9tbrS",
+    "pairUrl": "https://dexscreener.com/solana/e8rjg3srqbisfmxdwrkg2dkwpwgyk7uycfjkats9tbrs",
+    "quoteToken": "SOL",
+    "volume24h": 66549.98,
+    "txns24h": {
+      "buys": 335,
+      "sells": 416
+    },
+    "liquidityUsd": 129783.14,
+    "pairCreatedAt": 1782959359000,
+    "priceUsd": 0.0008586,
+    "marketCap": 858649,
+    "name": "The Black Table",
+    "symbol": "MENSA",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/H-5mFrohfKl9a3mM?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": -0.93,
+      "h1": -10.17,
+      "h6": -4.57,
+      "h24": -20.52
+    }
+  }
+}

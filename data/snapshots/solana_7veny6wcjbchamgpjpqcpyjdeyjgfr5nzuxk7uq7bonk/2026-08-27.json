@@ -1,0 +1,159 @@
+{
+  "timestamp": "2026-08-27T15:40:36.490Z",
+  "date": "2026-08-27",
+  "token": {
+    "address": "7VENy6wCjBChAMGpjPQCPYJDeYJGFr5NZUxk7uQ7bonk",
+    "chain": "Solana",
+    "symbol": "CAPY",
+    "name": "Capybara",
+    "decimals": 6,
+    "totalSupply": "999658097465441800"
+  },
+  "priceUsd": 5.201166873602313e-7,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "GpMZbSM2GgvTKHJirzeGfMFoaZ8UR2X7F4v8vHTvxFbL",
+      "balance": 85379497698.01428,
+      "percentage": 8.540869914872655
+    },
+    {
+      "rank": 2,
+      "address": "HcbsbtwNFJNnwEdfAgcz7mrfAp5SUvc9v6Ydg5XYUu9X",
+      "balance": 54000000000.97939,
+      "percentage": 5.401846905246138
+    },
+    {
+      "rank": 3,
+      "address": "7vN5zUB1YbUaVLLnTUDPumvPFCzv3K7Z5MJEANVfTqCb",
+      "balance": 37582193379.68,
+      "percentage": 3.759504722161191
+    },
+    {
+      "rank": 4,
+      "address": "Gu81PufB1kmHWMA1RdvPry1qvGNMDP8JfAmYGCcS9Vur",
+      "balance": 30332575539.191452,
+      "percentage": 3.0342949870658202
+    },
+    {
+      "rank": 5,
+      "address": "8jtLkrz14sfp9DKGnoB5Fzxp3NY2HTNHwtZRWegcazpF",
+      "balance": 24166666666.666664,
+      "percentage": 2.417493213723716
+    },
+    {
+      "rank": 6,
+      "address": "8CGJPWdM7xZX5E2ZE7qw5TiNUgpLyUeXJAnHr5goezeD",
+      "balance": 22296387368.639576,
+      "percentage": 2.2304013167272285
+    },
+    {
+      "rank": 7,
+      "address": "3i26gPqZZfUpbTF9761J1QQaQY16ELCyK5xVCGLEEcjM",
+      "balance": 22060976484.752422,
+      "percentage": 2.206852176827895
+    },
+    {
+      "rank": 8,
+      "address": "EQenjp7JfgSj8C81qPUjopgJRdU3V2J1qeodoLxWkdkD",
+      "balance": 21325607652.019634,
+      "percentage": 2.1332901425086352
+    },
+    {
+      "rank": 9,
+      "address": "9kgWz1zwCHtnhtQH2hxaccvSi5amKvfwFDHk7XK9cd1u",
+      "balance": 19862643409.89152,
+      "percentage": 1.9869436820700765
+    },
+    {
+      "rank": 10,
+      "address": "21AZefSYhJdtibjwUstktgMs8ezPwTGRVfuzLjYRiDvT",
+      "balance": 19373997252.91712,
+      "percentage": 1.9380623537225818
+    },
+    {
+      "rank": 11,
+      "address": "G1Dujd7H5a2s8swoA6XfYmp8ixcFTRYBQmhzD3wifLhi",
+      "balance": 18585234565.008648,
+      "percentage": 1.8591591077119385
+    },
+    {
+      "rank": 12,
+      "address": "3m5FBRixR1X4smnVVsybetNBovFjESWQccnG97EvpY2E",
+      "balance": 18419167060.702347,
+      "percentage": 1.8425466774492965
+    },
+    {
+      "rank": 13,
+      "address": "4q7ZwMPtpjQwEvuAyHoZ7VnXqqtVP99kVuN7zpTadQwJ",
+      "balance": 18281574915.75924,
+      "percentage": 1.828782757035711
+    },
+    {
+      "rank": 14,
+      "address": "BfGkcB2gxPdgxEPvSn7MnkbuqahUGi4GLWF5nzPqrDT2",
+      "balance": 16672537043.107119,
+      "percentage": 1.6678239375421546
+    },
+    {
+      "rank": 15,
+      "address": "HVPJay53RvY7C6kuH1geCZ1JWyPTcQ97tV19X45gwDmk",
+      "balance": 15000000000,
+      "percentage": 1.500513029207824
+    },
+    {
+      "rank": 16,
+      "address": "2rENVEi2C1c4xDmVZ2amMjG397VmazAMXy2GaeHMhX4k",
+      "balance": 13128128814.911627,
+      "percentage": 1.3132618890595709
+    },
+    {
+      "rank": 17,
+      "address": "6jEU5hyHLfqGYtmCGdCT9CpHSPAEY8eG7AzA9cemwbzf",
+      "balance": 11777474723.971416,
+      "percentage": 1.1781502849656618
+    },
+    {
+      "rank": 18,
+      "address": "EXWGUMiuxxTB1TL1ZguYkDSyo4DwVfpDDZE3aox1pYzP",
+      "balance": 11405277142,
+      "percentage": 1.140917796886478
+    },
+    {
+      "rank": 19,
+      "address": "DNfuF1L62WWyW3pNakVkyGGFzVVhj4Yr52jSmdTyeBHm",
+      "balance": 11379211055.700155,
+      "percentage": 1.1383102967455867
+    },
+    {
+      "rank": 20,
+      "address": "529ojhjsC6KxBTSW5ZFMfCkuzzUCczfcsvV5VYwWx42t",
+      "balance": 11056660697.19584,
+      "percentage": 1.106044229044828
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "9grDkuZggLTSapbdcmSFBpqGZb3iP4ZiSDAiQeeW9D3R",
+    "pairUrl": "https://dexscreener.com/solana/9grdkuzggltsapbdcmsfbpqgzb3ip4zisdaiqeew9d3r",
+    "quoteToken": "SOL",
+    "volume24h": 25174.6,
+    "txns24h": {
+      "buys": 107,
+      "sells": 402
+    },
+    "liquidityUsd": 91254.07,
+    "pairCreatedAt": 1751987295000,
+    "priceUsd": 5.344e-7,
+    "marketCap": 534403,
+    "name": "Capybara",
+    "symbol": "CAPY",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/bf145afe76d9bc29c24d2fde65d37c5fe9493cfeb4f942f6407491131a7f067c?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "h1": 8.09,
+      "h6": 11.42,
+      "h24": 2.41
+    }
+  }
+}

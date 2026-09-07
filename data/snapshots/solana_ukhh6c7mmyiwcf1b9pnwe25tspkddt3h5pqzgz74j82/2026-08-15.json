@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-08-15T17:52:25.887Z",
+  "date": "2026-08-15",
+  "token": {
+    "address": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82",
+    "chain": "Solana",
+    "symbol": "BOME",
+    "name": "BOOK OF MEME",
+    "decimals": 6,
+    "totalSupply": "68866828878415210"
+  },
+  "priceUsd": 0.0009289,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM",
+      "balance": 17951147168.891,
+      "percentage": 26.066464016491675
+    },
+    {
+      "rank": 2,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 7286847334.869267,
+      "percentage": 10.581069948398872,
+      "label": "Raydium"
+    },
+    {
+      "rank": 3,
+      "address": "3gd3dqgtJ4jWfBfLYTX67DALFetjc5iS72sCgRhCkW2u",
+      "balance": 6586299050.828642,
+      "percentage": 9.56381926987925
+    },
+    {
+      "rank": 4,
+      "address": "5tzFkiKscXHK5ZXCGbXZxdw7gTjjD1mBwuoFbhUvuAi9",
+      "balance": 3640036452.099412,
+      "percentage": 5.285616473681281
+    },
+    {
+      "rank": 5,
+      "address": "CBEADkb8TZAXHjVE3zwad4L995GZE7rJcacJ7asebkVG",
+      "balance": 3290479143.32002,
+      "percentage": 4.7780320321259175
+    },
+    {
+      "rank": 6,
+      "address": "u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w",
+      "balance": 2441671268.072301,
+      "percentage": 3.545496878305644
+    },
+    {
+      "rank": 7,
+      "address": "2Ejnns2Fd5gsZdFJbnkZmQEwbrgoiMc2ikKcS2z2Ps3e",
+      "balance": 2218094954.023081,
+      "percentage": 3.220846654547054
+    },
+    {
+      "rank": 8,
+      "address": "5LZkATrLwHYCQj2YuVbjjgsDZzBk6YfL4pFQRJmtboT2",
+      "balance": 2025434332.991373,
+      "percentage": 2.9410884252668135
+    },
+    {
+      "rank": 9,
+      "address": "GBrURzmtWujJRTA3Bkvo7ZgWuZYLMMwPCwre7BejJXnK",
+      "balance": 1314140636.760003,
+      "percentage": 1.9082345712187883
+    },
+    {
+      "rank": 10,
+      "address": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+      "balance": 1263171362.192735,
+      "percentage": 1.8342232142311523
+    },
+    {
+      "rank": 11,
+      "address": "8wM44Ryv9DFCSfkgUnPEPgnsc53arT4cnmXL6LnnC4UW",
+      "balance": 926283469.553566,
+      "percentage": 1.3450357518115506
+    },
+    {
+      "rank": 12,
+      "address": "22Wnk8PwyWZV7BfkZGJEKT9jGGdtvu7xY6EXeRh7zkBa",
+      "balance": 899640360.861162,
+      "percentage": 1.3063478825916064
+    },
+    {
+      "rank": 13,
+      "address": "AcLHpBGUgsRApF2eF3tPPxMsgsnyBAr53mdBvLM8ST8z",
+      "balance": 893628291.05416,
+      "percentage": 1.297617888914075
+    },
+    {
+      "rank": 14,
+      "address": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+      "balance": 857472409.537914,
+      "percentage": 1.2451167325444688
+    },
+    {
+      "rank": 15,
+      "address": "EPxGiguU5j5tKFnMQpzMrzczEQ5NRtLWrpG9fADvtadX",
+      "balance": 849093274.911507,
+      "percentage": 1.2329495763636602
+    },
+    {
+      "rank": 16,
+      "address": "6QJzieMYfp7yr3EdrePaQoG3Ghxs2wM98xSLRu8Xh56U",
+      "balance": 831689174.000001,
+      "percentage": 1.2076774661257499
+    },
+    {
+      "rank": 17,
+      "address": "6FEVkH17P9y8Q9aCkDdPcMDjvj7SVxrTETaYEm8f51Jy",
+      "balance": 631763445.591757,
+      "percentage": 0.9173697350100716
+    },
+    {
+      "rank": 18,
+      "address": "8TWNcXvh9BXKdgNdRKGAfKzGUYsoVDMKUuAdbMYxCJEA",
+      "balance": 443233089.549698,
+      "percentage": 0.6436089722270044
+    },
+    {
+      "rank": 19,
+      "address": "CmnENjeuQfyPWHprK752FnU2wQgCZ8at4uMDBedctryo",
+      "balance": 419327386.41,
+      "percentage": 0.6088960291032495
+    },
+    {
+      "rank": 20,
+      "address": "4QuB7hY3H512CLG1orbVrA7HTeXbBYCPxBpNfQ6gs5ru",
+      "balance": 399999452.9473,
+      "percentage": 0.5808303641416412
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
+    "pairUrl": "https://dexscreener.com/solana/dsuvc5qf5ljhhv5e2td184ixotsncnwj7i4jja4xsrmt",
+    "quoteToken": "SOL",
+    "volume24h": 3739022.09,
+    "txns24h": {
+      "buys": 7406,
+      "sells": 6334
+    },
+    "liquidityUsd": 13545848.7,
+    "pairCreatedAt": 1710401208000,
+    "priceUsd": 0.000932,
+    "marketCap": 64269912,
+    "name": "BOOK OF MEME",
+    "symbol": "BOME",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/1fdb1c93b76e5aed7324c2c541558fd75fe7ffb3d0d0fb9ee8370cbac5890e4e?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": -0.48,
+      "h1": 4.53,
+      "h6": 18.93,
+      "h24": 17.03
+    }
+  }
+}

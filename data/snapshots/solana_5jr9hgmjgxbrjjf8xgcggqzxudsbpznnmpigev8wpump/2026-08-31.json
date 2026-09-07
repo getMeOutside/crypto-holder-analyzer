@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-08-31T14:03:37.430Z",
+  "date": "2026-08-31",
+  "token": {
+    "address": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump",
+    "chain": "Solana",
+    "symbol": "MUSHU",
+    "name": "Mushu",
+    "decimals": 6,
+    "totalSupply": "159703155498470"
+  },
+  "priceUsd": 0.005249413678380186,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 28941459.877313,
+      "percentage": 18.122033836451195,
+      "label": "Raydium"
+    },
+    {
+      "rank": 2,
+      "address": "J9WiAZKf8JnCkHFL8fLCCXdEgdoLjLRqU2EGsDjdqYga",
+      "balance": 6524906.216786,
+      "percentage": 4.085646395915146
+    },
+    {
+      "rank": 3,
+      "address": "GZL3v6oNaFtTGjpBmMTqKjvadKyyyZP3WMxkVD1jajyv",
+      "balance": 6234709.457004,
+      "percentage": 3.903936298280425
+    },
+    {
+      "rank": 4,
+      "address": "3rwDjSTzWbH6TJvTnHm34iMt4F6uLd6GnyP5ALVrTFNp",
+      "balance": 4347183.183112,
+      "percentage": 2.722039630052048
+    },
+    {
+      "rank": 5,
+      "address": "3Q3vAu824GYq2AWBPQo75z5FHzfYPafB4UBD9t4T2iiX",
+      "balance": 3697642.53918,
+      "percentage": 2.3153221535534554
+    },
+    {
+      "rank": 6,
+      "address": "8EJiP6w76bh29o3eK31n1Exyk5GJVzU4V5VK9RYeXbba",
+      "balance": 3641204.846142,
+      "percentage": 2.279983031504273
+    },
+    {
+      "rank": 7,
+      "address": "3drmqrv97uFeXqt1ANwzYZhLPnBMLVFXdNeFB17AL5k5",
+      "balance": 3247421.240537,
+      "percentage": 2.0334108179647776
+    },
+    {
+      "rank": 8,
+      "address": "Qchui3DYZ61AdaLjqmdF39ZRBjCXcQjKQHxkhVJp8MX",
+      "balance": 3231405.093195,
+      "percentage": 2.023382119851701
+    },
+    {
+      "rank": 9,
+      "address": "CFsxow7QdSiYCftqVUEhfnWi4U8p7qDPtxCip42uDWf7",
+      "balance": 3104106.126739,
+      "percentage": 1.9436723820831066
+    },
+    {
+      "rank": 10,
+      "address": "A4YUmRzKeZiEWdJg3VcRwry8U7MwETiCQXa9EhPnujqt",
+      "balance": 3043039.812274,
+      "percentage": 1.9054349945534752
+    },
+    {
+      "rank": 11,
+      "address": "BCFp1UCHf6uBDuEnVq2P4f4qCpDnR3fmSVTeAktFh3om",
+      "balance": 2990000.26397,
+      "percentage": 1.872223660601775
+    },
+    {
+      "rank": 12,
+      "address": "CuQ8kiDapN1EFtnqfcEC9Bsd8XYJ3AP2hXkbTFEJXMDz",
+      "balance": 2693686.51297,
+      "percentage": 1.6866833373219141
+    },
+    {
+      "rank": 13,
+      "address": "Ds28HX9rvgfwJrN19MnRFZqKRP9VxdmmdvtaMANSSMPN",
+      "balance": 2466685.205937,
+      "percentage": 1.5445438120730377
+    },
+    {
+      "rank": 14,
+      "address": "Fkb43Yf5m12xuSN5T3QE7WS6VWsLZxtGsJceUdwRWLuw",
+      "balance": 2053579.32276,
+      "percentage": 1.285872728281611
+    },
+    {
+      "rank": 15,
+      "address": "4nhctR9SPQvKCfugnf1epaGZNLqFyK15rGKhGomq97qX",
+      "balance": 2033154.265103,
+      "percentage": 1.2730833393723884
+    },
+    {
+      "rank": 16,
+      "address": "7YXdm3onJWBiRfLbtj9fRYcooUvWC4rZSNPZqh9HUou1",
+      "balance": 1947453.75115,
+      "percentage": 1.2194209595117593
+    },
+    {
+      "rank": 17,
+      "address": "AKF2s4NZKFaiRvkmVAn7dYwzPysK2F2zEQdqdQ9Vr8j7",
+      "balance": 1769402.61729,
+      "percentage": 1.107932158113777
+    },
+    {
+      "rank": 18,
+      "address": "Aobgb9sAr4WC1ygTnhsr9G1s1mcFm9zCjmZYHhMEJDbk",
+      "balance": 1764795.343436,
+      "percentage": 1.1050472596660164
+    },
+    {
+      "rank": 19,
+      "address": "FmXieEEaTQ1YiMZ8aze2U6bV9Krsz5UcpmsgcEndbuQa",
+      "balance": 1737097.233096,
+      "percentage": 1.087703763694664
+    },
+    {
+      "rank": 20,
+      "address": "DxibjcU9dioqgXTjpCudsLnUMVGU4o8JakWLuSeoViRa",
+      "balance": 1672483.016906,
+      "percentage": 1.047244815974862
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "HXH2Wp1NQ2iCo2RV5hQzmcirh7tvjsGWYKchY8ZjbbR7",
+    "pairUrl": "https://dexscreener.com/solana/hxh2wp1nq2ico2rv5hqzmcirh7tvjsgwykchy8zjbbr7",
+    "quoteToken": "SOL",
+    "volume24h": 57839.01,
+    "txns24h": {
+      "buys": 311,
+      "sells": 244
+    },
+    "liquidityUsd": 303733.36,
+    "pairCreatedAt": 1719967602000,
+    "priceUsd": 0.005253,
+    "marketCap": 4422846,
+    "name": "Mushu",
+    "symbol": "MUSHU",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/558d591a7c9a733127e3cd52229b3b686701eab5e9c9ecf72b5b577f61c95cba?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": 0.48,
+      "h1": -0.29,
+      "h6": 9.17,
+      "h24": -5.66
+    }
+  }
+}

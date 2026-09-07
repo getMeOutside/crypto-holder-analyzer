@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-09-07T10:54:36.678Z",
+  "date": "2026-09-07",
+  "token": {
+    "address": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+    "chain": "Solana",
+    "symbol": "neet",
+    "name": "NotInEmploymentEducationTraining",
+    "decimals": 6,
+    "totalSupply": "999762847714243"
+  },
+  "priceUsd": 0.03045069710366524,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "Ge4p7K2p55poDvu5ZxK5RJVUAj5WZXyY8iioARdgh1sq",
+      "balance": 58335177.931277,
+      "percentage": 5.834901553368248
+    },
+    {
+      "rank": 2,
+      "address": "5wNu5QhdpRGrL37ffcd6TMMqZugQgxwafgz477rShtHy",
+      "balance": 28417312.585504,
+      "percentage": 2.8424053414741786
+    },
+    {
+      "rank": 3,
+      "address": "Au1GUWfcadx7jMzhsg6gHGUgViYJrnPfL1vbdqnvLK4i",
+      "balance": 25452146.660684,
+      "percentage": 2.5458184127241
+    },
+    {
+      "rank": 4,
+      "address": "AH39BneW9UeWxQysUcwogQrYFdPvJuRVZ5w4ccq9SKfL",
+      "balance": 13118043.741974,
+      "percentage": 1.3121155453981685
+    },
+    {
+      "rank": 5,
+      "address": "oJEyy4MkksJzjNbVCXSctRKC7fq4SCYQ9PJDBM4BYzm",
+      "balance": 11798448.70151,
+      "percentage": 1.1801247394304342
+    },
+    {
+      "rank": 6,
+      "address": "BuqfibGhYr5PHnjupvHSU7uScH3XwUZBw9BQeUDXooTi",
+      "balance": 11497472.16181,
+      "percentage": 1.1500199460398695
+    },
+    {
+      "rank": 7,
+      "address": "BuiPM9sK5PwWTj4xqzBDXRyehuKu1Qx8qyT4shG4QUP7",
+      "balance": 10915091.210963,
+      "percentage": 1.0917680363816442
+    },
+    {
+      "rank": 8,
+      "address": "DBgdDW1kD8mJZ68qESDP528Q7xNnKfySLhRV6BQ7JDuS",
+      "balance": 10811645.478114,
+      "percentage": 1.0814210092756154
+    },
+    {
+      "rank": 9,
+      "address": "Fe8z9Th1t175gScoy2TFP8ZGB6ahVvNEwPnmRmDJDMby",
+      "balance": 10323697.435993,
+      "percentage": 1.0326146305192339
+    },
+    {
+      "rank": 10,
+      "address": "392KaqcWwp7rKs2xzybQkwtXnXEuzMDPhhdeDZ95i4Xj",
+      "balance": 10260878.234376,
+      "percentage": 1.0263312202324217
+    },
+    {
+      "rank": 11,
+      "address": "8fR8rFuNvKg9Y2B19nwei9W9xRY3ViD3bhyLytD1V8CM",
+      "balance": 10048313.488761,
+      "percentage": 1.0050697034536191
+    },
+    {
+      "rank": 12,
+      "address": "H6K1Nu1tbE3WAsGiy7zHNaxQAxhfH3amD9CiZ4aV5Psc",
+      "balance": 10008829.375172,
+      "percentage": 1.0011203554978243
+    },
+    {
+      "rank": 13,
+      "address": "4vZ66F2Rv7y9o97ebS1opSmUBYKGgjcuFU58Z1f5jdMt",
+      "balance": 10002849.968092,
+      "percentage": 1.0005222729531815
+    },
+    {
+      "rank": 14,
+      "address": "9hbpTGp1BdnmvnEfgfbuHD1yXj6Q4F327qGDZ1P2AQ5b",
+      "balance": 10000092.069018,
+      "percentage": 1.0002464176260601
+    },
+    {
+      "rank": 15,
+      "address": "GNDrkTazhTV3H5yEDeDFo8dMgFjYuT9BC8feQuL8DTCp",
+      "balance": 10000091.597503,
+      "percentage": 1.0002463704633755
+    },
+    {
+      "rank": 16,
+      "address": "5ZJSx9xaTB75drnc2sJtwNknuvJBoi8tghjimMVUcHM1",
+      "balance": 10000091.210963,
+      "percentage": 1.0002463318002064
+    },
+    {
+      "rank": 17,
+      "address": "65GVtFLEM2pVyfoTmmtSyoCZJzmn1T4nF2wBxHUky528",
+      "balance": 8803546.525231,
+      "percentage": 0.8805634801651754
+    },
+    {
+      "rank": 18,
+      "address": "4SuQhLSTmaJb8gpV6gWaUPqfQK66zw6dPcPv4qr4DDUA",
+      "balance": 8583810.98051,
+      "percentage": 0.8585847133782937
+    },
+    {
+      "rank": 19,
+      "address": "ExfSc9a9vy2NiQwmZQHu6NTkkjEoR1rwg9qyvCtBVEhc",
+      "balance": 8576796.090081,
+      "percentage": 0.8578830579362018
+    },
+    {
+      "rank": 20,
+      "address": "Bffb9BvS2L8uwRH3DaHg5AAWSyfrEQBCnGW8kMTfigS3",
+      "balance": 8390540.46579,
+      "percentage": 0.8392530773646255
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "pumpswap",
+    "pairAddress": "5wNu5QhdpRGrL37ffcd6TMMqZugQgxwafgz477rShtHy",
+    "pairUrl": "https://dexscreener.com/solana/5wnu5qhdprgrl37ffcd6tmmqzugqgxwafgz477rshthy",
+    "quoteToken": "SOL",
+    "volume24h": 970275.25,
+    "txns24h": {
+      "buys": 1839,
+      "sells": 2400
+    },
+    "liquidityUsd": 1742371.22,
+    "pairCreatedAt": 1745715491000,
+    "priceUsd": 0.03061,
+    "marketCap": 30603856,
+    "name": "NotInEmploymentEducationTraining",
+    "symbol": "neet",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/d5d7bfff13c5cc762c020b4414e4493a8eb19d4bdcfb51957da58e9c471d43dd?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": 0.59,
+      "h1": 5.39,
+      "h6": 1.23,
+      "h24": 4.03
+    }
+  }
+}

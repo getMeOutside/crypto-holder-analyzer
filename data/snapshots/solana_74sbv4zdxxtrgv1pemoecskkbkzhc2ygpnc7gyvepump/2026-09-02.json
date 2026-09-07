@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-09-02T09:09:52.184Z",
+  "date": "2026-09-02",
+  "token": {
+    "address": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
+    "chain": "Solana",
+    "symbol": "swarms",
+    "name": "swarms",
+    "decimals": 6,
+    "totalSupply": "999968511213821"
+  },
+  "priceUsd": 0.007667751936418169,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w",
+      "balance": 342376299.190121,
+      "percentage": 34.23870805436906
+    },
+    {
+      "rank": 2,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 91177864.625985,
+      "percentage": 9.118073579667813,
+      "label": "Raydium"
+    },
+    {
+      "rank": 3,
+      "address": "9ZPsRWGkukYeWg2Z7eZ8NaTBZ1DSuBUVzLcGQWZgE4Y4",
+      "balance": 73284121.504795,
+      "percentage": 7.328642920549407
+    },
+    {
+      "rank": 4,
+      "address": "23Cbgj4HmiTYtc73JVZf2HtbZ4QqLs3MYueMgfxuvjo5",
+      "balance": 21339612.802434,
+      "percentage": 2.13402847820985
+    },
+    {
+      "rank": 5,
+      "address": "G5tj6pUqxhQhoLqYpCifyJsZBTkw1zhWQR9UcRxEWsxZ",
+      "balance": 21069900.79,
+      "percentage": 2.1070564276493173
+    },
+    {
+      "rank": 6,
+      "address": "6BhBoBB47wSGjK5uzcGWNcTf2oNRPQNuv6GVdkNyj9PB",
+      "balance": 19874629.892595,
+      "percentage": 1.9875255740273257
+    },
+    {
+      "rank": 7,
+      "address": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+      "balance": 19291449.043442,
+      "percentage": 1.9292056526884926
+    },
+    {
+      "rank": 8,
+      "address": "7TWnq4WeYcwQWBCwKeEX2Q9xqVtthPGkB7adNvueuVuh",
+      "balance": 17618715.773744,
+      "percentage": 1.7619270583188023
+    },
+    {
+      "rank": 9,
+      "address": "2Ejnns2Fd5gsZdFJbnkZmQEwbrgoiMc2ikKcS2z2Ps3e",
+      "balance": 16913504.837066,
+      "percentage": 1.6914037439574356
+    },
+    {
+      "rank": 10,
+      "address": "BmFdpraQhkiDQE6SnfG5omcA1VwzqfXrwtNYBwWTymy6",
+      "balance": 16408216.963505,
+      "percentage": 1.6408733654610517
+    },
+    {
+      "rank": 11,
+      "address": "6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF",
+      "balance": 14269279.28687,
+      "percentage": 1.426972862330345
+    },
+    {
+      "rank": 12,
+      "address": "AGVhmrhDi3RKLu9nxnRqp3CUpaG3SVeYXWkWcygHAk8N",
+      "balance": 13776500,
+      "percentage": 1.3776933818923225
+    },
+    {
+      "rank": 13,
+      "address": "4GQeEya6ZTwvXre4Br6ZfDyfe2WQMkcDz2QbkJZazVqS",
+      "balance": 11320249.546761,
+      "percentage": 1.1320606018903345
+    },
+    {
+      "rank": 14,
+      "address": "A9m1DW6ugQQiggBJmfo11QKR5DuviZRMF1AmVXP3ZqgB",
+      "balance": 10239836.106465,
+      "percentage": 1.024015855662823
+    },
+    {
+      "rank": 15,
+      "address": "DtWy976Ymf5aywrxXzywycqFNUC7zfp9478buJ6DDSFN",
+      "balance": 10000000.119214,
+      "percentage": 1.0000315016995294
+    },
+    {
+      "rank": 16,
+      "address": "7SQnatwwtvwDih1dVAoDsDsqhGFBo8MRiM5p8WuEN4HN",
+      "balance": 9165395.11083,
+      "percentage": 0.9165683727085064
+    },
+    {
+      "rank": 17,
+      "address": "5PAhQiYdLBd6SVdjzBQDxUAEFyDdF5ExNPQfcscnPRj5",
+      "balance": 8734172.070769,
+      "percentage": 0.8734447107906372
+    },
+    {
+      "rank": 18,
+      "address": "F6V3T6gAj6yko3D5QTj4gZXXmitvXNBUBY8ZsMsWLqoW",
+      "balance": 8535623.301789,
+      "percentage": 0.8535892086669765
+    },
+    {
+      "rank": 19,
+      "address": "EFE3j1pcSP1paUzA86zW7989ZjsFP2J7ginyUqo4ewqR",
+      "balance": 7939956.92769,
+      "percentage": 0.7940206955169029
+    },
+    {
+      "rank": 20,
+      "address": "FZ1t8TZtx7VSCQdBsxvFJiezj9paUBF6Ub7RKA2eTGyE",
+      "balance": 7771393.938108,
+      "percentage": 0.7771638657575949
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "HL4KFTfhZZMm7NGefszQxzJ3M6CaDWE7TesyuRuQYmMJ",
+    "pairUrl": "https://dexscreener.com/solana/hl4kftfhzzmm7ngefszqxzj3m6cadwe7tesyuruqymmj",
+    "quoteToken": "SOL",
+    "volume24h": 102683.66,
+    "txns24h": {
+      "buys": 656,
+      "sells": 892
+    },
+    "liquidityUsd": 1406529.73,
+    "pairCreatedAt": 1734670055000,
+    "priceUsd": 0.007703,
+    "marketCap": 7703335,
+    "name": "swarms",
+    "symbol": "swarms",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/520ec32189e86e88dc50eb142cfad52a64b938d328845cc7ab330690d36c49e7?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "h1": -0.29,
+      "h6": -0.16,
+      "h24": 1.79
+    }
+  }
+}

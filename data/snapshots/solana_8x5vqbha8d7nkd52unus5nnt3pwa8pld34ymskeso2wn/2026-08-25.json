@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-08-25T12:36:10.644Z",
+  "date": "2026-08-25",
+  "token": {
+    "address": "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+    "chain": "Solana",
+    "symbol": "ZEREBRO",
+    "name": "zerebro",
+    "decimals": 6,
+    "totalSupply": "999948125736534"
+  },
+  "priceUsd": 0.03981037,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "5LZkATrLwHYCQj2YuVbjjgsDZzBk6YfL4pFQRJmtboT2",
+      "balance": 521583140.673407,
+      "percentage": 52.16101988182871
+    },
+    {
+      "rank": 2,
+      "address": "BZfRPexCoXMsFLvbYqn8C4PvTLH5KRaxpsFHynMTGQoN",
+      "balance": 62289034.072909,
+      "percentage": 6.2292265438298235
+    },
+    {
+      "rank": 3,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 41282001.086042,
+      "percentage": 4.128414267053586,
+      "label": "Raydium"
+    },
+    {
+      "rank": 4,
+      "address": "u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w",
+      "balance": 35393560.171355,
+      "percentage": 3.539539628146719
+    },
+    {
+      "rank": 5,
+      "address": "5CQgCDN7F3zVUWTn1rDSFqfgduNKoMdLAbEsfDEkC17W",
+      "balance": 29347573.910843,
+      "percentage": 2.9349096373600774
+    },
+    {
+      "rank": 6,
+      "address": "GVhU9gRPkduFR35uD1Hay5nVp1PiKZdhMV3zkNk8UnFw",
+      "balance": 25392985.239814,
+      "percentage": 2.539430255055504
+    },
+    {
+      "rank": 7,
+      "address": "2Ejnns2Fd5gsZdFJbnkZmQEwbrgoiMc2ikKcS2z2Ps3e",
+      "balance": 24262039.469979,
+      "percentage": 2.426329811069775
+    },
+    {
+      "rank": 8,
+      "address": "EvzT88nob9X7rzKoxWwV6AChr5jpFV7Mhhe9LtdF8bP4",
+      "balance": 16402404.764428,
+      "percentage": 1.640325567123439
+    },
+    {
+      "rank": 9,
+      "address": "4raqd4tCEnm2yGeUocVqPgN2MPB1W6A3EZfC8LoMChvf",
+      "balance": 14860543.587912,
+      "percentage": 1.486131450765622
+    },
+    {
+      "rank": 10,
+      "address": "6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF",
+      "balance": 10374607.935315,
+      "percentage": 1.037514613837928
+    },
+    {
+      "rank": 11,
+      "address": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+      "balance": 9815723.229424,
+      "percentage": 0.9816232439251797
+    },
+    {
+      "rank": 12,
+      "address": "28RWPC6XPxSxUVjd27KiNRtcHVxKtd6cjms7eBcxiqdV",
+      "balance": 8329754.971843,
+      "percentage": 0.8330187094163043
+    },
+    {
+      "rank": 13,
+      "address": "9ZPsRWGkukYeWg2Z7eZ8NaTBZ1DSuBUVzLcGQWZgE4Y4",
+      "balance": 7932949.765638,
+      "percentage": 0.7933361302912398
+    },
+    {
+      "rank": 14,
+      "address": "AZQ93yCf3aF9f7PDLCqwtvFvH52XjJTrUnmsvPLkwnjT",
+      "balance": 7929085.315642,
+      "percentage": 0.7929496652440502
+    },
+    {
+      "rank": 15,
+      "address": "6BhBoBB47wSGjK5uzcGWNcTf2oNRPQNuv6GVdkNyj9PB",
+      "balance": 6944023.26,
+      "percentage": 0.6944383494779016
+    },
+    {
+      "rank": 16,
+      "address": "CXFmQi2eM4Jzt9HZwm9A5JAzGvNpKwRuxo52ua3Jyceh",
+      "balance": 6000000,
+      "percentage": 0.6000311261727269
+    },
+    {
+      "rank": 17,
+      "address": "5PAhQiYdLBd6SVdjzBQDxUAEFyDdF5ExNPQfcscnPRj5",
+      "balance": 5203182.799145,
+      "percentage": 0.520345272442256
+    },
+    {
+      "rank": 18,
+      "address": "GAu8iug1KfdmMetpfGHVA4nCe6cCJxmjFmFLWhXeKfek",
+      "balance": 5000000,
+      "percentage": 0.5000259384772724
+    },
+    {
+      "rank": 19,
+      "address": "EFE3j1pcSP1paUzA86zW7989ZjsFP2J7ginyUqo4ewqR",
+      "balance": 3707464.0041,
+      "percentage": 0.37076563360416176
+    },
+    {
+      "rank": 20,
+      "address": "DSFWxvJjgvLbVqoQ1Zwoe1iVHhwFgrfSiF3ZK1h7nd1K",
+      "balance": 3517620.886366,
+      "percentage": 0.3517803369824828
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "3sjNoCnkkhWPVXYGDtem8rCciHSGc9jSFZuUAzKbvRVp",
+    "pairUrl": "https://dexscreener.com/solana/3sjnocnkkhwpvxygdtem8rccihsgc9jsfzuuazkbvrvp",
+    "quoteToken": "SOL",
+    "volume24h": 703113.81,
+    "txns24h": {
+      "buys": 2474,
+      "sells": 2795
+    },
+    "liquidityUsd": 3281245.08,
+    "pairCreatedAt": 1730142507000,
+    "priceUsd": 0.03969,
+    "marketCap": 39691110,
+    "name": "zerebro",
+    "symbol": "ZEREBRO",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/2eb3b0a304e9ed93ee44ff263a7cd1c5b376589644b70618aef104a037f391c2?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": -0.38,
+      "h1": 1.98,
+      "h6": 5.08,
+      "h24": 6.27
+    }
+  }
+}

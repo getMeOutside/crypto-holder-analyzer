@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-08-22T11:20:23.790Z",
+  "date": "2026-08-22",
+  "token": {
+    "address": "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP",
+    "chain": "Solana",
+    "symbol": "GRIFFAIN",
+    "name": "test griffain.com",
+    "decimals": 6,
+    "totalSupply": "999847584232799"
+  },
+  "priceUsd": 0.013137512333877983,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w",
+      "balance": 190074519.995325,
+      "percentage": 19.010349476532724
+    },
+    {
+      "rank": 2,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 62838810.102297,
+      "percentage": 6.2848389187752405,
+      "label": "Raydium"
+    },
+    {
+      "rank": 3,
+      "address": "E2RvJg2myWpKcbkhBuF81gfhYr6KvmNcDbSmr5qnatYy",
+      "balance": 43310686.59943,
+      "percentage": 4.33172888372412
+    },
+    {
+      "rank": 4,
+      "address": "5PAhQiYdLBd6SVdjzBQDxUAEFyDdF5ExNPQfcscnPRj5",
+      "balance": 39660092.483924,
+      "percentage": 3.966613822881405
+    },
+    {
+      "rank": 5,
+      "address": "9ZPsRWGkukYeWg2Z7eZ8NaTBZ1DSuBUVzLcGQWZgE4Y4",
+      "balance": 35399358.314844,
+      "percentage": 3.540475455767247
+    },
+    {
+      "rank": 6,
+      "address": "6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF",
+      "balance": 32690034.682294,
+      "percentage": 3.26950179185337
+    },
+    {
+      "rank": 7,
+      "address": "2Ejnns2Fd5gsZdFJbnkZmQEwbrgoiMc2ikKcS2z2Ps3e",
+      "balance": 31952951.832227,
+      "percentage": 3.1957822708293158
+    },
+    {
+      "rank": 8,
+      "address": "DbJUpnsfZjHLWHSVm2nki8nmajDG5uFc4EK9AwEVkopb",
+      "balance": 25570500.734506,
+      "percentage": 2.557439867610092
+    },
+    {
+      "rank": 9,
+      "address": "av5UTLUmmUi5MqHXUXDwPWSL6QDAMC4G9pL6TJcN6dp",
+      "balance": 25342388,
+      "percentage": 2.534625116831749
+    },
+    {
+      "rank": 10,
+      "address": "AGVhmrhDi3RKLu9nxnRqp3CUpaG3SVeYXWkWcygHAk8N",
+      "balance": 19164800,
+      "percentage": 1.9167721462972274
+    },
+    {
+      "rank": 11,
+      "address": "7pvKSMW8j7hED87sFUSpSs3nTGhPyAFWUXAosRAEi5H3",
+      "balance": 18818663.593959,
+      "percentage": 1.8821532292243222
+    },
+    {
+      "rank": 12,
+      "address": "C4B4XFxWrhsedA2TTcwZDVqa4vZ3f4jigySkvPbn5qMA",
+      "balance": 17540145.722365,
+      "percentage": 1.754281952466172
+    },
+    {
+      "rank": 13,
+      "address": "EFE3j1pcSP1paUzA86zW7989ZjsFP2J7ginyUqo4ewqR",
+      "balance": 14546202.09876,
+      "percentage": 1.4548419507280763
+    },
+    {
+      "rank": 14,
+      "address": "KEN7s6mHAFpqmvppk7L9VaJW3htu3jz6z3dDjiaWdYT",
+      "balance": 10998084.185841,
+      "percentage": 1.0999760722810594
+    },
+    {
+      "rank": 15,
+      "address": "BmFdpraQhkiDQE6SnfG5omcA1VwzqfXrwtNYBwWTymy6",
+      "balance": 10161957.738736,
+      "percentage": 1.016350681742503
+    },
+    {
+      "rank": 16,
+      "address": "8QCVZ7KL65pBhUxbvfwbyyg4ronxNAEXbDrGLYLrRNn5",
+      "balance": 9610608.526232,
+      "percentage": 0.9612073557797705
+    },
+    {
+      "rank": 17,
+      "address": "6BhBoBB47wSGjK5uzcGWNcTf2oNRPQNuv6GVdkNyj9PB",
+      "balance": 9170011.672584,
+      "percentage": 0.9171409540005353
+    },
+    {
+      "rank": 18,
+      "address": "VJH55gfPZ1RTq52zoXnkdAeq52iFiwYLWChpL7sCKRR",
+      "balance": 8909787.669011,
+      "percentage": 0.8911145868145133
+    },
+    {
+      "rank": 19,
+      "address": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+      "balance": 7908760.222081,
+      "percentage": 0.790996582559084
+    },
+    {
+      "rank": 20,
+      "address": "A77HErqtfN1hLLpvZ9pCtu66FEtM8BveoaKbbMoZ4RiR",
+      "balance": 7585311.841864,
+      "percentage": 0.7586468139225786
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "CpsMssqi3P9VMvNqxrdWVbSBCwyUHbGgNcrw7MorBq3g",
+    "pairUrl": "https://dexscreener.com/solana/cpsmssqi3p9vmvnqxrdwvbsbcwyuhbggncrw7morbq3g",
+    "quoteToken": "SOL",
+    "volume24h": 643253.94,
+    "txns24h": {
+      "buys": 2013,
+      "sells": 3021
+    },
+    "liquidityUsd": 1659000.29,
+    "pairCreatedAt": 1730593613000,
+    "priceUsd": 0.01321,
+    "marketCap": 13212408,
+    "name": "test griffain.com",
+    "symbol": "GRIFFAIN",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/5e450081609e72dfaaf692052cddcd67be9cd6cf2f51f269439bba874c5a4f7f?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": 0.1,
+      "h1": 1.3,
+      "h6": -0.81,
+      "h24": -0.08
+    }
+  }
+}

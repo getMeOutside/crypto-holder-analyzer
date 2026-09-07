@@ -1,0 +1,147 @@
+{
+  "timestamp": "2026-08-09T13:27:03.223Z",
+  "date": "2026-08-09",
+  "token": {
+    "address": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
+    "chain": "Solana",
+    "symbol": "swarms",
+    "name": "swarms",
+    "decimals": 6,
+    "totalSupply": "999968784884737"
+  },
+  "priceUsd": 0.00807656,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "FZbgHAKPbwXSkWzejS1nQ9DpZtMLioYn1fFk9bFtvxv8",
+      "balance": 329984438.965418,
+      "percentage": 32.99947397892567
+    },
+    {
+      "rank": 2,
+      "address": "6W861NmESxtVtiA1rHibdptN9BpMwYqwqRcDiucwZXVF",
+      "balance": 78514844.339865,
+      "percentage": 7.851729526628687
+    },
+    {
+      "rank": 3,
+      "address": "6shUsSy5zF4X5UjttcEDrhuKF6bdtkiEt1LemsFjoN6m",
+      "balance": 77604696.675995,
+      "percentage": 7.760711919116579
+    },
+    {
+      "rank": 4,
+      "address": "29JaiMzdFAPscXcNJYr6jCNczi9TynJ5dJkc5Nm5rVmo",
+      "balance": 22014826.323635,
+      "percentage": 2.2015513540427736
+    },
+    {
+      "rank": 5,
+      "address": "63WS1AME6UanSPh4hPv3a87xmqMPDaEjKCTkpaoamAqi",
+      "balance": 21339612.802434,
+      "percentage": 2.134027894170091
+    },
+    {
+      "rank": 6,
+      "address": "33yxBAaQY5HBTxF2rAfPEbRA6HNVHg71kkpQSi57A3cM",
+      "balance": 21104064.781168,
+      "percentage": 2.1104723567546757
+    },
+    {
+      "rank": 7,
+      "address": "3bmjNv42UNCqq6awtaXhhidNuAZSgVumZHSWtw7SVCqc",
+      "balance": 21069900.79,
+      "percentage": 2.1070558509912543
+    },
+    {
+      "rank": 8,
+      "address": "AVGKLPi4yLi2nkj3D7dHHSKZ5nWMoXKGf2o9WFQnWAaw",
+      "balance": 19874629.892595,
+      "percentage": 1.9875250300824023
+    },
+    {
+      "rank": 9,
+      "address": "BEn962uf6nh3Xo5388pjFqnjGwEErnpqoThBVYidehrp",
+      "balance": 17618715.773744,
+      "percentage": 1.7619265761155583
+    },
+    {
+      "rank": 10,
+      "address": "rYTGNKPyTm4UhWRjfx6FMnG72aezDMt28eW46PUPpi1",
+      "balance": 17030376.977647,
+      "percentage": 1.7030908599421963
+    },
+    {
+      "rank": 11,
+      "address": "9Y2F1JFC5nJZs7Bo1Mr3QCxfwbUB8Y41pwNTHFP8G7LS",
+      "balance": 16622595.286073,
+      "percentage": 1.662311417849811
+    },
+    {
+      "rank": 12,
+      "address": "GuFqWVXVRC2VTuxHkxQURKzmqX8qLpuCSZnkuYHUu6xe",
+      "balance": 15607726.571963,
+      "percentage": 1.5608213784155323
+    },
+    {
+      "rank": 13,
+      "address": "E8UqoBLiEbZu7WxtdNHzt7gbqcphUe4rJPuxTY1urvpk",
+      "balance": 13776500,
+      "percentage": 1.3776930048459433
+    },
+    {
+      "rank": 14,
+      "address": "DZLSptHxQCfj91GPmdjgFXqLxLrKfZYurgeAR6ziPQxQ",
+      "balance": 12408422.051854,
+      "percentage": 1.2408809394269518
+    },
+    {
+      "rank": 15,
+      "address": "ETuEgNKe71Jxc5tsu38FhkNHvvb4DYk1LdikF5Uvffe7",
+      "balance": 10239836.106465,
+      "percentage": 1.0240155754107176
+    },
+    {
+      "rank": 16,
+      "address": "3FMgwDY7J2WiwT8HapZ3BmKc7dJaKQsVU9knb2yoxLuf",
+      "balance": 10000000.119214,
+      "percentage": 1.000031228011449
+    },
+    {
+      "rank": 17,
+      "address": "V49ShfEuc5i3fsefKL88UPUPChEuhqWYybtNDTfB4Ui",
+      "balance": 8934875.799633,
+      "percentage": 0.8935154711517213
+    },
+    {
+      "rank": 18,
+      "address": "6uSRNciDyjbzkv9nUs3U1dGNHXqJx3iU4eqSc8NvhMhR",
+      "balance": 8535623.301789,
+      "percentage": 0.8535889750571436
+    },
+    {
+      "rank": 19,
+      "address": "36QrEqEs1rbDeJR83px4kN43ATtqhjYxDUoyXnA5prae",
+      "balance": 8270522.23002,
+      "percentage": 0.8270780403383606
+    },
+    {
+      "rank": 20,
+      "address": "BLGd2p9EtLsmeUyeyVHhsgkrDBKmUtaPkQRDUHvzaMCZ",
+      "balance": 7771393.938108,
+      "percentage": 0.7771636530638085
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "HL4KFTfhZZMm7NGefszQxzJ3M6CaDWE7TesyuRuQYmMJ",
+    "pairUrl": "https://dexscreener.com/solana/hl4kftfhzzmm7ngefszqxzj3m6cadwe7tesyuruqymmj",
+    "quoteToken": "SOL",
+    "volume24h": 494076.65,
+    "txns24h": {
+      "buys": 1752,
+      "sells": 2134
+    }
+  }
+}

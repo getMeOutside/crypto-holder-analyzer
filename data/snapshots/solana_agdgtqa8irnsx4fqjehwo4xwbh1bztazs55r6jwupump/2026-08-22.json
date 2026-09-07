@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-08-22T11:20:33.405Z",
+  "date": "2026-08-22",
+  "token": {
+    "address": "AGdGTQa8iRnSx4fQJehWo4Xwbh1bzTazs55R6Jwupump",
+    "chain": "Solana",
+    "symbol": "114514",
+    "name": "114514",
+    "decimals": 6,
+    "totalSupply": "999699586081421"
+  },
+  "priceUsd": 0.0004057,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "AA2x8NAEEen6zQ7wxxL6horSkHmJMPnsiYjLroQZMkCe",
+      "balance": 136789188.636668,
+      "percentage": 13.683029436157748
+    },
+    {
+      "rank": 2,
+      "address": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+      "balance": 126163549.423356,
+      "percentage": 12.620146209911558
+    },
+    {
+      "rank": 3,
+      "address": "BM9CcyErJcu2mjrFvUsRRrD3snGeHDDVirJLvL6EjvMN",
+      "balance": 28952013.218788,
+      "percentage": 2.8960713420191406
+    },
+    {
+      "rank": 4,
+      "address": "FXx4PsqTQSeTAR1txMibGNiUhHjxBv5tvPKAvXUX86Lw",
+      "balance": 18900699.878548,
+      "percentage": 1.8906379618135225
+    },
+    {
+      "rank": 5,
+      "address": "7mVEc7QkmQurEWDNDPdzGhCXHzWxxELKowqDb7f89Qqc",
+      "balance": 15995459.259603,
+      "percentage": 1.6000265962199012
+    },
+    {
+      "rank": 6,
+      "address": "C1zUAtJVj5SU8gzQpjaJGE7JDwDNdWTtMjq59dLtfWpk",
+      "balance": 14034635.224526,
+      "percentage": 1.4038852691275339
+    },
+    {
+      "rank": 7,
+      "address": "B2f9t2AQKHE2jK24iCxC95zmgvcuZxkkK9HUjvd3k418",
+      "balance": 12080117.425525,
+      "percentage": 1.208374755147806
+    },
+    {
+      "rank": 8,
+      "address": "7ze3dCQoGcc1eZVuXJVnRgwJ7q5TLVAyakVgrSLwYSE9",
+      "balance": 11375486.903835,
+      "percentage": 1.1378905285360916
+    },
+    {
+      "rank": 9,
+      "address": "mP4tnNkwAtRLpSZG5CqcH3CVPJHgVw7XH3j6YRyayQP",
+      "balance": 10953787.703075,
+      "percentage": 1.0957079362222386
+    },
+    {
+      "rank": 10,
+      "address": "6Ed4PhHXwS8oAwteAsETrzHwN8TGdCB355mxr2qUkxTc",
+      "balance": 9590150.46795,
+      "percentage": 0.9593032348388835
+    },
+    {
+      "rank": 11,
+      "address": "AJstEZMZFJrjf9psCp3Zh1RQzNfJaH5R62GqC3ZhcUAY",
+      "balance": 9280446.024478,
+      "percentage": 0.9283234837432602
+    },
+    {
+      "rank": 12,
+      "address": "DAUYhzqjFKcPpymssBPG89U1741WM4JQytBXUVMCCBFv",
+      "balance": 8749010.469543,
+      "percentage": 0.8751639583884385
+    },
+    {
+      "rank": 13,
+      "address": "HWxvob3GuBuq5z2xP7Aw1Q4xTf4auWnxP7w7kQf97vWr",
+      "balance": 8575338.180356,
+      "percentage": 0.8577915105446066
+    },
+    {
+      "rank": 14,
+      "address": "bNZwVfRtHm1F84xZWuUfVgBhdWRfAeSo2LiPRNzDcrY",
+      "balance": 8461455.76121,
+      "percentage": 0.8463998464155464
+    },
+    {
+      "rank": 15,
+      "address": "2muaTEkX1rPoXtyp1cqV2KfRzk2SsfzQ5UKhNuSjsGxi",
+      "balance": 8339395.756598,
+      "percentage": 0.834190178000013
+    },
+    {
+      "rank": 16,
+      "address": "39KjgFYfMP7FsLBF5n1zS9L57UKAvGJ9t2reRiPiE8ei",
+      "balance": 8132326.865906,
+      "percentage": 0.8134770664237986
+    },
+    {
+      "rank": 17,
+      "address": "ZMa9uziHGCUtdpkngYHyHc4b4iMajrJNnZpfZ1NieKY",
+      "balance": 8106589.682909,
+      "percentage": 0.8109025747109546
+    },
+    {
+      "rank": 18,
+      "address": "9szroBxEC4ja5N6S7aEkRF2TnEg6BJM4KoH5N6oWoAZb",
+      "balance": 7329895.367878,
+      "percentage": 0.7332098032179253
+    },
+    {
+      "rank": 19,
+      "address": "H6iz8sp5rSXztp2cuHdraznKivXuWNYomixSZnv8mxRF",
+      "balance": 6500807.639235,
+      "percentage": 0.6502761159196417
+    },
+    {
+      "rank": 20,
+      "address": "6ALLs91zPCfP8CLJShxBqM1eTgiNBe6Vjimkb3Dv34s5",
+      "balance": 6415504.762837,
+      "percentage": 0.641743264892628
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "pumpswap",
+    "pairAddress": "AA2x8NAEEen6zQ7wxxL6horSkHmJMPnsiYjLroQZMkCe",
+    "pairUrl": "https://dexscreener.com/solana/aa2x8naeeen6zq7wxxl6horskhmjmpnsiyjlroqzmkce",
+    "quoteToken": "SOL",
+    "volume24h": 26072.76,
+    "txns24h": {
+      "buys": 116,
+      "sells": 108
+    },
+    "liquidityUsd": 111567.43,
+    "pairCreatedAt": 1766677576000,
+    "priceUsd": 0.0004057,
+    "marketCap": 405640,
+    "name": "114514",
+    "symbol": "114514",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/a9f282ee6fbc1ca5066e19bef80a0cf9f4cae1024dd836825b70e7719c8f56a3?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": -2.01,
+      "h1": 0.48,
+      "h6": -4.37,
+      "h24": -3.65
+    }
+  }
+}

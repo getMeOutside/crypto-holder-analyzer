@@ -1,0 +1,158 @@
+{
+  "timestamp": "2026-08-28T07:34:18.801Z",
+  "date": "2026-08-28",
+  "token": {
+    "address": "76EDL5qNcte2ZH29quTaFzagXjWAEY83CATEjyA6pump",
+    "chain": "Solana",
+    "symbol": "gork",
+    "name": "@gork",
+    "decimals": 6,
+    "totalSupply": "999893758049581"
+  },
+  "priceUsd": 0.00209914,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "AZmU4Bv6TPHimgqBe5eRsRQ18KKKr2aemHdqmfbVKqvr",
+      "balance": 54285956.338536,
+      "percentage": 5.429172439722757
+    },
+    {
+      "rank": 2,
+      "address": "Dpt2pQN8QeCuRA7X2uhZiPLQKXR9Uj7FcQmeaWLmw4F",
+      "balance": 37463492.06222,
+      "percentage": 3.746747267959475
+    },
+    {
+      "rank": 3,
+      "address": "843omGWTvBA54qeuxByKhqLXycpBGwu9b14wcDF83Xcf",
+      "balance": 24125542.533501,
+      "percentage": 2.41281059505371
+    },
+    {
+      "rank": 4,
+      "address": "3g66fqEU6CNLuozZz6YLfrn85oZNyFdnXPHEBghGkZrF",
+      "balance": 23999976.436504,
+      "percentage": 2.4002526511735587
+    },
+    {
+      "rank": 5,
+      "address": "2gyz1axSDZTpyG2rRye3HBTwkNyKJt82RHxhXJfqPnEb",
+      "balance": 23486279.959472,
+      "percentage": 2.3488775452789055
+    },
+    {
+      "rank": 6,
+      "address": "8aKx1HAHS1iTnx2aPrgzxVFFiFqq6t9D5c7vxRLBinBX",
+      "balance": 22206689.943937,
+      "percentage": 2.220904947667035
+    },
+    {
+      "rank": 7,
+      "address": "4b7szMVmniEK34Q8Rm6YTcUuLwx61w8DNXN11xAjCV3f",
+      "balance": 21042305.303599,
+      "percentage": 2.1044541116692908
+    },
+    {
+      "rank": 8,
+      "address": "J3jQNKnKz93c4rj3cGzXGqup7eiP4JeE2ngfPjzatv4r",
+      "balance": 20561848.442162,
+      "percentage": 2.0564033205158196
+    },
+    {
+      "rank": 9,
+      "address": "J1jrn8ct2CMeukkhWQ1wkP3Jc8CtdycuFeEKy1pPArPZ",
+      "balance": 20036391.196375,
+      "percentage": 2.003852012783689
+    },
+    {
+      "rank": 10,
+      "address": "BMUuTzLEMFeGwegQw7Dbrnq67Jearem7TWbtc25wFu8j",
+      "balance": 17190837.720382,
+      "percentage": 1.7192664302570406
+    },
+    {
+      "rank": 11,
+      "address": "GhQZHsjMsnLC48SnZSV1M2P1kv7htua4KnQz4RMESvH3",
+      "balance": 16875429.459611,
+      "percentage": 1.6877222528650098
+    },
+    {
+      "rank": 12,
+      "address": "CGo1mT6G7Uw2RZYYjaJSZeGtqNT56fYtiaGMir88hwWo",
+      "balance": 16287055.2735,
+      "percentage": 1.6288785825876098
+    },
+    {
+      "rank": 13,
+      "address": "44DRTXEdsqTD6bzWCer59eQ5GfyFRTSMFMnxR1jFk7cf",
+      "balance": 15073899.278603,
+      "percentage": 1.5075500929225265
+    },
+    {
+      "rank": 14,
+      "address": "HQG5LQ7NazKdWdvLDFNmh9C1S9oKCPVqJxqjP5ArEm8L",
+      "balance": 14012600.260868,
+      "percentage": 1.4014089145032114
+    },
+    {
+      "rank": 15,
+      "address": "GwbgT6MGFGZ8CYfQBv98sRYM887VZqjxVfLYJm3wadCM",
+      "balance": 13728330.12067,
+      "percentage": 1.3729788800210976
+    },
+    {
+      "rank": 16,
+      "address": "CoTiKU9qEeCwKbBbp3U6B5hb7ZzxM16oe6EtLNXmUoM8",
+      "balance": 13136924.172161,
+      "percentage": 1.31383200129044
+    },
+    {
+      "rank": 17,
+      "address": "B8dGM18Taa74PS1fsJRLCArrkmcoHKXDwG6HiMF3umF2",
+      "balance": 10414335.197149,
+      "percentage": 1.041544175399542
+    },
+    {
+      "rank": 18,
+      "address": "3SPuDkaDw6xkPZLo5SNjYahStMMJEY6pUf1kPGRiDXMx",
+      "balance": 10000962.605939,
+      "percentage": 1.0002025240608703
+    },
+    {
+      "rank": 19,
+      "address": "CBRvUc4qKowpE6k1qfsZyvTU37xtVncvk2xr7qAYPbiP",
+      "balance": 9513849.502899,
+      "percentage": 0.9514860380223759
+    },
+    {
+      "rank": 20,
+      "address": "6VHXtavvMAYp69A7NR4HmgBmkD2LMD25cqo2ByZZWM6e",
+      "balance": 9456687.582609,
+      "percentage": 0.9457692386294582
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "pumpswap",
+    "pairAddress": "AZmU4Bv6TPHimgqBe5eRsRQ18KKKr2aemHdqmfbVKqvr",
+    "pairUrl": "https://dexscreener.com/solana/azmu4bv6tphimgqbe5ersrq18kkkr2aemhdqmfbvkqvr",
+    "quoteToken": "SOL",
+    "volume24h": 8569.03,
+    "txns24h": {
+      "buys": 34,
+      "sells": 31
+    },
+    "liquidityUsd": 228342.47,
+    "pairCreatedAt": 1746093705000,
+    "priceUsd": 0.002094,
+    "marketCap": 2094595,
+    "name": "@gork",
+    "symbol": "gork",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/7c19ab5519a499dff4643ee05861a0505f8d33e2c8f6a2af091c52153b2ccb54?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "h6": -3.16,
+      "h24": -2.55
+    }
+  }
+}

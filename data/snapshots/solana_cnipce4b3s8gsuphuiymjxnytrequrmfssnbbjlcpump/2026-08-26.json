@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-08-26T13:11:40.102Z",
+  "date": "2026-08-26",
+  "token": {
+    "address": "CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump",
+    "chain": "Solana",
+    "symbol": "pwease",
+    "name": "PWEASE",
+    "decimals": 6,
+    "totalSupply": "999860941543676"
+  },
+  "priceUsd": 0.0015442645525785552,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 162763381.100602,
+      "percentage": 16.278601787295855,
+      "label": "Raydium"
+    },
+    {
+      "rank": 2,
+      "address": "2vbY9UePnabv1MotDBazvgmNaNJvz15EE8cJATJuLQAv",
+      "balance": 35159894.196488,
+      "percentage": 3.5164784157089852
+    },
+    {
+      "rank": 3,
+      "address": "5AjSrF4ujjffbdtCNkpDXd5LNiAy5EzKwrJLnsV4BExi",
+      "balance": 26921055.711384,
+      "percentage": 2.6924799832485533
+    },
+    {
+      "rank": 4,
+      "address": "4ZxmZEuPAk5j2RftgvzfRdaUhwDw5cwRuHZMjsCAHNHX",
+      "balance": 22650208.172414,
+      "percentage": 2.2653358313451624
+    },
+    {
+      "rank": 5,
+      "address": "EJ1izM56eBS5baVLk7Q4iaQvsgCPa3W5bZgc44wwHz8U",
+      "balance": 21658936.24692,
+      "percentage": 2.1661948524042725
+    },
+    {
+      "rank": 6,
+      "address": "7y4t9NKPcg6dN3uBgyaDmDHsfedEiNhaCEZZ2y7j5Dc5",
+      "balance": 19806472.439406,
+      "percentage": 1.980922707994471
+    },
+    {
+      "rank": 7,
+      "address": "8VaaA2qJkY4ASw6zEnzPMQ8F7Tgcp7WcrxQZYfse496N",
+      "balance": 18862070.267711,
+      "percentage": 1.886469356287688
+    },
+    {
+      "rank": 8,
+      "address": "6u996m6V78UsXo5rwB2iAeWzV49ht47221M2zkMYP7xu",
+      "balance": 17206524.352021,
+      "percentage": 1.7208917397509307
+    },
+    {
+      "rank": 9,
+      "address": "EgXSihnWhaoEpiYr9VVFmy5gJ9zfb7BYKEgRFtp2SGqn",
+      "balance": 13384469.432958,
+      "percentage": 1.3386330915470948
+    },
+    {
+      "rank": 10,
+      "address": "6omVUAV6sm9WJxTgiLWtvpiTJdJjpy5zgARMXffgdgZH",
+      "balance": 11911894.3748,
+      "percentage": 1.191355105481902
+    },
+    {
+      "rank": 11,
+      "address": "DXGVcx5DwmP43sSKEqfvFmpnRgkryFehNNQ1qoFAQroT",
+      "balance": 11690930.964078,
+      "percentage": 1.1692556912992802
+    },
+    {
+      "rank": 12,
+      "address": "DNdeiwqXA3go1f6aiVZqGwCGpG1QnwKVwWnfk66WxJrM",
+      "balance": 11622101.761762,
+      "percentage": 1.1623718138063024
+    },
+    {
+      "rank": 13,
+      "address": "B6safREXGvZBJWDEMWsqLJF2WD48NgTeiygwT8MVU9Fa",
+      "balance": 10987490.890905,
+      "percentage": 1.0989019006924619
+    },
+    {
+      "rank": 14,
+      "address": "jmWdUmewpDz66tRYF2us266Ju2Rb7zGYd1zhrTecaBT",
+      "balance": 10641967.500097,
+      "percentage": 1.0643447561484864
+    },
+    {
+      "rank": 15,
+      "address": "QnvKBrATVHbkYH5J6oYVycRRQ9B2bR2aSmvcbE1sBb3",
+      "balance": 10576020.942738,
+      "percentage": 1.0577491832423997
+    },
+    {
+      "rank": 16,
+      "address": "Drr1uh9ew728SQxEA3BsVzK2K1ZD1XtU9zZW7of8wiaM",
+      "balance": 10496444.267631,
+      "percentage": 1.0497904089968388
+    },
+    {
+      "rank": 17,
+      "address": "9ddR3cC95yDH4mpjn8j3gZLjpGN5zxvmpVPa857SMfBh",
+      "balance": 10418593.676921,
+      "percentage": 1.0420042671969796
+    },
+    {
+      "rank": 18,
+      "address": "DxS2SB9eywFQTChnSj4tJRZ17BcjgTYrXLBbbFFT3KPL",
+      "balance": 10092062.48673,
+      "percentage": 1.009346606854045
+    },
+    {
+      "rank": 19,
+      "address": "9JoExVJx751pqS5ef9sACuAwTsZB5MQEjZMacyGsqsHs",
+      "balance": 10000000,
+      "percentage": 1.0001390777962675
+    },
+    {
+      "rank": 20,
+      "address": "BGuoAPEGgZ5Bi6LERDF59niD2REUxxLbb5xnLy1AL1Xr",
+      "balance": 8879849.542877,
+      "percentage": 0.888108453278261
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "9fmdkQipJK2teeUv53BMDXi52uRLbrEvV38K8GBNkiM7",
+    "pairUrl": "https://dexscreener.com/solana/9fmdkqipjk2teeuv53bmdxi52urlbrevv38k8gbnkim7",
+    "quoteToken": "SOL",
+    "volume24h": 134151.01,
+    "txns24h": {
+      "buys": 889,
+      "sells": 868
+    },
+    "liquidityUsd": 500091.3,
+    "pairCreatedAt": 1740952868000,
+    "priceUsd": 0.001535,
+    "marketCap": 1535990,
+    "name": "PWEASE",
+    "symbol": "pwease",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/f87f405bec0e9531f218d8258f3cfa77a24b92d330aebdf157dc3598b22975b4?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": -0.26,
+      "h1": -0.04,
+      "h6": 4.65,
+      "h24": 57.51
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-09-02T09:09:56.705Z",
+  "date": "2026-09-02",
+  "token": {
+    "address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+    "chain": "Solana",
+    "symbol": "pippin",
+    "name": "Pippin",
+    "decimals": 6,
+    "totalSupply": "999934074287101"
+  },
+  "priceUsd": 0.01835741803123934,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w",
+      "balance": 283663001.069382,
+      "percentage": 28.368170298788787
+    },
+    {
+      "rank": 2,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 105724440.845283,
+      "percentage": 10.573141126394638,
+      "label": "Raydium"
+    },
+    {
+      "rank": 3,
+      "address": "9ZPsRWGkukYeWg2Z7eZ8NaTBZ1DSuBUVzLcGQWZgE4Y4",
+      "balance": 83696981.589618,
+      "percentage": 8.370249973658456
+    },
+    {
+      "rank": 4,
+      "address": "4QuB7hY3H512CLG1orbVrA7HTeXbBYCPxBpNfQ6gs5ru",
+      "balance": 79000003.526649,
+      "percentage": 7.900521200157294
+    },
+    {
+      "rank": 5,
+      "address": "28RWPC6XPxSxUVjd27KiNRtcHVxKtd6cjms7eBcxiqdV",
+      "balance": 60144552.344818,
+      "percentage": 6.014851767872579
+    },
+    {
+      "rank": 6,
+      "address": "G5tj6pUqxhQhoLqYpCifyJsZBTkw1zhWQR9UcRxEWsxZ",
+      "balance": 32731482.85,
+      "percentage": 3.2733640838608067
+    },
+    {
+      "rank": 7,
+      "address": "5PAhQiYdLBd6SVdjzBQDxUAEFyDdF5ExNPQfcscnPRj5",
+      "balance": 31776532.268959,
+      "percentage": 3.1778627297618547
+    },
+    {
+      "rank": 8,
+      "address": "C3Rbp6t4H6TNQ3hxQnQGu5WPHmeRcE87Rve66WZNDDw",
+      "balance": 11933149.786108,
+      "percentage": 1.193393653938205
+    },
+    {
+      "rank": 9,
+      "address": "C4B4XFxWrhsedA2TTcwZDVqa4vZ3f4jigySkvPbn5qMA",
+      "balance": 10305616.976453,
+      "percentage": 1.0306296426392259
+    },
+    {
+      "rank": 10,
+      "address": "3WXbSDZmSiVRtZhSWgJzkYk3LPPA9nHWeFd9LFhV4ijm",
+      "balance": 10000000,
+      "percentage": 1.0000659300593853
+    },
+    {
+      "rank": 11,
+      "address": "AhxzRPdizP8Dg52aJHrczQphEcsPv36QocHujrcPtarU",
+      "balance": 10000000,
+      "percentage": 1.0000659300593853
+    },
+    {
+      "rank": 12,
+      "address": "5ex3ey6JWFNUe945gcyjCWggGu7n1QqzMReG4oAfuHdM",
+      "balance": 9781618.34028,
+      "percentage": 0.9782263242958058
+    },
+    {
+      "rank": 13,
+      "address": "2Z4ATYUQUGdjSQi16JeYAJnGwU392y4ZJoKb5g63ddow",
+      "balance": 9410770.293962,
+      "percentage": 0.9411390746606342
+    },
+    {
+      "rank": 14,
+      "address": "EaadhrEdPXznDDFxmYXsaSupnsVUGnhTbFo7Z1wMujTN",
+      "balance": 8696135.729602,
+      "percentage": 0.8696709066347074
+    },
+    {
+      "rank": 15,
+      "address": "m7VmSjdSN6isudY6PVRa7GuZbG8rPBpB2X2DGHR5awz",
+      "balance": 8369421.658719,
+      "percentage": 0.8369973455185978
+    },
+    {
+      "rank": 16,
+      "address": "MfDuWeqSHEqTFVYZ7LoexgAK9dxk7cy4DFJWjWMGVWa",
+      "balance": 7565769.232429,
+      "percentage": 0.7566268044043788
+    },
+    {
+      "rank": 17,
+      "address": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+      "balance": 6979209.768886,
+      "percentage": 0.6979669908600524
+    },
+    {
+      "rank": 18,
+      "address": "4GQeEya6ZTwvXre4Br6ZfDyfe2WQMkcDz2QbkJZazVqS",
+      "balance": 6646001.174216,
+      "percentage": 0.664643934546809
+    },
+    {
+      "rank": 19,
+      "address": "9mnedhdUj7ijFrwy9QqqAPkQn7VK5XRVG8DGE1B3uHhG",
+      "balance": 5848506.965129,
+      "percentage": 0.5848892557540526
+    },
+    {
+      "rank": 20,
+      "address": "VJH55gfPZ1RTq52zoXnkdAeq52iFiwYLWChpL7sCKRR",
+      "balance": 5665182.461629,
+      "percentage": 0.5665555967445123
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "8WwcNqdZjCY5Pt7AkhupAFknV2txca9sq6YBkGzLbvdt",
+    "pairUrl": "https://dexscreener.com/solana/8wwcnqdzjcy5pt7akhupafknv2txca9sq6ybkgzlbvdt",
+    "quoteToken": "SOL",
+    "volume24h": 556911,
+    "txns24h": {
+      "buys": 1833,
+      "sells": 2114
+    },
+    "liquidityUsd": 3873469.82,
+    "pairCreatedAt": 1731184061000,
+    "priceUsd": 0.01829,
+    "marketCap": 18295276,
+    "name": "Pippin",
+    "symbol": "pippin",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/d237de55618e54fd7d66593ff2adf3ad8c092398f9049a31f1dcb1b23ad1dff8?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "h1": -1.69,
+      "h6": 1.55,
+      "h24": 4.66
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "timestamp": "2026-08-24T15:27:57.864Z",
+  "date": "2026-08-24",
+  "token": {
+    "address": "6yjNqPzTSanBWSa6dxVEgTjePXBrZ2FoHLDQwYwEsyM6",
+    "chain": "Solana",
+    "symbol": "Chud",
+    "name": "Chudjak",
+    "decimals": 6,
+    "totalSupply": "926892078966982"
+  },
+  "priceUsd": 0.0023461772870774075,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 81405355.823492,
+      "percentage": 8.782614251512214,
+      "label": "Raydium"
+    },
+    {
+      "rank": 2,
+      "address": "A2Q7eQrfKJkJrFMrT3BFecMoMUDu6FM5wMmPMVN7Jjnb",
+      "balance": 29989355.917792,
+      "percentage": 3.2354743986176935
+    },
+    {
+      "rank": 3,
+      "address": "4nKcXaT9rN85mBaUqVHaDRzHsyDA6a9H9LsY8jdDbdyg",
+      "balance": 27741925.761895,
+      "percentage": 2.9930049453883867
+    },
+    {
+      "rank": 4,
+      "address": "G1U6FxxH8WpMKUJdg7BJf1jbpvzA4tLiPe9nZ5bbzdHM",
+      "balance": 26892983.005481,
+      "percentage": 2.901414697108334
+    },
+    {
+      "rank": 5,
+      "address": "EeEPvVEfSoKHsVCQ4GswTK6ftHDsjAHZHKEW1QJj3P8D",
+      "balance": 24000000,
+      "percentage": 2.589298208994074
+    },
+    {
+      "rank": 6,
+      "address": "4mfvdPr5Zv2tT8ZeXeaxK3rhkbawYnaXyiMEUjbMnTEC",
+      "balance": 23804460.835621,
+      "percentage": 2.5682019919892927
+    },
+    {
+      "rank": 7,
+      "address": "9bZdtgnwSPQs4ReWKmrL4x6T3NaxLyGRAoCEojpEqCzh",
+      "balance": 21752374.846348,
+      "percentage": 2.3468077179590257
+    },
+    {
+      "rank": 8,
+      "address": "FjxgGwchRnwxaEcTTNJ8MHkoUqZDHwuEVHawMGASx441",
+      "balance": 20548774.997356,
+      "percentage": 2.2169544290698373
+    },
+    {
+      "rank": 9,
+      "address": "GDRTKkK5QmW9C768wmecq12hc14rhupsZCBFWJSEXsEX",
+      "balance": 19241216.509577,
+      "percentage": 2.075885310296455
+    },
+    {
+      "rank": 10,
+      "address": "9HLb8fGKGMkBQdU41tjKnpa5ZRFscS4ZMoqFxzC4i4KE",
+      "balance": 17563998.445525,
+      "percentage": 1.8949345715738575
+    },
+    {
+      "rank": 11,
+      "address": "Ed1y4BGmD5xVr8jRGJqn5F93PjdBa4DJQvoxKzS3n3ZX",
+      "balance": 13190651.953636,
+      "percentage": 1.4231054782922448
+    },
+    {
+      "rank": 12,
+      "address": "87kEqjQQ7S97WAzbbtkDxF5DM7JakX8GqJ3grPkmPnGG",
+      "balance": 12000000,
+      "percentage": 1.294649104497037
+    },
+    {
+      "rank": 13,
+      "address": "4J5rDTvRbzjuKkB4B9rvNEvDz6f1BEBzUVT5mdctKHoT",
+      "balance": 11690000.000002,
+      "percentage": 1.2612040026310791
+    },
+    {
+      "rank": 14,
+      "address": "8dvX4QSWpQHSQAPUwGFDXmvYC6QWJkyfc7cGSN5Fgh2V",
+      "balance": 11636521.736587,
+      "percentage": 1.2554343704777218
+    },
+    {
+      "rank": 15,
+      "address": "F6snf5ESjgAFPL2LMQbVCGwPzcQUUiixkPkcebNhdnun",
+      "balance": 11111111,
+      "percentage": 1.1987491588430979
+    },
+    {
+      "rank": 16,
+      "address": "Et6DgJN3jr1QzbujE3PyTt4aaTfnHKuUbf7aeDvhFbNu",
+      "balance": 10888562.324215,
+      "percentage": 1.1747389551920937
+    },
+    {
+      "rank": 17,
+      "address": "ALxQpkEhNrxdTqYpaziZYNvxEeWR3VP9Ct8itvsp6Jn",
+      "balance": 10097411.890292,
+      "percentage": 1.0893837717920225
+    },
+    {
+      "rank": 18,
+      "address": "G6p85qxejfkMtA6b3PmTLEG6JafKBULFu9MGJKn9yarK",
+      "balance": 10000000.513895,
+      "percentage": 1.078874309190339
+    },
+    {
+      "rank": 19,
+      "address": "AT4aWeMuKMRPxVPGeAoehryeT8AdPqFgfQyvenVWiyJg",
+      "balance": 10000000.000001,
+      "percentage": 1.0788742537476388
+    },
+    {
+      "rank": 20,
+      "address": "CVnRWFefzdHf3ALGK8aEc8PTvCsN6zG3JfcyPeWmQPUZ",
+      "balance": 9997568.484427,
+      "percentage": 1.078611923792601
+    }
+  ],
+  "totalHolders": 20
+}

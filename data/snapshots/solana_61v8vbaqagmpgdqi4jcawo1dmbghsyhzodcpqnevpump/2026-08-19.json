@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-08-19T06:41:38.705Z",
+  "date": "2026-08-19",
+  "token": {
+    "address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+    "chain": "Solana",
+    "symbol": "arc",
+    "name": "AI Rig Complex",
+    "decimals": 6,
+    "totalSupply": "999982738451812"
+  },
+  "priceUsd": 0.072522,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w",
+      "balance": 183953621.044901,
+      "percentage": 18.3956796424007
+    },
+    {
+      "rank": 2,
+      "address": "3hyWeRMoZAf9U9FJGKH8wZVL7YnYR8MLWEurrXkRuPhU",
+      "balance": 144036240.057493,
+      "percentage": 14.403872638890949
+    },
+    {
+      "rank": 3,
+      "address": "6j4JJLSX44Nth7s3hMzXzAu4SeqKtjdhzqeprbDupfRQ",
+      "balance": 130999995.27,
+      "percentage": 13.100225657176454
+    },
+    {
+      "rank": 4,
+      "address": "B5WCZRcRANSGLG6f3hA9U4ZQaM7Pvn8p349BwJgu3UXt",
+      "balance": 122999981.94,
+      "percentage": 12.300210514676522
+    },
+    {
+      "rank": 5,
+      "address": "HoKVbPwpcgF1LzSgVHSzraipsyQ3P3F1bdXpkN1BwbU1",
+      "balance": 87637650.746955,
+      "percentage": 8.763916353459951
+    },
+    {
+      "rank": 6,
+      "address": "HzbxrtSowc6N5vHYX9g2j34Caj5R7fztao4atwfP5S7o",
+      "balance": 30000000,
+      "percentage": 3.0000517855384623
+    },
+    {
+      "rank": 7,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 27480678.16917,
+      "percentage": 2.7481152536408766,
+      "label": "Raydium"
+    },
+    {
+      "rank": 8,
+      "address": "G5tj6pUqxhQhoLqYpCifyJsZBTkw1zhWQR9UcRxEWsxZ",
+      "balance": 27436407.95,
+      "percentage": 2.7436881553053056
+    },
+    {
+      "rank": 9,
+      "address": "FseyqZHQu5yoXBWhCaDWuh1sMndJW4TwRjjG68AsEbdj",
+      "balance": 18326766.479802,
+      "percentage": 1.8327082833625479
+    },
+    {
+      "rank": 10,
+      "address": "9ZPsRWGkukYeWg2Z7eZ8NaTBZ1DSuBUVzLcGQWZgE4Y4",
+      "balance": 17689093.385075,
+      "percentage": 1.7689398731483619
+    },
+    {
+      "rank": 11,
+      "address": "5nfpsKkmELsYfDMiKAeEsyT1wB92w6WqPiEfWXtcdMKJ",
+      "balance": 9514040.21,
+      "percentage": 0.9514204439898412
+    },
+    {
+      "rank": 12,
+      "address": "F6V3T6gAj6yko3D5QTj4gZXXmitvXNBUBY8ZsMsWLqoW",
+      "balance": 9100583.835203,
+      "percentage": 0.9100740928081075
+    },
+    {
+      "rank": 13,
+      "address": "5PAhQiYdLBd6SVdjzBQDxUAEFyDdF5ExNPQfcscnPRj5",
+      "balance": 7372671.42311,
+      "percentage": 0.737279868902985
+    },
+    {
+      "rank": 14,
+      "address": "7TWnq4WeYcwQWBCwKeEX2Q9xqVtthPGkB7adNvueuVuh",
+      "balance": 6964489.87228,
+      "percentage": 0.6964610092232717
+    },
+    {
+      "rank": 15,
+      "address": "mRLdw9iCj1yvqxSgd6f6mAoKYLGAxQ77FdDMWY9NaJt",
+      "balance": 5562934.879362,
+      "percentage": 0.5563030905888053
+    },
+    {
+      "rank": 16,
+      "address": "4GQeEya6ZTwvXre4Br6ZfDyfe2WQMkcDz2QbkJZazVqS",
+      "balance": 5556566.694362,
+      "percentage": 0.5556662610961424
+    },
+    {
+      "rank": 17,
+      "address": "6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF",
+      "balance": 5283663.028408,
+      "percentage": 0.5283754234186328
+    },
+    {
+      "rank": 18,
+      "address": "FQTm5QScKVTZQJWacuCgtnpiuxMZnB4NPVmgziFSrTQ4",
+      "balance": 3500200.88,
+      "percentage": 0.3500261299929099
+    },
+    {
+      "rank": 19,
+      "address": "44P5Ct5JkPz76Rs2K6juC65zXMpFRDrHatxcASJ4Dyra",
+      "balance": 3107643.68,
+      "percentage": 0.3107697323667106
+    },
+    {
+      "rank": 20,
+      "address": "EFE3j1pcSP1paUzA86zW7989ZjsFP2J7ginyUqo4ewqR",
+      "balance": 2846696.81778,
+      "percentage": 0.2846745957022516
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "J3b6dvheS2Y1cbMtVz5TCWXNegSjJDbUKxdUVDPoqmS7",
+    "pairUrl": "https://dexscreener.com/solana/j3b6dvhes2y1cbmtvz5tcwxnegsjjdbukxduvdpoqms7",
+    "quoteToken": "SOL",
+    "volume24h": 696216.36,
+    "txns24h": {
+      "buys": 2135,
+      "sells": 2181
+    },
+    "liquidityUsd": 3989873.67,
+    "pairCreatedAt": 1733865287000,
+    "priceUsd": 0.0725,
+    "marketCap": 72504571,
+    "name": "AI Rig Complex",
+    "symbol": "arc",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/952429eb5f770cb20d90492e438aa92bf61d33fa6aaaeca0186d2862d68fc21c?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": 0.04,
+      "h1": 0.57,
+      "h6": 3.88,
+      "h24": -1.32
+    }
+  }
+}
