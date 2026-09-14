@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-09-14T09:17:09.568Z",
+  "date": "2026-09-14",
+  "token": {
+    "address": "9AvytnUKsLxPxFHFqS6VLxaxt5p6BhYNr53SD2Chpump",
+    "chain": "Solana",
+    "symbol": "67",
+    "name": "The Official 67 Coin",
+    "decimals": 6,
+    "totalSupply": "999580191548162"
+  },
+  "priceUsd": 0.0018068070811213487,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "DMAFL613XTipuA3jFNYczavWT7XsiYf9cR3qmRMZQhB6",
+      "balance": 89003835.372767,
+      "percentage": 8.904121562764942
+    },
+    {
+      "rank": 2,
+      "address": "Da6gBAjx2G4V1zbk7DNkKfDAzk3VVxS3aCoe5QN3TbxJ",
+      "balance": 37219065.139,
+      "percentage": 3.723469657932563
+    },
+    {
+      "rank": 3,
+      "address": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+      "balance": 34857563.612578,
+      "percentage": 3.4872203258240018
+    },
+    {
+      "rank": 4,
+      "address": "3s67VM41dTb6d8XsHjQNnpQcgX5xmwydcVXGf7Wot3zQ",
+      "balance": 22998919.486486,
+      "percentage": 2.30085786822816
+    },
+    {
+      "rank": 5,
+      "address": "BaCw5hq6qBf85ZX2S98Eb8TThdWap8yxhzFWE583JZfP",
+      "balance": 22167891.020822,
+      "percentage": 2.2177201197322747
+    },
+    {
+      "rank": 6,
+      "address": "6XkTmkguZ7kYwq3hctAnJbR8NBvuFKf5rV6tvdTrPewE",
+      "balance": 20135811.527375,
+      "percentage": 2.014426826144725
+    },
+    {
+      "rank": 7,
+      "address": "4BVmFcuAZtVS3V5Va44uiUt4R43aSsFqDNMfcgjVfqQA",
+      "balance": 20055635.396811,
+      "percentage": 2.0064058458129894
+    },
+    {
+      "rank": 8,
+      "address": "Et6DgJN3jr1QzbujE3PyTt4aaTfnHKuUbf7aeDvhFbNu",
+      "balance": 16500000,
+      "percentage": 1.650692974862237
+    },
+    {
+      "rank": 9,
+      "address": "9k9kdQxzsYTKQQye6VUiXkzrLrgH4Tcvv8VKfo37buZS",
+      "balance": 15998820.976147,
+      "percentage": 1.6005540237214815
+    },
+    {
+      "rank": 10,
+      "address": "FjxgGwchRnwxaEcTTNJ8MHkoUqZDHwuEVHawMGASx441",
+      "balance": 14812863.086266,
+      "percentage": 1.4819084263088145
+    },
+    {
+      "rank": 11,
+      "address": "E3Ni9HinpGJBHPjpqmQPua6jKCi3j1wRUN539LgEcHZ",
+      "balance": 14254004.340212,
+      "percentage": 1.425999080487502
+    },
+    {
+      "rank": 12,
+      "address": "6BXi7z69yajbKCHRLBtzkNaBATE5hKnyCtP4Eco7A5Mi",
+      "balance": 13392477.666696,
+      "percentage": 1.339810230328151
+    },
+    {
+      "rank": 13,
+      "address": "2P7Sk46dXTYRmeFjbWg1hEba6VcBd8GLkiXxYNtAhZiw",
+      "balance": 11712103.870721,
+      "percentage": 1.1717022775912707
+    },
+    {
+      "rank": 14,
+      "address": "F6uSTaRaUALuirvCGawrhrSFK3k4r2SUiaFzBdzUZ3hc",
+      "balance": 10483071.993562,
+      "percentage": 1.048747472408961
+    },
+    {
+      "rank": 15,
+      "address": "6SKSZh15zbwcoZicLioCdAxsQsStnd7y2QixVNEzs3So",
+      "balance": 10419834.573363,
+      "percentage": 1.042421074513755
+    },
+    {
+      "rank": 16,
+      "address": "HBYkoojFkFX7NWuF2VcpDWNXEdGatfNE6mYLsR2udSzo",
+      "balance": 10033509.81991,
+      "percentage": 1.0037723741173759
+    },
+    {
+      "rank": 17,
+      "address": "4mHG8ce35GQzV83h7XiXt4sGaRxU9D1FqrgGbb8Qhw2p",
+      "balance": 9942996.827005,
+      "percentage": 0.9947172734190707
+    },
+    {
+      "rank": 18,
+      "address": "3ovQHnSLLv3WArthqGo6iHzzAdeDKaWFsnLaEhuxw3kE",
+      "balance": 9196543.443165,
+      "percentage": 0.9200405851301716
+    },
+    {
+      "rank": 19,
+      "address": "2cEH2PFw1USkZooDGGdjSiiWPUcAoKaTCg8ycp4ogGwj",
+      "balance": 8977158.503763,
+      "percentage": 0.8980928773567499
+    },
+    {
+      "rank": 20,
+      "address": "2hiaWps9HzCB1SYCfweLaqCSqFtHfQ4ajQqiyPefKDsk",
+      "balance": 8545966.195303,
+      "percentage": 0.8549555370907165
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "pumpswap",
+    "pairAddress": "DMAFL613XTipuA3jFNYczavWT7XsiYf9cR3qmRMZQhB6",
+    "pairUrl": "https://dexscreener.com/solana/dmafl613xtipua3jfnyczavwt7xsiyf9cr3qmrmzqhb6",
+    "quoteToken": "SOL",
+    "volume24h": 69127.78,
+    "txns24h": {
+      "buys": 404,
+      "sells": 315
+    },
+    "liquidityUsd": 327759.61,
+    "pairCreatedAt": 1758274299000,
+    "priceUsd": 0.00184,
+    "marketCap": 1839592,
+    "name": "The Official 67 Coin",
+    "symbol": "67",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/cbdc4c6ea4ad0890cc51bd9d03d5e0f273edb5acdd92ce728244711999b5825d?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": 1.96,
+      "h1": -4.22,
+      "h6": -4.23,
+      "h24": 4.03
+    }
+  }
+}

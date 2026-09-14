@@ -1,0 +1,158 @@
+{
+  "timestamp": "2026-09-08T09:10:00.383Z",
+  "date": "2026-09-08",
+  "token": {
+    "address": "H5b4iYiZYycr7fmQ1dMj7hdfLGAEPcDH261K4hugpump",
+    "chain": "Solana",
+    "symbol": "MONEROCHAN",
+    "name": "Monero-Chan",
+    "decimals": 6,
+    "totalSupply": "999915002547181"
+  },
+  "priceUsd": 0.0001598,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "B6NR5XYLroBdAnKjcF2o1raKqgSdi68yGZm4jtPMmQbQ",
+      "balance": 190298586.200527,
+      "percentage": 19.031476247057086
+    },
+    {
+      "rank": 2,
+      "address": "AJwncKTAe6Ru3BM4ghQyqkitmC8WmyvdUHBqJNkebTdc",
+      "balance": 29512261.633823,
+      "percentage": 2.9514770314120238
+    },
+    {
+      "rank": 3,
+      "address": "83k7fpj6hNoU9DpVpJwVf79EpWTEpSFhRhMLrqP8aAQh",
+      "balance": 29091181.642054,
+      "percentage": 2.9093654528582125
+    },
+    {
+      "rank": 4,
+      "address": "HXHUoSUJqdGsnaoMnPyNhMosZ87MRpy1rH1DNQoCwthD",
+      "balance": 28918392.154588,
+      "percentage": 2.8920850353201377
+    },
+    {
+      "rank": 5,
+      "address": "EzkPYJ9fDs2oFAgZBPMqKVKd6nU8KGDozW6dhFs31xzp",
+      "balance": 27214981.009401,
+      "percentage": 2.721729441009848
+    },
+    {
+      "rank": 6,
+      "address": "86DSnpwyQybXRxBJ2iB7D6Qdf8Yvc6VAcKcQrZ7gA7JM",
+      "balance": 23354530.29401,
+      "percentage": 2.3356515538337486
+    },
+    {
+      "rank": 7,
+      "address": "Eo9gZ4WzUfDFwWa2Su4YWUf82S8f2iR4bwPbNbcZ9KZs",
+      "balance": 22074819.802821,
+      "percentage": 2.207669626577025
+    },
+    {
+      "rank": 8,
+      "address": "8hCdDoxqeS82QgDEwE73UR4HWR7AGx4eCE19w4RMq5Lp",
+      "balance": 21549138.759282,
+      "percentage": 2.1550970536883414
+    },
+    {
+      "rank": 9,
+      "address": "5sMtMauZm4EyDdBzEHDA6FSdwrU4nFYeHU2q2r7D76HD",
+      "balance": 21325369.866894,
+      "percentage": 2.1327182623092766
+    },
+    {
+      "rank": 10,
+      "address": "BfNXbMo29q2hScnkTgWEqbQu3vpNqinv7Q1yNYtJ6kaP",
+      "balance": 18360865.439952,
+      "percentage": 1.8362426199406527
+    },
+    {
+      "rank": 11,
+      "address": "Hw2EHHXCYQw3QUzXXxUS9R7eYrHwGtdNv7sqzdtELyUd",
+      "balance": 15669572.093239,
+      "percentage": 1.5670904080169186
+    },
+    {
+      "rank": 12,
+      "address": "A5TPvxw5KxBJvRipAQTT5dZYw8S2aMXBNKmLZqnqyvSk",
+      "balance": 14114772.773619,
+      "percentage": 1.4115972595333666
+    },
+    {
+      "rank": 13,
+      "address": "ChzzPd5bgyC1u5x7SMyFcf8ZBXa6B7TMqt16qaB5YYPy",
+      "balance": 12072522.701824,
+      "percentage": 1.2073548922728918
+    },
+    {
+      "rank": 14,
+      "address": "GjURyDMFBHSnwMgEtxHuZCD9J12M5gcMwnmNktREUo4s",
+      "balance": 11573921.683307,
+      "percentage": 1.1574905520792889
+    },
+    {
+      "rank": 15,
+      "address": "ESgTVNPhc9xv6Qu4BoH8jivQh86SEMrX52fMvtz5E84U",
+      "balance": 10777953.248269,
+      "percentage": 1.0778869424714368
+    },
+    {
+      "rank": 16,
+      "address": "CWthyu4XdhonVvpj1hWwmuhxj1rG8pAFTPeNcYMbrXbp",
+      "balance": 10623962.989073,
+      "percentage": 1.0624866075625972
+    },
+    {
+      "rank": 17,
+      "address": "DtjqvaandURPsLmdPzkj9Z5zziEXf1jzEv3mMvRSJArQ",
+      "balance": 10232143.729588,
+      "percentage": 1.0233013509670985
+    },
+    {
+      "rank": 18,
+      "address": "FNYzHSNM9dsv7Unhaemb9oUqc3zmqv6KBzG65EesJuo",
+      "balance": 10000000,
+      "percentage": 1.000085004678
+    },
+    {
+      "rank": 19,
+      "address": "7U6xXAHgTGykwrmXRVJg8gWViZeY3SjRsLKDMqif2t2o",
+      "balance": 10000000,
+      "percentage": 1.000085004678
+    },
+    {
+      "rank": 20,
+      "address": "A8ocyafALCzYfSBJu5c19kGgEzC88Mb6weK7no16rPjw",
+      "balance": 9793074.069095,
+      "percentage": 0.9793906526202875
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "pumpswap",
+    "pairAddress": "B6NR5XYLroBdAnKjcF2o1raKqgSdi68yGZm4jtPMmQbQ",
+    "pairUrl": "https://dexscreener.com/solana/b6nr5xylrobdankjcf2o1rakqgsdi68ygzm4jtpmmqbq",
+    "quoteToken": "SOL",
+    "volume24h": 34977.73,
+    "txns24h": {
+      "buys": 250,
+      "sells": 219
+    },
+    "liquidityUsd": 61179.35,
+    "pairCreatedAt": 1762472580000,
+    "priceUsd": 0.0001598,
+    "marketCap": 159854,
+    "name": "Monero-Chan",
+    "symbol": "MONEROCHAN",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/5c0bdd2ef06db0b5969c9d7a1c4e51454dead4eb2392ef58cff542706d804b4c?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "h6": -0.7,
+      "h24": -22.21
+    }
+  }
+}

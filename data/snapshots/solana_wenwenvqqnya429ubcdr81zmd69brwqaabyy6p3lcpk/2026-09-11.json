@@ -1,0 +1,159 @@
+{
+  "timestamp": "2026-09-11T09:32:22.308Z",
+  "date": "2026-09-11",
+  "token": {
+    "address": "WENWENvqqNya429ubCdR81ZmD69brwQaaBYY6p3LCpk",
+    "chain": "Solana",
+    "symbol": "WEN",
+    "name": "Wen",
+    "decimals": 5,
+    "totalSupply": "72756272055103490"
+  },
+  "priceUsd": 0.000007171947374810881,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w",
+      "balance": 61362142164.12587,
+      "percentage": 8.433931595292837
+    },
+    {
+      "rank": 2,
+      "address": "22Wnk8PwyWZV7BfkZGJEKT9jGGdtvu7xY6EXeRh7zkBa",
+      "balance": 55378359814.38286,
+      "percentage": 7.611489463401987
+    },
+    {
+      "rank": 3,
+      "address": "6FEVkH17P9y8Q9aCkDdPcMDjvj7SVxrTETaYEm8f51Jy",
+      "balance": 40049290906.49987,
+      "percentage": 5.50458259820785
+    },
+    {
+      "rank": 4,
+      "address": "5PAhQiYdLBd6SVdjzBQDxUAEFyDdF5ExNPQfcscnPRj5",
+      "balance": 29046838573.22766,
+      "percentage": 3.992348391796164
+    },
+    {
+      "rank": 5,
+      "address": "5LZkATrLwHYCQj2YuVbjjgsDZzBk6YfL4pFQRJmtboT2",
+      "balance": 27201590379.70709,
+      "percentage": 3.738727894016532
+    },
+    {
+      "rank": 6,
+      "address": "BmFdpraQhkiDQE6SnfG5omcA1VwzqfXrwtNYBwWTymy6",
+      "balance": 14373087043.89577,
+      "percentage": 1.97551175148309
+    },
+    {
+      "rank": 7,
+      "address": "DYrBWu3oBkwzfpZpEpDdANuezDSkpzY8qb7kYTdR6uSt",
+      "balance": 10301538461.53845,
+      "percentage": 1.4158969626338693
+    },
+    {
+      "rank": 8,
+      "address": "GRWqbdwRLEyUKJKJfvfYUjxQDcaowTLu3ASBXznB4VKd",
+      "balance": 8720789115.49277,
+      "percentage": 1.198630560522383
+    },
+    {
+      "rank": 9,
+      "address": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+      "balance": 8592903461.87715,
+      "percentage": 1.1810532919236343
+    },
+    {
+      "rank": 10,
+      "address": "CSEncqtqbmNRjve42sNnbs5cCSmrjUNsAEwc17XY2RCs",
+      "balance": 7609179797.13199,
+      "percentage": 1.0458452009977943
+    },
+    {
+      "rank": 11,
+      "address": "BoSSb33swX6VXWrUFPt1cFren1oRQqM1L4gqwNUmz3GC",
+      "balance": 7353696375.8748,
+      "percentage": 1.0107302323441372
+    },
+    {
+      "rank": 12,
+      "address": "ADqZYsW9SVZ6bCSGDqfBiPkfaZuQKGg79MA357otX8Ud",
+      "balance": 6673407801.45284,
+      "percentage": 0.9172278365772499
+    },
+    {
+      "rank": 13,
+      "address": "C57RBagtGDYpTGxwG92gSKQ5ptQr4Wa9qz3yDBB6uu1B",
+      "balance": 5936893811.14978,
+      "percentage": 0.8159975275606959
+    },
+    {
+      "rank": 14,
+      "address": "9K2hYKANAxrFUWcGvqjd1vwdreVAJC7rCB2whzBsmKoX",
+      "balance": 5771118670.35983,
+      "percentage": 0.7932125310088665
+    },
+    {
+      "rank": 15,
+      "address": "8TWNcXvh9BXKdgNdRKGAfKzGUYsoVDMKUuAdbMYxCJEA",
+      "balance": 5712796579.9346,
+      "percentage": 0.7851964399176325
+    },
+    {
+      "rank": 16,
+      "address": "C4679ZqtJhRqQP5fq1GVHdbxmG1eMeUu98kMMYDZGVyQ",
+      "balance": 5706692543.81025,
+      "percentage": 0.7843574694822416
+    },
+    {
+      "rank": 17,
+      "address": "EFE3j1pcSP1paUzA86zW7989ZjsFP2J7ginyUqo4ewqR",
+      "balance": 5615045602.45,
+      "percentage": 0.7717610377559376
+    },
+    {
+      "rank": 18,
+      "address": "C7btLHHfisibLTK7AFSdBPUbAaotB8w9uxiytfQ3FxcZ",
+      "balance": 5611036534,
+      "percentage": 0.7712100105610639
+    },
+    {
+      "rank": 19,
+      "address": "A77HErqtfN1hLLpvZ9pCtu66FEtM8BveoaKbbMoZ4RiR",
+      "balance": 5501318867.51725,
+      "percentage": 0.7561298444965282
+    },
+    {
+      "rank": 20,
+      "address": "AqvrsVbGLTqWaNxQeRfqn3JNs4wH3Pbrq1HkTdbSUWbd",
+      "balance": 5419253828.0128,
+      "percentage": 0.7448503991392542
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "meteora",
+    "pairAddress": "9dZ2bEQ9Ci4uV3FWiLdVPZwQs92kkK4TaMfpfQUJW73n",
+    "pairUrl": "https://dexscreener.com/solana/9dz2beq9ci4uv3fwildvpzwqs92kkk4tamfpfqujw73n",
+    "quoteToken": "SOL",
+    "volume24h": 38573.44,
+    "txns24h": {
+      "buys": 336,
+      "sells": 461
+    },
+    "liquidityUsd": 64316.82,
+    "pairCreatedAt": 1706227729000,
+    "priceUsd": 0.00000718,
+    "marketCap": 5225180,
+    "name": "Wen",
+    "symbol": "WEN",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/3b5f146d3709efa00175ea0003751b9ec540f2e709aa5999e6fdb70cd7ebfa67?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "h1": -2.15,
+      "h6": 5.61,
+      "h24": -3.02
+    }
+  }
+}
