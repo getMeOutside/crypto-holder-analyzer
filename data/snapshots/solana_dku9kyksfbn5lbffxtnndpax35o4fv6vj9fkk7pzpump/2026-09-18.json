@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-09-18T11:52:08.679Z",
+  "date": "2026-09-18",
+  "token": {
+    "address": "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump",
+    "chain": "Solana",
+    "symbol": "AVA",
+    "name": "Ava AI",
+    "decimals": 6,
+    "totalSupply": "999191379296420"
+  },
+  "priceUsd": 0.00955289,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w",
+      "balance": 296008282.1054,
+      "percentage": 29.624783423755524
+    },
+    {
+      "rank": 2,
+      "address": "2iwfztcKUwwnMGJmcPsfe18TaPwAyDk2QjBcraVLtRhr",
+      "balance": 149738638.889066,
+      "percentage": 14.98598186410539
+    },
+    {
+      "rank": 3,
+      "address": "9ZPsRWGkukYeWg2Z7eZ8NaTBZ1DSuBUVzLcGQWZgE4Y4",
+      "balance": 84930315.894973,
+      "percentage": 8.49990478848773
+    },
+    {
+      "rank": 4,
+      "address": "rAdtnMeiMWxhg8mHg5En5fssdQb16iavhBhunzopDdF",
+      "balance": 80000000,
+      "percentage": 8.006474200801447
+    },
+    {
+      "rank": 5,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 68888098.052455,
+      "percentage": 6.894384747490767,
+      "label": "Raydium"
+    },
+    {
+      "rank": 6,
+      "address": "FQTm5QScKVTZQJWacuCgtnpiuxMZnB4NPVmgziFSrTQ4",
+      "balance": 25006082.64,
+      "percentage": 2.5026319440033618
+    },
+    {
+      "rank": 7,
+      "address": "BmFdpraQhkiDQE6SnfG5omcA1VwzqfXrwtNYBwWTymy6",
+      "balance": 19512320.336906,
+      "percentage": 1.9528111171901414
+    },
+    {
+      "rank": 8,
+      "address": "G5tj6pUqxhQhoLqYpCifyJsZBTkw1zhWQR9UcRxEWsxZ",
+      "balance": 18037223.15,
+      "percentage": 1.80518202255717
+    },
+    {
+      "rank": 9,
+      "address": "HYJ1JngMdKcz397PF7J15fGiVufvv1UApZPqJos1Mm8X",
+      "balance": 15000000.004689,
+      "percentage": 1.5012139131195508
+    },
+    {
+      "rank": 10,
+      "address": "JAVgARheZkMmEK9zLYrx6edVH1bF6EXJTTxvd6WTubJj",
+      "balance": 12144473.002279,
+      "percentage": 1.2154301221884565
+    },
+    {
+      "rank": 11,
+      "address": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+      "balance": 11404833.799886,
+      "percentage": 1.1414063447901948
+    },
+    {
+      "rank": 12,
+      "address": "AGVhmrhDi3RKLu9nxnRqp3CUpaG3SVeYXWkWcygHAk8N",
+      "balance": 10000000,
+      "percentage": 1.000809275100181
+    },
+    {
+      "rank": 13,
+      "address": "6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF",
+      "balance": 7886260.554042,
+      "percentage": 0.7892642708341925
+    },
+    {
+      "rank": 14,
+      "address": "FZ1t8TZtx7VSCQdBsxvFJiezj9paUBF6Ub7RKA2eTGyE",
+      "balance": 7698509.48,
+      "percentage": 0.7704739692030671
+    },
+    {
+      "rank": 15,
+      "address": "EFE3j1pcSP1paUzA86zW7989ZjsFP2J7ginyUqo4ewqR",
+      "balance": 7655204.9569,
+      "percentage": 0.76614001236584
+    },
+    {
+      "rank": 16,
+      "address": "9YKu7hu1NnTesTvTuVMof9mUktfhBoZQ5sXZgbkrxsuR",
+      "balance": 7187152.468855,
+      "percentage": 0.7192968852389249
+    },
+    {
+      "rank": 17,
+      "address": "6BhBoBB47wSGjK5uzcGWNcTf2oNRPQNuv6GVdkNyj9PB",
+      "balance": 6495215.775245,
+      "percentage": 0.6500472191642207
+    },
+    {
+      "rank": 18,
+      "address": "28RWPC6XPxSxUVjd27KiNRtcHVxKtd6cjms7eBcxiqdV",
+      "balance": 6223110.059098,
+      "percentage": 0.6228146267114513
+    },
+    {
+      "rank": 19,
+      "address": "6aZNkfmZBCzwrrMYURfjXkT7qTPGAfJuPJsZTd4JQvR4",
+      "balance": 5600010.000003,
+      "percentage": 0.5604541948656766
+    },
+    {
+      "rank": 20,
+      "address": "4GQeEya6ZTwvXre4Br6ZfDyfe2WQMkcDz2QbkJZazVqS",
+      "balance": 5273859.896294,
+      "percentage": 0.5278127899789913
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "GjvW8JQSpKG5ogjyD3zozfaeJSShTajS5ZFrexT8L12k",
+    "pairUrl": "https://dexscreener.com/solana/gjvw8jqspkg5ogjyd3zozfaejsshtajs5zfrext8l12k",
+    "quoteToken": "SOL",
+    "volume24h": 177035.56,
+    "txns24h": {
+      "buys": 947,
+      "sells": 1277
+    },
+    "liquidityUsd": 1319685.84,
+    "pairCreatedAt": 1731524625000,
+    "priceUsd": 0.009589,
+    "marketCap": 9589937,
+    "name": "Ava AI",
+    "symbol": "AVA",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/786c9d35f50b4fd28668584463ee9f85a2d6e9696e6a2070674f48cfa2434864?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": 0.18,
+      "h1": -1,
+      "h6": -2.26,
+      "h24": -0.88
+    }
+  }
+}
