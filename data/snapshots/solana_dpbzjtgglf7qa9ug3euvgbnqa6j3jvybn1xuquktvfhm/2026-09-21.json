@@ -1,0 +1,158 @@
+{
+  "timestamp": "2026-09-21T08:45:43.214Z",
+  "date": "2026-09-21",
+  "token": {
+    "address": "DpBzjtgGLF7QA9Ug3eUVGbnqa6j3jvYBn1XuQuktvfhm",
+    "chain": "Solana",
+    "symbol": "DOGE-1",
+    "name": "DOGE-1 Satellite",
+    "decimals": 9,
+    "totalSupply": "6941515362089917000"
+  },
+  "priceUsd": 0.0000902149213985502,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC",
+      "balance": 487594002.11742973,
+      "percentage": 7.024316401867435
+    },
+    {
+      "rank": 2,
+      "address": "G3pvfE8tcxhNRckQjMnVbEAenqvEPNf1cPiN7U9qAP7A",
+      "balance": 157282413.0449863,
+      "percentage": 2.265822444245553
+    },
+    {
+      "rank": 3,
+      "address": "EEoR9nnuZYnZUZ3SoJMbbu1kTgiwoACZggh34UHVsfzz",
+      "balance": 151730598.8204181,
+      "percentage": 2.185842584878121
+    },
+    {
+      "rank": 4,
+      "address": "etuRQCa36CRcX5mg9ZvRRsd8nkrHQxjtstV8HCEBQTQ",
+      "balance": 114527350.51688933,
+      "percentage": 1.649889750908914
+    },
+    {
+      "rank": 5,
+      "address": "3uXfCsXTG4J72KV7rAoBozk7qLjhQxH2C78d28oy1ugr",
+      "balance": 105079152.35605676,
+      "percentage": 1.5137782872300676
+    },
+    {
+      "rank": 6,
+      "address": "pcgpGZ1WpputeDtGVgLhdDbF6zfJsfkufqeb5TEUG4h",
+      "balance": 100152220.21659295,
+      "percentage": 1.4428005268642037
+    },
+    {
+      "rank": 7,
+      "address": "H1Xemw5w1ScKbqcL6qBr7meUJbbDkiZD7Rud7MiXWqi6",
+      "balance": 78276851.84255423,
+      "percentage": 1.127662300800369
+    },
+    {
+      "rank": 8,
+      "address": "9S9LeMawz4jY8YaKi8uQXEm3fs2v1uSZrKHyNm4PDPLF",
+      "balance": 65960969.62661407,
+      "percentage": 0.9502387617961688
+    },
+    {
+      "rank": 9,
+      "address": "8R2jdx4KZdgdxREJsb2j6HheqvQzGVrXwtFSU2JWGA4L",
+      "balance": 62932033.531709306,
+      "percentage": 0.9066036772806629
+    },
+    {
+      "rank": 10,
+      "address": "2ZXtcsDXkDnWsCgBGd6zbn2TigkDBxT5uLhEGpmz37sc",
+      "balance": 62031250.16813444,
+      "percentage": 0.8936269234079515
+    },
+    {
+      "rank": 11,
+      "address": "GVwA6wT66qeu9puiJZYczATUFKM9SAVwHSMZGnhacGZe",
+      "balance": 59288856.34361757,
+      "percentage": 0.8541197887051448
+    },
+    {
+      "rank": 12,
+      "address": "DC2Lz4YKMbFcgZADMx9LWZyf7J5vQhttHCUCYK6sCdsP",
+      "balance": 58924136.8816284,
+      "percentage": 0.8488656123046858
+    },
+    {
+      "rank": 13,
+      "address": "HWJCHdRKF2v1kC6hZS6sdwcc2NbCxZAkgrmgghjt5bT8",
+      "balance": 58664242.7932402,
+      "percentage": 0.8451215582353455
+    },
+    {
+      "rank": 14,
+      "address": "C1xUZsTciHfHcaYNyVtpmNjUQ6UrG34mpok9secS3PZc",
+      "balance": 55531689.339787096,
+      "percentage": 0.7999937541457502
+    },
+    {
+      "rank": 15,
+      "address": "BP6RzuhM6xd1yDa7cXFZcSkTQhzVL44BxxC1VTB1DU25",
+      "balance": 53678975.55302584,
+      "percentage": 0.7733034179566296
+    },
+    {
+      "rank": 16,
+      "address": "8tsGjLfwNAtG6xDxZzUKK9cDuZu7dgGZPbsWqmWVKAYa",
+      "balance": 53448677.13522939,
+      "percentage": 0.769985721376223
+    },
+    {
+      "rank": 17,
+      "address": "BM9CcyErJcu2mjrFvUsRRrD3snGeHDDVirJLvL6EjvMN",
+      "balance": 52687630.68507701,
+      "percentage": 0.759022028141332
+    },
+    {
+      "rank": 18,
+      "address": "5qxUdiH3fTYjdheZJHeMEUwSdSHRuwoAcc8zzr6wHRJU",
+      "balance": 50817604.60312609,
+      "percentage": 0.7320822897066408
+    },
+    {
+      "rank": 19,
+      "address": "Gnad82F6rQLUysNVFg5G3ahgUF4Xhdsum49ZkZyy4HNW",
+      "balance": 49912908.240067326,
+      "percentage": 0.7190491648647709
+    },
+    {
+      "rank": 20,
+      "address": "ErwEeF8y8uLR7LkJcL3xRUuN1d8SrMLZJB92Ydq8vfdw",
+      "balance": 49062963.00669797,
+      "percentage": 0.7068047889751602
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "meteora",
+    "pairAddress": "2fckuYXUrwbA9LHKMP1az5DTFstFrRjqqbBstz7yvVXL",
+    "pairUrl": "https://dexscreener.com/solana/2fckuyxurwba9lhkmp1az5dtfstfrrjqqbbstz7yvvxl",
+    "quoteToken": "SOL",
+    "volume24h": 13312.66,
+    "txns24h": {
+      "buys": 179,
+      "sells": 93
+    },
+    "liquidityUsd": 95285.57,
+    "pairCreatedAt": 1755029293000,
+    "priceUsd": 0.00009395,
+    "marketCap": 652196,
+    "name": "DOGE-1 Satellite",
+    "symbol": "DOGE-1",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/78913b71cd019f95f5b737fdf03de3671658c613a6ad9a8fb60ae3be6def9ae4?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "h6": -2.05,
+      "h24": 6.4
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-09-21T08:45:29.979Z",
+  "date": "2026-09-21",
+  "token": {
+    "address": "7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr",
+    "chain": "Solana",
+    "symbol": "POPCAT",
+    "name": "POPCAT",
+    "decimals": 9,
+    "totalSupply": "979932848197224200"
+  },
+  "priceUsd": 0.05301570501352647,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "4xLpwxgYuPwPvtQjE94RLS4WZ4aD8NJYYKr2AJk99Qdg",
+      "balance": 107216589.92393455,
+      "percentage": 10.941218076440665
+    },
+    {
+      "rank": 2,
+      "address": "CSSJFgoeqidqVtHKSNP7i7s6WX8APHfH2kYGdLV195Jb",
+      "balance": 65000009,
+      "percentage": 6.63310849509536
+    },
+    {
+      "rank": 3,
+      "address": "9ZifroknFoYu4r6DUk6nYoJiUQnEyyoUyeAwjXbPoL2x",
+      "balance": 60182794.91423559,
+      "percentage": 6.141522352776874
+    },
+    {
+      "rank": 4,
+      "address": "51yZyDSnec4xnUv7XLRVYcDyV4x3wUtzrDcRaYbmQU5j",
+      "balance": 51623198.75564626,
+      "percentage": 5.268034319965609
+    },
+    {
+      "rank": 5,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 37957715.34958708,
+      "percentage": 3.873501681203731,
+      "label": "Raydium"
+    },
+    {
+      "rank": 6,
+      "address": "u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w",
+      "balance": 25193651.706107672,
+      "percentage": 2.57095695408683
+    },
+    {
+      "rank": 7,
+      "address": "DwdrYTtTWHfnfJBiN2RH6EgPbquDQLjZTfTwpykPEq1g",
+      "balance": 21381811.537409,
+      "percentage": 2.1819670171017305
+    },
+    {
+      "rank": 8,
+      "address": "6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF",
+      "balance": 20449824.790995236,
+      "percentage": 2.0868598117326753
+    },
+    {
+      "rank": 9,
+      "address": "6GTYrwStnattq8hE1XyWmNxQq731MoxzYFPmEKz68QHe",
+      "balance": 18094571.24093753,
+      "percentage": 1.8465113476118278
+    },
+    {
+      "rank": 10,
+      "address": "EFE3j1pcSP1paUzA86zW7989ZjsFP2J7ginyUqo4ewqR",
+      "balance": 16923953.35306,
+      "percentage": 1.727052357127826
+    },
+    {
+      "rank": 11,
+      "address": "E2RvJg2myWpKcbkhBuF81gfhYr6KvmNcDbSmr5qnatYy",
+      "balance": 16511299.61278,
+      "percentage": 1.684941947109511
+    },
+    {
+      "rank": 12,
+      "address": "2XubGivxkprDmvGucdQBAz13JNqCjJD6Kesuj7Di2Frd",
+      "balance": 14922028.048674416,
+      "percentage": 1.522760266290325
+    },
+    {
+      "rank": 13,
+      "address": "2WpNSDtMi1aksXXBjeENPA42vRhCeuh81B5rpF7tiaFH",
+      "balance": 13172864.431980755,
+      "percentage": 1.3442619518485155
+    },
+    {
+      "rank": 14,
+      "address": "6uQ6Uut5gWYrEzWSrQfBJ2W7LqeMeYQGsvdy66wS9MgJ",
+      "balance": 13145708.725393113,
+      "percentage": 1.3414907714928819
+    },
+    {
+      "rank": 15,
+      "address": "2x5vUChSsDNJfoqkhea2d8gFMFDTVcUVRBesrYsfRs4x",
+      "balance": 12566917.457741408,
+      "percentage": 1.282426390834911
+    },
+    {
+      "rank": 16,
+      "address": "AVPKzX2QZ8E23SWR728yhMTnnqr9UjAZdgemfaE3qHg5",
+      "balance": 11184240.092433,
+      "percentage": 1.1413271953285953
+    },
+    {
+      "rank": 17,
+      "address": "GpCaBXxX5jjxnWBC2cdevDMeTPE3RVGzRMXQuvfjvCKv",
+      "balance": 11000000,
+      "percentage": 1.1225258975894752
+    },
+    {
+      "rank": 18,
+      "address": "5PAhQiYdLBd6SVdjzBQDxUAEFyDdF5ExNPQfcscnPRj5",
+      "balance": 10823957.484032659,
+      "percentage": 1.1045611445667343
+    },
+    {
+      "rank": 19,
+      "address": "DSFWxvJjgvLbVqoQ1Zwoe1iVHhwFgrfSiF3ZK1h7nd1K",
+      "balance": 9677244.7258177,
+      "percentage": 0.9875416201855937
+    },
+    {
+      "rank": 20,
+      "address": "5zsbHMxdgLUPMFPHTwCykxbbmQ6R7dd8T9vhzWKfuTdm",
+      "balance": 8944434.000000002,
+      "percentage": 0.9127598912981656
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "FRhB8L7Y9Qq41qZXYLtC2nw8An1RJfLLxRF2x9RwLLMo",
+    "pairUrl": "https://dexscreener.com/solana/frhb8l7y9qq41qzxyltc2nw8an1rjfllxrf2x9rwllmo",
+    "quoteToken": "SOL",
+    "volume24h": 662209.92,
+    "txns24h": {
+      "buys": 2691,
+      "sells": 2301
+    },
+    "liquidityUsd": 3996880.96,
+    "pairCreatedAt": 1702415044000,
+    "priceUsd": 0.05264,
+    "marketCap": 51593739,
+    "name": "Popcat",
+    "symbol": "POPCAT",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/Pp6Fvh41hc0bHGK8?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": 0.27,
+      "h1": 1.45,
+      "h6": 5.66,
+      "h24": 9.65
+    }
+  }
+}

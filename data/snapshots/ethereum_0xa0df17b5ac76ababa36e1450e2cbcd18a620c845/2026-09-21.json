@@ -1,0 +1,340 @@
+{
+  "timestamp": "2026-09-21T08:45:22.331Z",
+  "date": "2026-09-21",
+  "token": {
+    "address": "0xa0df17b5ac76ababa36e1450e2cbcd18a620c845",
+    "chain": "Ethereum",
+    "symbol": "FWA",
+    "name": "Fake World Assets",
+    "decimals": 18,
+    "totalSupply": "979297434280484520226496506"
+  },
+  "priceUsd": 0.02225017502273132,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "0x019817ad02a31b990433542097be29d97613e8cb",
+      "balance": 41540413.32865334,
+      "percentage": 4.241858691192648
+    },
+    {
+      "rank": 2,
+      "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
+      "balance": 30067373.84055213,
+      "percentage": 3.070300481553229
+    },
+    {
+      "rank": 3,
+      "address": "0xe01a97fc4607a388a41626d5e039fdecbfc6acd9",
+      "balance": 26500000,
+      "percentage": 2.706021589801289
+    },
+    {
+      "rank": 4,
+      "address": "0xf3f1eae1c49bf8489a71016956697b16ad38272c",
+      "balance": 25972200.416318495,
+      "percentage": 2.6521258513661836
+    },
+    {
+      "rank": 5,
+      "address": "0xf1c27c1830efd7fc0aa7e8d90024684bc73a7f07",
+      "balance": 25144790.70751172,
+      "percentage": 2.5676357179457185
+    },
+    {
+      "rank": 6,
+      "address": "0xcb5ebee4654ce75db2f5c843ccb515988db52b77",
+      "balance": 18825548.492049783,
+      "percentage": 1.922352477710861
+    },
+    {
+      "rank": 7,
+      "address": "0xff60c38f0343a8b8de07c9770266764c452a368f",
+      "balance": 17799148.85835714,
+      "percentage": 1.8175426826717502
+    },
+    {
+      "rank": 8,
+      "address": "0x93536bcc7d31300e0efc2afe57b1535136e316f8",
+      "balance": 15861026.916045005,
+      "percentage": 1.6196332555183828
+    },
+    {
+      "rank": 9,
+      "address": "0x88ccc4b0235574445c1fd331ce1d7a4c0c2d8c81",
+      "balance": 15651918.100005891,
+      "percentage": 1.5982803132233023
+    },
+    {
+      "rank": 10,
+      "address": "0xb0926656fab4f7adf568d1e3b880b51907007043",
+      "balance": 12828101.740128586,
+      "percentage": 1.3099290666020917
+    },
+    {
+      "rank": 11,
+      "address": "0x6e697eff642e3c39623d31a7f5e46f2ca6a3487c",
+      "balance": 10761809.41553616,
+      "percentage": 1.0989316461799108
+    },
+    {
+      "rank": 12,
+      "address": "0x366aa56191e89d219ac36b33406fce85da1e7554",
+      "balance": 10195674.642841844,
+      "percentage": 1.0411213474007386
+    },
+    {
+      "rank": 13,
+      "address": "0x01467c420df8d9556fe5dbbf02b0c25c42226558",
+      "balance": 10001900.169893108,
+      "percentage": 1.0213342565572805
+    },
+    {
+      "rank": 14,
+      "address": "0x7ace8be7dd7990ff058ec8a6724d80437a70a603",
+      "balance": 10000910.06377388,
+      "percentage": 1.021233152838985
+    },
+    {
+      "rank": 15,
+      "address": "0x6ba9ad599e6271252817933831e3148936cf742a",
+      "balance": 9000299.392904362,
+      "percentage": 0.9190567725235712
+    },
+    {
+      "rank": 16,
+      "address": "0x6a1a1c0cfb3d3c538e13d36d608a5bcaa992fc78",
+      "balance": 8604357.437731134,
+      "percentage": 0.8786255469006696
+    },
+    {
+      "rank": 17,
+      "address": "0xd61b05ba5a560b56cb3aea0420d898f79229b4e4",
+      "balance": 8264368.458400075,
+      "percentage": 0.8439079046982415
+    },
+    {
+      "rank": 18,
+      "address": "0x1bb3ea2b525feee67271778336b8b9b813273d5e",
+      "balance": 8231797.267291531,
+      "percentage": 0.840581929364458
+    },
+    {
+      "rank": 19,
+      "address": "0x7f874197a17a966ed1e4453075fade93f4b92109",
+      "balance": 8185172.743269241,
+      "percentage": 0.8358209116807399
+    },
+    {
+      "rank": 20,
+      "address": "0x1cca082840abf3c851c2d261771fc8f43daefca0",
+      "balance": 8024263.012628658,
+      "percentage": 0.8193897718647954
+    },
+    {
+      "rank": 21,
+      "address": "0x28c66690ae101a4f07546b07a2ac8eb439b6c245",
+      "balance": 7974060.938713439,
+      "percentage": 0.8142634361716867
+    },
+    {
+      "rank": 22,
+      "address": "0x470879abd61fdca91436fe27ed87db2c8650f3e7",
+      "balance": 7900000,
+      "percentage": 0.8067007758275541
+    },
+    {
+      "rank": 23,
+      "address": "0x2d10dc093dd5e7f21fe717d23e641c0fe6f04a69",
+      "balance": 7266128.21353421,
+      "percentage": 0.7419735781165223
+    },
+    {
+      "rank": 24,
+      "address": "0xf47a4719986c175be9b0671385c728d26e7cf67e",
+      "balance": 7161032.400272309,
+      "percentage": 0.7312418219020156
+    },
+    {
+      "rank": 25,
+      "address": "0x577236e8deb97c36d2c7f6b1690429fb4944c044",
+      "balance": 7157935.640641572,
+      "percentage": 0.730925599320159
+    },
+    {
+      "rank": 26,
+      "address": "0x26d7b4fe67f4601643304b5023b3caf3a72e8504",
+      "balance": 7000000,
+      "percentage": 0.7147981557965669
+    },
+    {
+      "rank": 27,
+      "address": "0xe53a38e714af50e908e336f6eb6f0d0df720cb6c",
+      "balance": 6742276.132166173,
+      "percentage": 0.6884809350205129
+    },
+    {
+      "rank": 28,
+      "address": "0xcf2b7c6bc98bfe0d6138a25a3b6162b51f75e05d",
+      "balance": 6623317.11387615,
+      "percentage": 0.6763335511792159
+    },
+    {
+      "rank": 29,
+      "address": "0x4ac4a33101abb2aa21167de2b881429b915818a3",
+      "balance": 6332912.365126471,
+      "percentage": 0.6466791542019538
+    },
+    {
+      "rank": 30,
+      "address": "0x5d805ae896a07940fb8393e2d9e6a19061089a89",
+      "balance": 6091364.302621204,
+      "percentage": 0.6220137099712397
+    },
+    {
+      "rank": 31,
+      "address": "0xb4903bb1a05fe8768cd1565c392a1ab5eb2ecc19",
+      "balance": 5754715.484820436,
+      "percentage": 0.5876371450976563
+    },
+    {
+      "rank": 32,
+      "address": "0xc36fb04db65eefb442041fb994f62e2f6b91588c",
+      "balance": 5684992.259863154,
+      "percentage": 0.5805174261525629
+    },
+    {
+      "rank": 33,
+      "address": "0xb7802764002a0b15ff89300bbdf0de80a50c5d9b",
+      "balance": 5644328.025051888,
+      "percentage": 0.5763650375739954
+    },
+    {
+      "rank": 34,
+      "address": "0x8bd9c4b5ea8f6f14c9b14d830ddb67f3720d77f6",
+      "balance": 5400000,
+      "percentage": 0.551415720185923
+    },
+    {
+      "rank": 35,
+      "address": "0x39b337121494b10cffe3e581ab3281b2d62c5b08",
+      "balance": 5390075.209518921,
+      "percentage": 0.5504022599098455
+    },
+    {
+      "rank": 36,
+      "address": "0xd71f115b09cd381f6ff289dd30c3a18a3bd64ae2",
+      "balance": 5384144.071793156,
+      "percentage": 0.5497966075801095
+    },
+    {
+      "rank": 37,
+      "address": "0x6fedfdb4249cd5dca3030fd09e0e1368f23cb4f8",
+      "balance": 5371734.345317392,
+      "percentage": 0.5485294004945642
+    },
+    {
+      "rank": 38,
+      "address": "0x83ba61e7a43afb760e2963d782dc39513ec5fdb1",
+      "balance": 5065015.376082722,
+      "percentage": 0.5172090928435977
+    },
+    {
+      "rank": 39,
+      "address": "0xbb61c94456d2102d4e9f3cc27d91fe253bfef58e",
+      "balance": 5018625.350625693,
+      "percentage": 0.512472020751592
+    },
+    {
+      "rank": 40,
+      "address": "0x0505fc864059d112e8df756e837a584c541da9f4",
+      "balance": 5003014.601349649,
+      "percentage": 0.510877944352575
+    },
+    {
+      "rank": 41,
+      "address": "0x818b26218cfd1f7eeb1fa4d0aec5c723c1f5a403",
+      "balance": 5000000,
+      "percentage": 0.510570111283262
+    },
+    {
+      "rank": 42,
+      "address": "0xd81fbec8562a6428f8790c03140de5e1c5318752",
+      "balance": 4871634.578414886,
+      "percentage": 0.49746220176653516
+    },
+    {
+      "rank": 43,
+      "address": "0x197d43e5a2c36eb3185718c7b30f590ebe2c0c2f",
+      "balance": 4671116.671712101,
+      "percentage": 0.4769865117786296
+    },
+    {
+      "rank": 44,
+      "address": "0x1fefbbc536e4d6d22e63c7128226569bc9d50b9e",
+      "balance": 4649296.457372258,
+      "percentage": 0.474758361925886
+    },
+    {
+      "rank": 45,
+      "address": "0xbde12f6a59339464fed96dcca0d50931cb6621c7",
+      "balance": 4624982.846191494,
+      "percentage": 0.4722756012926338
+    },
+    {
+      "rank": 46,
+      "address": "0xfda5ef9aee7768b9c86e902486f2dd1f3e1180b8",
+      "balance": 4613884.700673893,
+      "percentage": 0.471142325014242
+    },
+    {
+      "rank": 47,
+      "address": "0x63b9a33525ebbfc765ac9c81e852c57bff0a2cef",
+      "balance": 4505857.416668043,
+      "percentage": 0.46011122453094283
+    },
+    {
+      "rank": 48,
+      "address": "0x28bd9eced3529c5daefa7ec084e65f5c0b4ed77c",
+      "balance": 4469792.436141857,
+      "percentage": 0.45642848430680616
+    },
+    {
+      "rank": 49,
+      "address": "0xe5e9ffe707ee071998340972af6fb178f5c64ba6",
+      "balance": 4238750.5702471305,
+      "percentage": 0.4328358700706135
+    },
+    {
+      "rank": 50,
+      "address": "0xe54d6571aca515614927f3a70b8957c2b511603c",
+      "balance": 4167630.2575391377,
+      "percentage": 0.42557348887584956
+    }
+  ],
+  "totalHolders": 50,
+  "tradingActivity": {
+    "dex": "uniswap",
+    "pairAddress": "0x230ecd3c25b44af30db59c15f70df7794eb13f67a200f230b7400daa96fe804d",
+    "pairUrl": "https://dexscreener.com/ethereum/0x230ecd3c25b44af30db59c15f70df7794eb13f67a200f230b7400daa96fe804d",
+    "quoteToken": "ETH",
+    "volume24h": 468757.35,
+    "txns24h": {
+      "buys": 1028,
+      "sells": 1170
+    },
+    "liquidityUsd": 1204125.61,
+    "pairCreatedAt": 1784223815000,
+    "priceUsd": 0.02257,
+    "marketCap": 22044461,
+    "name": "Fake World Assets",
+    "symbol": "FWA",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/YEFggtEx_Tq-hpge?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": 0.84,
+      "h1": 1.79,
+      "h6": 3.73,
+      "h24": 4.35
+    }
+  }
+}

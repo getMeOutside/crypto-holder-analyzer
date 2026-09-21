@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-09-21T08:45:41.997Z",
+  "date": "2026-09-21",
+  "token": {
+    "address": "Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump",
+    "chain": "Solana",
+    "symbol": "CHILLGUY",
+    "name": "Just a chill guy",
+    "decimals": 6,
+    "totalSupply": "999937438765096"
+  },
+  "priceUsd": 0.013720546674659679,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "5LZkATrLwHYCQj2YuVbjjgsDZzBk6YfL4pFQRJmtboT2",
+      "balance": 126222443.829183,
+      "percentage": 12.62303409551955
+    },
+    {
+      "rank": 2,
+      "address": "u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w",
+      "balance": 86890967.264585,
+      "percentage": 8.689640361090362
+    },
+    {
+      "rank": 3,
+      "address": "FixDET3jRBMjT9M69Wim8iRpMQiJHkSSfD7wivStuuph",
+      "balance": 71500402.702537,
+      "percentage": 7.150487613588973
+    },
+    {
+      "rank": 4,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 57311565.246703,
+      "percentage": 5.731515095332536,
+      "label": "Raydium"
+    },
+    {
+      "rank": 5,
+      "address": "M2St7Gra11AKvk3tC4fJPkxviWYKpLZSMmKcHNoDtxp",
+      "balance": 31979584.444954,
+      "percentage": 3.1981585252421585
+    },
+    {
+      "rank": 6,
+      "address": "22Wnk8PwyWZV7BfkZGJEKT9jGGdtvu7xY6EXeRh7zkBa",
+      "balance": 29328221.137896,
+      "percentage": 2.933005606242307
+    },
+    {
+      "rank": 7,
+      "address": "4raqd4tCEnm2yGeUocVqPgN2MPB1W6A3EZfC8LoMChvf",
+      "balance": 28260302.11928,
+      "percentage": 2.826207022929449
+    },
+    {
+      "rank": 8,
+      "address": "5PAhQiYdLBd6SVdjzBQDxUAEFyDdF5ExNPQfcscnPRj5",
+      "balance": 24292903.452917,
+      "percentage": 2.429442334204256
+    },
+    {
+      "rank": 9,
+      "address": "EPxGiguU5j5tKFnMQpzMrzczEQ5NRtLWrpG9fADvtadX",
+      "balance": 24083290.961495,
+      "percentage": 2.4084797736183794
+    },
+    {
+      "rank": 10,
+      "address": "6FEVkH17P9y8Q9aCkDdPcMDjvj7SVxrTETaYEm8f51Jy",
+      "balance": 24002162.927156,
+      "percentage": 2.400366462605723
+    },
+    {
+      "rank": 11,
+      "address": "2UL8hbNaoErAYNePqgQYPP9yDCDRZGWbzKW4krLqkhNL",
+      "balance": 22568287.499781,
+      "percentage": 2.256969948805239
+    },
+    {
+      "rank": 12,
+      "address": "6BhBoBB47wSGjK5uzcGWNcTf2oNRPQNuv6GVdkNyj9PB",
+      "balance": 18039696.15,
+      "percentage": 1.8040824806278568
+    },
+    {
+      "rank": 13,
+      "address": "BmFdpraQhkiDQE6SnfG5omcA1VwzqfXrwtNYBwWTymy6",
+      "balance": 14816667.401227,
+      "percentage": 1.4817594408231485
+    },
+    {
+      "rank": 14,
+      "address": "28RWPC6XPxSxUVjd27KiNRtcHVxKtd6cjms7eBcxiqdV",
+      "balance": 12105792.938607,
+      "percentage": 1.2106550339346658
+    },
+    {
+      "rank": 15,
+      "address": "7n84gquK7kMcvAJdSmo4M3PqTFu8nJnvrP7AwFwAeu86",
+      "balance": 10512566.850002,
+      "percentage": 1.0513224570313942
+    },
+    {
+      "rank": 16,
+      "address": "49mvMufixEbUMzZEUVAnbQ8hLLuEWy789XfKUNTz7wCv",
+      "balance": 10379409.232453,
+      "percentage": 1.0380058621738752
+    },
+    {
+      "rank": 17,
+      "address": "bazxfWH6Vu2FncaSKc3kkgvyCuPwyFpx4ryZPcNiG7x",
+      "balance": 9000100.000004,
+      "percentage": 0.9000663092602027
+    },
+    {
+      "rank": 18,
+      "address": "DhnnQyBy8RQKGQv1Dfmqvjc4LyiJiPeLfdrdobnbqwYx",
+      "balance": 8854856.557846,
+      "percentage": 0.885541056326642
+    },
+    {
+      "rank": 19,
+      "address": "CSEncqtqbmNRjve42sNnbs5cCSmrjUNsAEwc17XY2RCs",
+      "balance": 8469710.8686,
+      "percentage": 0.8470240777322964
+    },
+    {
+      "rank": 20,
+      "address": "2Yrkybr6WoKGhPZAGJtjd4uJfrpG8BGoYGWdmT6NcSKN",
+      "balance": 8290259.481053,
+      "percentage": 0.8290778162373154
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "93tjgwff5Ac5ThyMi8C4WejVVQq4tuMeMuYW1LEYZ7bu",
+    "pairUrl": "https://dexscreener.com/solana/93tjgwff5ac5thymi8c4wejvvqq4tumemuyw1leyz7bu",
+    "quoteToken": "SOL",
+    "volume24h": 184670.85,
+    "txns24h": {
+      "buys": 1030,
+      "sells": 1115
+    },
+    "liquidityUsd": 1592741.29,
+    "pairCreatedAt": 1731701302000,
+    "priceUsd": 0.0139,
+    "marketCap": 13907697,
+    "name": "Just a chill guy",
+    "symbol": "CHILLGUY",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/20ae19e21d577f3aead6ae8722a7a3a66c5376cbf11f10d278807bef32551b46?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": 0.98,
+      "h1": 1.92,
+      "h6": 1.46,
+      "h24": 2.73
+    }
+  }
+}

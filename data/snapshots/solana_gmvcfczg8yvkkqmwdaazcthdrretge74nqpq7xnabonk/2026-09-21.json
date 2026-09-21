@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-09-21T08:45:45.553Z",
+  "date": "2026-09-21",
+  "token": {
+    "address": "GMvCfcZg8YvkkQmwDaAzCtHDrrEtgE74nQpQ7xNabonk",
+    "chain": "Solana",
+    "symbol": "1",
+    "name": "1 coin can change your life",
+    "decimals": 6,
+    "totalSupply": "998836562424784"
+  },
+  "priceUsd": 0.0005063426217683113,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "GpMZbSM2GgvTKHJirzeGfMFoaZ8UR2X7F4v8vHTvxFbL",
+      "balance": 189734266.085544,
+      "percentage": 18.995526718099256
+    },
+    {
+      "rank": 2,
+      "address": "HoFagBugVanDBkaeU7bvTRnx88TVhnk4N7XzVCx7LNH4",
+      "balance": 20375885.947409,
+      "percentage": 2.0399619631408292
+    },
+    {
+      "rank": 3,
+      "address": "2GtmuqG31LuuWQmKzeK72YjH5iALPkJycuQaEQGsFzLw",
+      "balance": 19248885.50135,
+      "percentage": 1.9271306463413038
+    },
+    {
+      "rank": 4,
+      "address": "GGF82QnKtwch794EiYDAzgUf4BdHE4pPmFr8zZsFtCQ1",
+      "balance": 18632853.848854,
+      "percentage": 1.8654557261721307
+    },
+    {
+      "rank": 5,
+      "address": "9c8hwWTBaYVUd1EZF4PHAmMZ1GuxvHDoj8PKfX44jLmb",
+      "balance": 18600880.392521,
+      "percentage": 1.8622546562938536
+    },
+    {
+      "rank": 6,
+      "address": "AEWUYPTkrDjWKRgJsH99D7CuUTwBoa7Ff3UqgRN9QxtN",
+      "balance": 18385703.106597,
+      "percentage": 1.840711864007432
+    },
+    {
+      "rank": 7,
+      "address": "HCGZE3Z3PkPR2kSGT8GweNigpg3ev7HhqQektseVCRPJ",
+      "balance": 17751950.195764,
+      "percentage": 1.7772627538452557
+    },
+    {
+      "rank": 8,
+      "address": "7SR1GBkrBqRhQQqWyjDrHn19kfd3t2JnipP9rrnhGCyX",
+      "balance": 14440010.660365,
+      "percentage": 1.4456830279931192
+    },
+    {
+      "rank": 9,
+      "address": "4dUb6yiEABwumjbxq49pgejUbDUwEUveoE8v7mEBKQrb",
+      "balance": 13902460.752094,
+      "percentage": 1.3918654237430268
+    },
+    {
+      "rank": 10,
+      "address": "5yCMdPWBXe7HSG48Wn8yzSU27VaneP5nLXvFEYF8nPCe",
+      "balance": 13429775.275641,
+      "percentage": 1.344541818036653
+    },
+    {
+      "rank": 11,
+      "address": "2EGcqkFurLAtATX5it9CkMdrU1vocwTEjGuLEq5syGiU",
+      "balance": 12515632.978188,
+      "percentage": 1.2530211096603179
+    },
+    {
+      "rank": 12,
+      "address": "6sD9Ug4SvksR6BwRPH6cu8CPNzeHfjrDP2rHujTvpJaM",
+      "balance": 12000069.42,
+      "percentage": 1.2014047013726181
+    },
+    {
+      "rank": 13,
+      "address": "GoXpBUJpqAWPULYVwb2QyXCmeAAMGGBoBvDtty7MWzQD",
+      "balance": 11321046.196071,
+      "percentage": 1.1334232868476435
+    },
+    {
+      "rank": 14,
+      "address": "69ehVz81526sBL7daKHFW4JNmVhNhRGtoSPSRBEqV36n",
+      "balance": 11302940.830688,
+      "percentage": 1.1316106414095302
+    },
+    {
+      "rank": 15,
+      "address": "2LoNg8b8wYneseTQ4FYEVQxSJWp12tsLE799oUdYPDHB",
+      "balance": 10840443.275591,
+      "percentage": 1.0853070145204389
+    },
+    {
+      "rank": 16,
+      "address": "CDjgazRvVC8eRrFNzzgr7ZKt9ntMxWocwninbbmtyGc5",
+      "balance": 10623064.308121,
+      "percentage": 1.0635437976291497
+    },
+    {
+      "rank": 17,
+      "address": "JAnwvneE9JJWtS9AVUojk6ax8pkHr6m79rRvXuH7xRpf",
+      "balance": 9638954.746235,
+      "percentage": 0.9650182130733573
+    },
+    {
+      "rank": 18,
+      "address": "5UmV3eMyR29TQ2pQR5LtEa58BFbRV6ho18eXmb5i63Ma",
+      "balance": 9575522.648443,
+      "percentage": 0.9586676147694656
+    },
+    {
+      "rank": 19,
+      "address": "GVDZKpujcfKvcQdHtvcQWVncz9VxqmftUhKVQD1nFDxS",
+      "balance": 9335834.376477,
+      "percentage": 0.934670868856988
+    },
+    {
+      "rank": 20,
+      "address": "JBBFpMUzMNw9pkLaYqwcavU4V4G2Jqjsxg54tJHwucTy",
+      "balance": 9042433.334237,
+      "percentage": 0.9052965894926306
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "6sEkZ73vph5AFYmQTzaV6H5vAQQLZ2C8WqeCQ6MhLqFk",
+    "pairUrl": "https://dexscreener.com/solana/6sekz73vph5afymqtzav6h5vaqqlz2c8wqecq6mhlqfk",
+    "quoteToken": "USD1",
+    "volume24h": 39392.17,
+    "txns24h": {
+      "buys": 240,
+      "sells": 155
+    },
+    "liquidityUsd": 193755.7,
+    "pairCreatedAt": 1758148287000,
+    "priceUsd": 0.0005105,
+    "marketCap": 510598,
+    "name": "1 coin can change your life",
+    "symbol": "1",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/f123ba828932f7ee5b3b35fce15bb80f4430076ad8d12b429884097b4d3ec1ef?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": 0.41,
+      "h1": -0.31,
+      "h6": -4.14,
+      "h24": -8.82
+    }
+  }
+}
