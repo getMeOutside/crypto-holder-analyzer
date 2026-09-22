@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-09-22T16:47:28.944Z",
+  "date": "2026-09-22",
+  "token": {
+    "address": "GtDZKAqvMZMnti46ZewMiXCa4oXF4bZxwQPoKzXPFxZn",
+    "chain": "Solana",
+    "symbol": "nub",
+    "name": "nubcat",
+    "decimals": 9,
+    "totalSupply": "999893700917681700"
+  },
+  "priceUsd": 0.0036469382582734362,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 558083988.1773019,
+      "percentage": 55.81433182998392,
+      "label": "Raydium"
+    },
+    {
+      "rank": 2,
+      "address": "HdBtqYR6BVYT2g8KoCBsXfWtxihYT2CGk84AUPieSBy6",
+      "balance": 24472967.511538886,
+      "percentage": 2.447556924208854
+    },
+    {
+      "rank": 3,
+      "address": "Et6DgJN3jr1QzbujE3PyTt4aaTfnHKuUbf7aeDvhFbNu",
+      "balance": 19306336.796000645,
+      "percentage": 1.9308389260060035
+    },
+    {
+      "rank": 4,
+      "address": "EGzTQ9bLTbY2mH8XE9ty9NQspyZWfcrME2auNx9GDHqD",
+      "balance": 18713660.817502387,
+      "percentage": 1.8715650273951496
+    },
+    {
+      "rank": 5,
+      "address": "FgMSTUr71rQTjsrE8uGfbRoPPSU1hCMqAhHxegvshCij",
+      "balance": 13588303.993330082,
+      "percentage": 1.358974857113213
+    },
+    {
+      "rank": 6,
+      "address": "FeX9YBAJwwEazQj3dNGj5ZKmUYzciozFD4h33vm3MCtm",
+      "balance": 12591945,
+      "percentage": 1.2593283654495846
+    },
+    {
+      "rank": 7,
+      "address": "HfQRCyGMSjXu4gUgVGLfHM7ge1iecYbks4KqJR81eFh4",
+      "balance": 10001560.793528132,
+      "percentage": 1.0002624063286834
+    },
+    {
+      "rank": 8,
+      "address": "FwVwZA7hDckiXJ1ahLS9SToX6GQoWnMNFKYr2nV2CzuN",
+      "balance": 9942905.4645322,
+      "percentage": 0.9943962498620411
+    },
+    {
+      "rank": 9,
+      "address": "icYz1F9hNcQDtwhFr2uAbgwc9WFDAD2fYZJqfXq8BZy",
+      "balance": 8706073.083959062,
+      "percentage": 0.8706998629923169
+    },
+    {
+      "rank": 10,
+      "address": "BAdR2UvqzZLcVumKFkDp8iDBxifhSHTyf1iMzE3sK8ka",
+      "balance": 8540805.230344439,
+      "percentage": 0.854171320661973
+    },
+    {
+      "rank": 11,
+      "address": "GcoeYrvkAijCxRS5nhSZTDYf75vZZaU5nyB89G4SHp6S",
+      "balance": 8154575.864146001,
+      "percentage": 0.8155442780229439
+    },
+    {
+      "rank": 12,
+      "address": "5r6iVWbTkVRqavvXUaaVbi3rBgU3AikQJ1iSSyWtJT7X",
+      "balance": 6984542.584161383,
+      "percentage": 0.6985285113558686
+    },
+    {
+      "rank": 13,
+      "address": "9Ge6ZZFjqgZsw5EyNDtCzeyJj4vT8ghDgaMgULLDmv8N",
+      "balance": 6383187.115015248,
+      "percentage": 0.6383865714082299
+    },
+    {
+      "rank": 14,
+      "address": "13X42NiMGh9hRRFUZEnM8dwauZbHNXqu11TAq9LYYki2",
+      "balance": 5596675.387035605,
+      "percentage": 0.5597270371739608
+    },
+    {
+      "rank": 15,
+      "address": "A77HErqtfN1hLLpvZ9pCtu66FEtM8BveoaKbbMoZ4RiR",
+      "balance": 5187439.691444378,
+      "percentage": 0.518799117014484
+    },
+    {
+      "rank": 16,
+      "address": "2BnPcTd6JDtx75u7tKf9MiHPFKGa2TbcAnBF2BkwiBDg",
+      "balance": 4886047.552133041,
+      "percentage": 0.4886566989719735
+    },
+    {
+      "rank": 17,
+      "address": "HhRYiyHoLQ1gzfbybsFHXC4dAq45wvWY2MkZK82eitGw",
+      "balance": 4541241.442745638,
+      "percentage": 0.45417242238627775
+    },
+    {
+      "rank": 18,
+      "address": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+      "balance": 4252565.683160121,
+      "percentage": 0.42530177750466913
+    },
+    {
+      "rank": 19,
+      "address": "GYB5hsbkNw7z4t9dKws1zAijnUJSQ7e9zmMSLyWhUUL8",
+      "balance": 3988411.079877988,
+      "percentage": 0.3988835089387509
+    },
+    {
+      "rank": 20,
+      "address": "2sJHFkmuPd2vwLLjZQStmvjtEk2ckLRvZeBe4JNApHWn",
+      "balance": 3697761.120796215,
+      "percentage": 0.36981542311972626
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "83G6VzJzLRCnHBsLATj94VCpRimyyqwuN6ZfL11McADL",
+    "pairUrl": "https://dexscreener.com/solana/83g6vzjzlrcnhbslatj94vcprimyyqwun6zfl11mcadl",
+    "quoteToken": "SOL",
+    "volume24h": 19149.02,
+    "txns24h": {
+      "buys": 164,
+      "sells": 226
+    },
+    "liquidityUsd": 239387.18,
+    "pairCreatedAt": 1711333309000,
+    "priceUsd": 0.0002142,
+    "marketCap": 214186,
+    "name": "nubcat",
+    "symbol": "nub",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/etSC5lXsvhQY3DfJ?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "m5": 0.33,
+      "h1": -0.14,
+      "h6": 1.02,
+      "h24": 1.35
+    }
+  }
+}

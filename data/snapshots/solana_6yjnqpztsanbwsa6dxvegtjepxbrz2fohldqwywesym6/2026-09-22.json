@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-09-22T16:47:16.316Z",
+  "date": "2026-09-22",
+  "token": {
+    "address": "6yjNqPzTSanBWSa6dxVEgTjePXBrZ2FoHLDQwYwEsyM6",
+    "chain": "Solana",
+    "symbol": "Chud",
+    "name": "Chudjak",
+    "decimals": 6,
+    "totalSupply": "926891412815879"
+  },
+  "priceUsd": 0.0013950407524963048,
+  "holders": [
+    {
+      "rank": 1,
+      "address": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+      "balance": 117327270.618085,
+      "percentage": 12.658146250556676,
+      "label": "Raydium"
+    },
+    {
+      "rank": 2,
+      "address": "A2Q7eQrfKJkJrFMrT3BFecMoMUDu6FM5wMmPMVN7Jjnb",
+      "balance": 29989355.917792,
+      "percentage": 3.235476723933054
+    },
+    {
+      "rank": 3,
+      "address": "4nKcXaT9rN85mBaUqVHaDRzHsyDA6a9H9LsY8jdDbdyg",
+      "balance": 27741925.761895,
+      "percentage": 2.993007096442456
+    },
+    {
+      "rank": 4,
+      "address": "G1U6FxxH8WpMKUJdg7BJf1jbpvzA4tLiPe9nZ5bbzdHM",
+      "balance": 26892983.005481,
+      "percentage": 2.9014167823370607
+    },
+    {
+      "rank": 5,
+      "address": "EeEPvVEfSoKHsVCQ4GswTK6ftHDsjAHZHKEW1QJj3P8D",
+      "balance": 24000000,
+      "percentage": 2.5893000699066184
+    },
+    {
+      "rank": 6,
+      "address": "4mfvdPr5Zv2tT8ZeXeaxK3rhkbawYnaXyiMEUjbMnTEC",
+      "balance": 23804460.835621,
+      "percentage": 2.5682038377401173
+    },
+    {
+      "rank": 7,
+      "address": "FjxgGwchRnwxaEcTTNJ8MHkoUqZDHwuEVHawMGASx441",
+      "balance": 20548774.997356,
+      "percentage": 2.2169560223812197
+    },
+    {
+      "rank": 8,
+      "address": "9bZdtgnwSPQs4ReWKmrL4x6T3NaxLyGRAoCEojpEqCzh",
+      "balance": 20532374.846348,
+      "percentage": 2.2151866510415736
+    },
+    {
+      "rank": 9,
+      "address": "GDRTKkK5QmW9C768wmecq12hc14rhupsZCBFWJSEXsEX",
+      "balance": 19241216.509577,
+      "percentage": 2.075886802222338
+    },
+    {
+      "rank": 10,
+      "address": "9HLb8fGKGMkBQdU41tjKnpa5ZRFscS4ZMoqFxzC4i4KE",
+      "balance": 17563998.445525,
+      "percentage": 1.8949359334515679
+    },
+    {
+      "rank": 11,
+      "address": "Ed1y4BGmD5xVr8jRGJqn5F93PjdBa4DJQvoxKzS3n3ZX",
+      "balance": 13190651.953636,
+      "percentage": 1.4231065010693154
+    },
+    {
+      "rank": 12,
+      "address": "87kEqjQQ7S97WAzbbtkDxF5DM7JakX8GqJ3grPkmPnGG",
+      "balance": 12000000,
+      "percentage": 1.2946500349533092
+    },
+    {
+      "rank": 13,
+      "address": "4J5rDTvRbzjuKkB4B9rvNEvDz6f1BEBzUVT5mdctKHoT",
+      "balance": 11690000.000002,
+      "percentage": 1.2612049090505646
+    },
+    {
+      "rank": 14,
+      "address": "8dvX4QSWpQHSQAPUwGFDXmvYC6QWJkyfc7cGSN5Fgh2V",
+      "balance": 11636521.736587,
+      "percentage": 1.2554352727506084
+    },
+    {
+      "rank": 15,
+      "address": "F6snf5ESjgAFPL2LMQbVCGwPzcQUUiixkPkcebNhdnun",
+      "balance": 11111111,
+      "percentage": 1.198750020376675
+    },
+    {
+      "rank": 16,
+      "address": "Et6DgJN3jr1QzbujE3PyTt4aaTfnHKuUbf7aeDvhFbNu",
+      "balance": 11000000,
+      "percentage": 1.1867625320405335
+    },
+    {
+      "rank": 17,
+      "address": "U9hmLA2d4g1pCbFDp8hPrUUww69LnKAdzqRYrFUGMBq",
+      "balance": 10425720.468647,
+      "percentage": 1.1248049474289392
+    },
+    {
+      "rank": 18,
+      "address": "ALxQpkEhNrxdTqYpaziZYNvxEeWR3VP9Ct8itvsp6Jn",
+      "balance": 10097411.890292,
+      "percentage": 1.0893845547253749
+    },
+    {
+      "rank": 19,
+      "address": "G6p85qxejfkMtA6b3PmTLEG6JafKBULFu9MGJKn9yarK",
+      "balance": 10000000.513895,
+      "percentage": 1.078875084570606
+    },
+    {
+      "rank": 20,
+      "address": "AT4aWeMuKMRPxVPGeAoehryeT8AdPqFgfQyvenVWiyJg",
+      "balance": 10000000.000001,
+      "percentage": 1.0788750291278657
+    }
+  ],
+  "totalHolders": 20,
+  "tradingActivity": {
+    "dex": "raydium",
+    "pairAddress": "3Cv7Z8KN21M6Ur6nTeKiKEPcjTuEAg87Ciu6cC3gRnw6",
+    "pairUrl": "https://dexscreener.com/solana/3cv7z8kn21m6ur6ntekikepcjtueag87ciu6cc3grnw6",
+    "quoteToken": "SOL",
+    "volume24h": 45736.85,
+    "txns24h": {
+      "buys": 464,
+      "sells": 676
+    },
+    "liquidityUsd": 328457.41,
+    "pairCreatedAt": 1714892652000,
+    "priceUsd": 0.001401,
+    "marketCap": 1299065,
+    "name": "Chudjak",
+    "symbol": "Chud",
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/R8_kR61H3eUeXeVa?width=800&height=800&quality=95&format=auto",
+    "priceChange": {
+      "h1": -0.52,
+      "h6": 0.49,
+      "h24": 3.91
+    }
+  }
+}
